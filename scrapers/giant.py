@@ -1,149 +1,155 @@
-"""Giant online scraper using Playwright to intercept Algolia API responses.
+"""Giant online scraper.
 
-Giant.sg uses Algolia instantsearch.js for product search.
-We intercept the Algolia API responses to get structured product data.
+Giant.sg uses Algolia for search but the Algolia DNS endpoint is unreachable from CI.
+We try Algolia API first (requests), then fall back to scraping category pages (Playwright).
 """
 import json
 import re
+import requests
 from datetime import datetime
 
 GIANT_BASE = "https://giant.sg"
 
-# Common categories to track
-CATEGORIES = [
-    "rice",
-    "oil",
-    "milk",
-    "eggs",
-    "chicken",
-    "bread",
-    "noodles",
-    "tuna",
-]
+# Giant Algolia config (from page source — search-only key)
+ALGOLIA_APP_ID = "PFCHI1YM66"
+ALGOLIA_API_KEY = "d0c09a40111717aec861992cf8497e71"
+ALGOLIA_INDEX = "giant_product_live"
+ALGOLIA_URL = f"https://{ALGOLIA_APP_ID}-dsn.algolia.net/1/indexes/*/queries"
+
+# Category page slugs on giant.sg
+CATEGORY_PAGES = {
+    "rice": "rice",
+    "oil": "cooking-oil",
+    "milk": "fresh-milk",
+    "eggs": "eggs",
+    "chicken": "chicken",
+    "bread": "bread",
+    "noodles": "instant-noodles",
+    "tuna": "canned-tuna",
+}
+
+HEADERS = {
+    "X-Algolia-Application-Id": ALGOLIA_APP_ID,
+    "X-Algolia-API-Key": ALGOLIA_API_KEY,
+    "Content-Type": "application/json",
+}
 
 
-def fetch_products(query: str) -> list:
-    """Fetch products from Giant by intercepting Algolia API responses."""
+def fetch_via_algolia(query: str) -> list:
+    """Try fetching products via Algolia API."""
+    payload = {
+        "requests": [{
+            "indexName": ALGOLIA_INDEX,
+            "params": f"query={query}&hitsPerPage=40",
+        }]
+    }
+    try:
+        resp = requests.post(ALGOLIA_URL, headers=HEADERS, json=payload, timeout=10)
+        resp.raise_for_status()
+        data = resp.json()
+        results = data.get("results", [])
+        if results:
+            return results[0].get("hits", [])
+    except Exception:
+        pass
+    return []
+
+
+def fetch_via_category_page(category_name: str) -> list:
+    """Scrape products from a Giant category page using Playwright."""
     from playwright.sync_api import sync_playwright
 
+    slug = CATEGORY_PAGES.get(category_name, category_name)
+    url = f"{GIANT_BASE}/{slug}"
     products = []
-    url = f"{GIANT_BASE}/search?q={query}"
 
     try:
         with sync_playwright() as p:
-            browser = p.chromium.launch(
-                headless=True,
-                args=["--no-sandbox"],
-            )
+            browser = p.chromium.launch(headless=True, args=["--no-sandbox"])
             context = browser.new_context(
                 user_agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
             )
             page = context.new_page()
+            page.goto(url, wait_until="domcontentloaded", timeout=30000)
+            page.wait_for_timeout(5000)
 
-            # Capture Algolia API responses
-            algolia_hits = []
-            all_requests = []
+            content_len = len(page.content())
+            print(f"[Giant] {category_name}: page content length = {content_len}")
 
-            def handle_response(response):
+            # Look for product items
+            items = page.query_selector_all('.product-item, .product-card, [class*="product-item"], [class*="product-card"]')
+            print(f"[Giant] {category_name}: found {len(items)} product items")
+
+            for item in items:
                 try:
-                    all_requests.append(response.url[:100])
-                    # Check for Algolia API calls or any failed requests
-                    if "algolia" in response.url.lower() and "js" not in response.url:
-                        print(f"[Giant] {query}: Algolia response: {response.status} {response.url[:100]}")
-                        if response.status == 200:
-                            data = response.json()
-                            results = data.get("results", [])
-                            for result in results:
-                                hits = result.get("hits", [])
-                                algolia_hits.extend(hits)
-                    elif response.status >= 400 and "giant.sg" in response.url:
-                        print(f"[Giant] {query}: Failed request: {response.status} {response.url[:100]}")
-                except Exception as e:
-                    print(f"[Giant] {query}: response error: {e}")
+                    name_el = item.query_selector('[class*="name"], [class*="title"], h3, h4')
+                    price_el = item.query_selector('[class*="price"]')
+                    img_el = item.query_selector('img')
 
-            page.on("response", handle_response)
+                    if name_el and price_el:
+                        name = name_el.inner_text().strip()
+                        price_text = price_el.inner_text().strip()
 
-            # Giant's /search URL returns 404 — search is entirely client-side.
-            # Navigate to homepage to load the Algolia config, then call Algolia directly.
-            page.goto(GIANT_BASE, wait_until="domcontentloaded", timeout=30000)
-            page.wait_for_timeout(3000)
+                        price_match = re.search(r'[\$S]*([\d.]+)', price_text)
+                        if price_match:
+                            price = float(price_match.group(1))
+                            if price > 0 and len(name) > 2:
+                                img_url = ""
+                                if img_el:
+                                    img_url = img_el.get_attribute("src") or ""
 
-            # Use the Algolia config from the page to make a direct API call
-            try:
-                result = page.evaluate(f"""
-                    async () => {{
-                        const config = site_config.algolia;
-                        const url = `https://${{config.appId}}-dsn.algolia.net/1/indexes/*/queries`;
-                        const resp = await fetch(url, {{
-                            method: 'POST',
-                            headers: {{
-                                'X-Algolia-Application-Id': config.appId,
-                                'X-Algolia-API-Key': config.apiKey,
-                                'Content-Type': 'application/json',
-                            }},
-                            body: JSON.stringify({{
-                                requests: [{{
-                                    indexName: config.index_product,
-                                    params: 'query={query}&hitsPerPage=40',
-                                }}]
-                            }})
-                        }});
-                        const data = await resp.json();
-                        return data.results ? data.results[0].hits : [];
-                    }}
-                """)
-                if result:
-                    algolia_hits.extend(result)
-                    print(f"[Giant] {query}: got {len(result)} hits via page.evaluate Algolia call")
-                else:
-                    print(f"[Giant] {query}: page.evaluate returned empty")
-            except Exception as e:
-                print(f"[Giant] {query}: page.evaluate error: {e}")
-
-            # Wait for Algolia to respond
-            page.wait_for_timeout(8000)
-
-            # Try to get Algolia config from the page
-            try:
-                algolia_config = page.evaluate("typeof site_config !== 'undefined' ? site_config.algolia : null")
-                if algolia_config:
-                    print(f"[Giant] {query}: Algolia config from page: {algolia_config}")
-            except Exception:
-                pass
-
-            print(f"[Giant] {query}: intercepted {len(algolia_hits)} Algolia hits, {len(all_requests)} total requests")
-
-            for hit in algolia_hits:
-                name = hit.get("name", hit.get("title", ""))
-                price = 0
-                for field in ["price", "sellingPrice", "currentPrice", "finalPrice"]:
-                    if field in hit and hit[field]:
-                        try:
-                            price = float(hit[field])
-                            break
-                        except (ValueError, TypeError):
-                            pass
-
-                if isinstance(price, dict):
-                    try:
-                        price = float(price.get("amount", 0))
-                    except (ValueError, TypeError):
-                        price = 0
-
-                if price > 0 and name:
-                    img_url = hit.get("imageUrl", hit.get("image", hit.get("thumbnail", "")))
-                    products.append({
-                        "name": name,
-                        "price": price,
-                        "category": query,
-                        "image_url": img_url or "",
-                    })
+                                products.append({
+                                    "name": name,
+                                    "price": price,
+                                    "category": category_name,
+                                    "image_url": img_url,
+                                })
+                except Exception:
+                    continue
 
             browser.close()
     except Exception as e:
-        print(f"[Giant] Error fetching {query}: {e}")
+        print(f"[Giant] Error fetching {category_name}: {e}")
 
     return products
+
+
+def fetch_products(query: str) -> list:
+    """Fetch products — try Algolia API first, fall back to category page scraping."""
+    # Try Algolia API (fast, structured data)
+    hits = fetch_via_algolia(query)
+    if hits:
+        products = []
+        for hit in hits:
+            name = hit.get("name", hit.get("title", ""))
+            price = 0
+            for field in ["price", "sellingPrice", "currentPrice", "finalPrice"]:
+                if field in hit and hit[field]:
+                    try:
+                        price = float(hit[field])
+                        break
+                    except (ValueError, TypeError):
+                        pass
+
+            if isinstance(price, dict):
+                try:
+                    price = float(price.get("amount", 0))
+                except (ValueError, TypeError):
+                    price = 0
+
+            if price > 0 and name:
+                img_url = hit.get("imageUrl", hit.get("image", hit.get("thumbnail", "")))
+                products.append({
+                    "name": name,
+                    "price": price,
+                    "category": query,
+                    "image_url": img_url or "",
+                })
+        print(f"[Giant] {query}: {len(products)} products via Algolia")
+        return products
+
+    # Fall back to category page scraping
+    return fetch_via_category_page(query)
 
 
 def parse_product(raw: dict) -> dict:
@@ -168,7 +174,7 @@ def scrape() -> list:
     """Scrape all tracked categories from Giant."""
     all_products = []
     seen_ids = set()
-    for cat in CATEGORIES:
+    for cat in CATEGORY_PAGES:
         raw = fetch_products(cat)
         for p in raw:
             parsed = parse_product(p)
