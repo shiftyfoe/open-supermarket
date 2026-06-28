@@ -24,19 +24,34 @@ jobs:
           pip install -r requirements.txt
           playwright install chromium --with-deps
 
-      - name: Debug - inspect target sites
+      - name: Debug - inspect Giant HTML structure
         run: |
-          echo "=== Giant search page ==="
-          curl -s -o /dev/null -w "HTTP %{http_code}" "https://giant.sg/search?q=rice" -H "User-Agent: Mozilla/5.0" || true
-          echo ""
-          curl -s "https://giant.sg/catalogsearch/result/?q=rice" -H "User-Agent: Mozilla/5.0" -o /dev/null -w "catalogsearch: HTTP %{http_code}" || true
-          echo ""
-          curl -s "https://giant.sg/search" -H "User-Agent: Mozilla/5.0" -o /dev/null -w "search root: HTTP %{http_code}" || true
-          echo ""
-          echo "=== Giant homepage snippet ==="
-          curl -s "https://giant.sg" -H "User-Agent: Mozilla/5.0" 2>/dev/null | grep -oP 'href="[^"]*search[^"]*"' | head -5
-          echo "=== Sheng Siong page size ==="
-          curl -s "https://www.shengsiong.com.sg/search/rice" -H "User-Agent: Mozilla/5.0" | wc -c
+          python3 -c "
+          from playwright.sync_api import sync_playwright
+          with sync_playwright() as p:
+              browser = p.chromium.launch(headless=True, args=['--no-sandbox'])
+              page = browser.new_page()
+              page.goto('https://giant.sg/search?q=rice', wait_until='domcontentloaded', timeout=30000)
+              page.wait_for_timeout(8000)
+              html = page.content()
+              # Find product-related class names
+              import re
+              classes = set(re.findall(r'class=\"([^\"]*product[^\"]*?)\"', html, re.I))
+              print('=== Product-related classes ===')
+              for c in sorted(classes)[:30]:
+                  print(c)
+              # Find price patterns
+              price_classes = set(re.findall(r'class=\"([^\"]*price[^\"]*?)\"', html, re.I))
+              print('=== Price-related classes ===')
+              for c in sorted(price_classes)[:20]:
+                  print(c)
+              # Dump a snippet around product cards
+              idx = html.find('product')
+              if idx > 0:
+                  print('=== HTML snippet around first product ===')
+                  print(html[max(0,idx-200):idx+500])
+              browser.close()
+          "
 
       - name: Run scrapers
         run: python scrape_all.py
