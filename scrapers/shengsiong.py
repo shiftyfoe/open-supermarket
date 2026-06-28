@@ -35,39 +35,34 @@ def fetch_products(query: str) -> list:
             page = browser.new_page(
                 user_agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
             )
-            page.goto(url, wait_until="networkidle", timeout=30000)
+            # Use domcontentloaded instead of networkidle — Meteor keeps
+            # DDP/WebSocket connections alive so networkidle never fires.
+            page.goto(url, wait_until="domcontentloaded", timeout=30000)
 
-            # Wait for product cards to appear
+            # Wait for product cards to appear in the rendered DOM
             try:
-                page.wait_for_selector('[class*="product"]', timeout=10000)
+                page.wait_for_selector('[class*="product-card"], [class*="product-item"], [class*="ProductCard"], [class*="ProductItem"]', timeout=15000)
             except Exception:
-                # If no product elements found, return empty
-                browser.close()
-                return products
+                # Fallback: wait a bit for Meteor to render
+                page.wait_for_timeout(5000)
 
             # Extract product data from the rendered page
-            # Sheng Siong uses CSS modules with hashed class names,
-            # so we look for common patterns
-            items = page.query_selector_all('[class*="product-card"], [class*="product-item"], [class*="ProductCard"]')
+            items = page.query_selector_all('[class*="product-card"], [class*="product-item"], [class*="ProductCard"], [class*="ProductItem"]')
 
             if not items:
-                # Fallback: try broader selectors
+                # Broader fallback
                 items = page.query_selector_all('[class*="product"]')
 
             for item in items:
                 try:
-                    # Find name element
                     name_el = item.query_selector('[class*="name"], [class*="title"], h3, h4')
-                    # Find price element
                     price_el = item.query_selector('[class*="price"]')
-                    # Find image
                     img_el = item.query_selector('img')
 
                     if name_el and price_el:
                         name = name_el.inner_text().strip()
                         price_text = price_el.inner_text().strip()
 
-                        # Extract price from "$3.20" or "S$3.20" format
                         price_match = re.search(r'[\$S]*([\d.]+)', price_text)
                         if price_match:
                             price = float(price_match.group(1))
