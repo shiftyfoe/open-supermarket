@@ -42,17 +42,21 @@ def fetch_products(query: str) -> list:
 
             # Capture Algolia API responses
             algolia_hits = []
+            all_requests = []
 
             def handle_response(response):
                 try:
-                    if "algolia" in response.url and response.status == 200:
-                        data = response.json()
-                        results = data.get("results", [])
-                        for result in results:
-                            hits = result.get("hits", [])
-                            algolia_hits.extend(hits)
-                except Exception:
-                    pass
+                    all_requests.append(response.url[:100])
+                    if "algolia" in response.url.lower():
+                        print(f"[Giant] {query}: Algolia response: {response.status} {response.url[:100]}")
+                        if response.status == 200:
+                            data = response.json()
+                            results = data.get("results", [])
+                            for result in results:
+                                hits = result.get("hits", [])
+                                algolia_hits.extend(hits)
+                except Exception as e:
+                    print(f"[Giant] {query}: response error: {e}")
 
             page.on("response", handle_response)
             page.goto(url, wait_until="domcontentloaded", timeout=30000)
@@ -60,7 +64,7 @@ def fetch_products(query: str) -> list:
             # Wait for Algolia to respond
             page.wait_for_timeout(8000)
 
-            print(f"[Giant] {query}: intercepted {len(algolia_hits)} Algolia hits")
+            print(f"[Giant] {query}: intercepted {len(algolia_hits)} Algolia hits, {len(all_requests)} total requests")
 
             for hit in algolia_hits:
                 name = hit.get("name", hit.get("title", ""))
