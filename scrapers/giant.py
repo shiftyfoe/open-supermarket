@@ -1,7 +1,8 @@
 """Giant online scraper.
 
-Giant.sg uses Algolia for search but the Algolia DNS endpoint is unreachable from CI.
-We try Algolia API first (requests), then fall back to scraping category pages (Playwright).
+Giant.sg uses Algolia instantsearch.js for product search.
+We intercept the Algolia network requests to capture product data.
+If Algolia fails, we fall back to extracting any server-rendered product data.
 """
 import json
 import re
@@ -14,7 +15,6 @@ GIANT_BASE = "https://giant.sg"
 ALGOLIA_APP_ID = "PFCHI1YM66"
 ALGOLIA_API_KEY = "d0c09a40111717aec861992cf8497e71"
 ALGOLIA_INDEX = "giant_product_live"
-ALGOLIA_URL = f"https://{ALGOLIA_APP_ID}-dsn.algolia.net/1/indexes/*/queries"
 
 # Category page slugs on giant.sg
 CATEGORY_PAGES = {
@@ -28,35 +28,9 @@ CATEGORY_PAGES = {
     "tuna": "canned-tuna",
 }
 
-HEADERS = {
-    "X-Algolia-Application-Id": ALGOLIA_APP_ID,
-    "X-Algolia-API-Key": ALGOLIA_API_KEY,
-    "Content-Type": "application/json",
-}
 
-
-def fetch_via_algolia(query: str) -> list:
-    """Try fetching products via Algolia API."""
-    payload = {
-        "requests": [{
-            "indexName": ALGOLIA_INDEX,
-            "params": f"query={query}&hitsPerPage=40",
-        }]
-    }
-    try:
-        resp = requests.post(ALGOLIA_URL, headers=HEADERS, json=payload, timeout=10)
-        resp.raise_for_status()
-        data = resp.json()
-        results = data.get("results", [])
-        if results:
-            return results[0].get("hits", [])
-    except Exception:
-        pass
-    return []
-
-
-def fetch_via_category_page(category_name: str) -> list:
-    """Scrape products from a Giant category page using Playwright."""
+def fetch_products(category_name: str) -> list:
+    """Fetch products from Giant by intercepting Algolia responses."""
     from playwright.sync_api import sync_playwright
 
     slug = CATEGORY_PAGES.get(category_name, category_name)
@@ -70,86 +44,95 @@ def fetch_via_category_page(category_name: str) -> list:
                 user_agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
             )
             page = context.new_page()
-            page.goto(url, wait_until="domcontentloaded", timeout=30000)
-            page.wait_for_timeout(5000)
 
-            content_len = len(page.content())
-            print(f"[Giant] {category_name}: page content length = {content_len}")
+            # Capture Algolia API responses
+            algolia_hits = []
 
-            # Look for product items
-            items = page.query_selector_all('.product-item, .product-card, [class*="product-item"], [class*="product-card"]')
-            print(f"[Giant] {category_name}: found {len(items)} product items")
-
-            for item in items:
+            def handle_response(response):
                 try:
-                    name_el = item.query_selector('[class*="name"], [class*="title"], h3, h4')
-                    price_el = item.query_selector('[class*="price"]')
-                    img_el = item.query_selector('img')
+                    url_lower = response.url.lower()
+                    if ("algolia" in url_lower or "algolianet" in url_lower) and response.status == 200:
+                        content_type = response.headers.get("content-type", "")
+                        if "json" in content_type:
+                            data = response.json()
+                            results = data.get("results", [])
+                            for result in results:
+                                hits = result.get("hits", [])
+                                algolia_hits.extend(hits)
+                except Exception:
+                    pass
 
-                    if name_el and price_el:
-                        name = name_el.inner_text().strip()
-                        price_text = price_el.inner_text().strip()
+            page.on("response", handle_response)
 
-                        price_match = re.search(r'[\$S]*([\d.]+)', price_text)
+            page.goto(url, wait_until="domcontentloaded", timeout=30000)
+
+            # Wait for Algolia to respond (it may take time for the JS to initialize)
+            page.wait_for_timeout(15000)
+
+            print(f"[Giant] {category_name}: intercepted {len(algolia_hits)} Algolia hits")
+
+            # Process Algolia hits
+            for hit in algolia_hits:
+                name = hit.get("name", hit.get("title", ""))
+                price = 0
+                for field in ["price", "sellingPrice", "currentPrice", "finalPrice"]:
+                    if field in hit and hit[field]:
+                        try:
+                            price = float(hit[field])
+                            break
+                        except (ValueError, TypeError):
+                            pass
+
+                if isinstance(price, dict):
+                    try:
+                        price = float(price.get("amount", 0))
+                    except (ValueError, TypeError):
+                        price = 0
+
+                if price > 0 and name:
+                    img_url = hit.get("imageUrl", hit.get("image", hit.get("thumbnail", "")))
+                    products.append({
+                        "name": name,
+                        "price": price,
+                        "category": category_name,
+                        "image_url": img_url or "",
+                    })
+
+            # If no Algolia hits, try extracting from rendered DOM
+            if not products:
+                # Try broader selectors for any product-like elements
+                all_elements = page.query_selector_all('[class*="product"], [class*="item"], [class*="hit"]')
+                print(f"[Giant] {category_name}: fallback - {len(all_elements)} elements with product/item/hit classes")
+
+                for el in all_elements:
+                    try:
+                        text = el.inner_text().strip()
+                        # Look for price patterns in the text
+                        price_match = re.search(r'\$[\d.]+', text)
                         if price_match:
-                            price = float(price_match.group(1))
-                            if price > 0 and len(name) > 2:
+                            price = float(price_match.group().replace('$', ''))
+                            # Try to extract product name (text before the price)
+                            name_part = text[:text.find('$')].strip()
+                            if name_part and len(name_part) > 3 and price > 0:
+                                img_el = el.query_selector('img')
                                 img_url = ""
                                 if img_el:
                                     img_url = img_el.get_attribute("src") or ""
 
                                 products.append({
-                                    "name": name,
+                                    "name": name_part[:100],
                                     "price": price,
                                     "category": category_name,
                                     "image_url": img_url,
                                 })
-                except Exception:
-                    continue
+                    except Exception:
+                        continue
 
             browser.close()
     except Exception as e:
         print(f"[Giant] Error fetching {category_name}: {e}")
 
     return products
-
-
-def fetch_products(query: str) -> list:
-    """Fetch products — try Algolia API first, fall back to category page scraping."""
-    # Try Algolia API (fast, structured data)
-    hits = fetch_via_algolia(query)
-    if hits:
-        products = []
-        for hit in hits:
-            name = hit.get("name", hit.get("title", ""))
-            price = 0
-            for field in ["price", "sellingPrice", "currentPrice", "finalPrice"]:
-                if field in hit and hit[field]:
-                    try:
-                        price = float(hit[field])
-                        break
-                    except (ValueError, TypeError):
-                        pass
-
-            if isinstance(price, dict):
-                try:
-                    price = float(price.get("amount", 0))
-                except (ValueError, TypeError):
-                    price = 0
-
-            if price > 0 and name:
-                img_url = hit.get("imageUrl", hit.get("image", hit.get("thumbnail", "")))
-                products.append({
-                    "name": name,
-                    "price": price,
-                    "category": query,
-                    "image_url": img_url or "",
-                })
-        print(f"[Giant] {query}: {len(products)} products via Algolia")
-        return products
-
-    # Fall back to category page scraping
-    return fetch_via_category_page(query)
 
 
 def parse_product(raw: dict) -> dict:
