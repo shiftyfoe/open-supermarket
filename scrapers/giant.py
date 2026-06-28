@@ -64,18 +64,41 @@ def fetch_products(query: str) -> list:
             page.on("response", handle_response)
 
             # Giant's /search URL returns 404 — search is entirely client-side.
-            # Navigate to homepage, then use the search box to trigger Algolia.
+            # Navigate to homepage to load the Algolia config, then call Algolia directly.
             page.goto(GIANT_BASE, wait_until="domcontentloaded", timeout=30000)
             page.wait_for_timeout(3000)
 
-            # Find and use the search input
-            search_input = page.query_selector('input[type="search"], input[name="q"], input[placeholder*="search" i], #search, .search-input')
-            if search_input:
-                search_input.fill(query)
-                search_input.press("Enter")
-                page.wait_for_timeout(8000)
-            else:
-                print(f"[Giant] {query}: no search input found")
+            # Use the Algolia config from the page to make a direct API call
+            try:
+                result = page.evaluate(f"""
+                    async () => {{
+                        const config = site_config.algolia;
+                        const url = `https://${{config.appId}}-dsn.algolia.net/1/indexes/*/queries`;
+                        const resp = await fetch(url, {{
+                            method: 'POST',
+                            headers: {{
+                                'X-Algolia-Application-Id': config.appId,
+                                'X-Algolia-API-Key': config.apiKey,
+                                'Content-Type': 'application/json',
+                            }},
+                            body: JSON.stringify({{
+                                requests: [{{
+                                    indexName: config.index_product,
+                                    params: 'query={query}&hitsPerPage=40',
+                                }}]
+                            }})
+                        }});
+                        const data = await resp.json();
+                        return data.results ? data.results[0].hits : [];
+                    }}
+                """)
+                if result:
+                    algolia_hits.extend(result)
+                    print(f"[Giant] {query}: got {len(result)} hits via page.evaluate Algolia call")
+                else:
+                    print(f"[Giant] {query}: page.evaluate returned empty")
+            except Exception as e:
+                print(f"[Giant] {query}: page.evaluate error: {e}")
 
             # Wait for Algolia to respond
             page.wait_for_timeout(8000)
