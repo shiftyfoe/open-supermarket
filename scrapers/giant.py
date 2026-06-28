@@ -47,7 +47,8 @@ def fetch_products(query: str) -> list:
             def handle_response(response):
                 try:
                     all_requests.append(response.url[:100])
-                    if "algolia" in response.url.lower():
+                    # Check for Algolia API calls or any failed requests
+                    if "algolia" in response.url.lower() and "js" not in response.url:
                         print(f"[Giant] {query}: Algolia response: {response.status} {response.url[:100]}")
                         if response.status == 200:
                             data = response.json()
@@ -55,6 +56,8 @@ def fetch_products(query: str) -> list:
                             for result in results:
                                 hits = result.get("hits", [])
                                 algolia_hits.extend(hits)
+                    elif response.status >= 400 and "giant.sg" in response.url:
+                        print(f"[Giant] {query}: Failed request: {response.status} {response.url[:100]}")
                 except Exception as e:
                     print(f"[Giant] {query}: response error: {e}")
 
@@ -63,6 +66,14 @@ def fetch_products(query: str) -> list:
 
             # Wait for Algolia to respond
             page.wait_for_timeout(8000)
+
+            # Try to get Algolia config from the page
+            try:
+                algolia_config = page.evaluate("typeof site_config !== 'undefined' ? site_config.algolia : null")
+                if algolia_config:
+                    print(f"[Giant] {query}: Algolia config from page: {algolia_config}")
+            except Exception:
+                pass
 
             print(f"[Giant] {query}: intercepted {len(algolia_hits)} Algolia hits, {len(all_requests)} total requests")
 
