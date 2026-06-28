@@ -57,9 +57,10 @@ def run_scrapers() -> list:
 
     scrapers = [
         ("FairPrice", fairprice),
-        ("Sheng Siong", shengsiong),
         ("Cold Storage", coldstorage),
-        ("Giant", giant),
+        # TODO: Fix Sheng Siong and Giant scrapers
+        # ("Sheng Siong", shengsiong),
+        # ("Giant", giant),
     ]
 
     for name, scraper in scrapers:

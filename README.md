@@ -3,10 +3,10 @@
 Aggregates prices from Singapore's major supermarkets and tracks price changes over time.
 
 ## Supermarkets Tracked
-- FairPrice
-- Sheng Siong
-- Cold Storage
-- Giant
+- ✅ FairPrice (121 products)
+- ✅ Cold Storage (240 products)
+- ⏳ Sheng Siong (coming soon)
+- ⏳ Giant (coming soon)
 
 ## Features
 - Daily automated price scraping
