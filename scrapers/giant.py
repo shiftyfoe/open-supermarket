@@ -1,7 +1,7 @@
-"""Giant online scraper using Playwright for Algolia search rendering.
+"""Giant online scraper using Playwright to intercept Algolia API responses.
 
-Giant.sg uses Algolia instantsearch.js for search — server returns 404 for /search.
-Playwright renders the client-side search and extracts product data.
+Giant.sg uses Algolia instantsearch.js for product search.
+We intercept the Algolia API responses to get structured product data.
 """
 import json
 import re
@@ -23,7 +23,7 @@ CATEGORIES = [
 
 
 def fetch_products(query: str) -> list:
-    """Fetch products from Giant by rendering the Algolia search with Playwright."""
+    """Fetch products from Giant by intercepting Algolia API responses."""
     from playwright.sync_api import sync_playwright
 
     products = []
@@ -37,52 +37,56 @@ def fetch_products(query: str) -> list:
             )
             context = browser.new_context(
                 user_agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-                viewport={"width": 1920, "height": 1080},
             )
             page = context.new_page()
+
+            # Capture Algolia API responses
+            algolia_hits = []
+
+            def handle_response(response):
+                try:
+                    if "algolia" in response.url and response.status == 200:
+                        data = response.json()
+                        results = data.get("results", [])
+                        for result in results:
+                            hits = result.get("hits", [])
+                            algolia_hits.extend(hits)
+                except Exception:
+                    pass
+
+            page.on("response", handle_response)
             page.goto(url, wait_until="domcontentloaded", timeout=30000)
 
-            # Wait for Algolia results to render
+            # Wait for Algolia to respond
             page.wait_for_timeout(8000)
 
-            content = page.content()
-            content_len = len(content)
-            print(f"[Giant] {query}: page content length = {content_len}")
+            print(f"[Giant] {query}: intercepted {len(algolia_hits)} Algolia hits")
 
-            # Giant uses Algolia instantsearch — product results are in these containers
-            items = page.query_selector_all('.suggested-product, .ais-hits--item, [class*="product-hits"] > *')
-            print(f"[Giant] {query}: found {len(items)} items with Algolia selectors")
+            for hit in algolia_hits:
+                name = hit.get("name", hit.get("title", ""))
+                price = 0
+                for field in ["price", "sellingPrice", "currentPrice", "finalPrice"]:
+                    if field in hit and hit[field]:
+                        try:
+                            price = float(hit[field])
+                            break
+                        except (ValueError, TypeError):
+                            pass
 
-            if not items:
-                items = page.query_selector_all('.product-item, .product-card, [class*="product-card"]')
-                print(f"[Giant] {query}: fallback found {len(items)} items")
+                if isinstance(price, dict):
+                    try:
+                        price = float(price.get("amount", 0))
+                    except (ValueError, TypeError):
+                        price = 0
 
-            for item in items:
-                try:
-                    name_el = item.query_selector('[class*="name"], [class*="title"], h3, h4, .product-name, .hit-name')
-                    price_el = item.query_selector('[class*="price"], .product-price, .hit-price')
-                    img_el = item.query_selector('img')
-
-                    if name_el and price_el:
-                        name = name_el.inner_text().strip()
-                        price_text = price_el.inner_text().strip()
-
-                        price_match = re.search(r'[\$S]*([\d.]+)', price_text)
-                        if price_match:
-                            price = float(price_match.group(1))
-                            if price > 0 and len(name) > 2:
-                                img_url = ""
-                                if img_el:
-                                    img_url = img_el.get_attribute("src") or img_el.get_attribute("data-src") or ""
-
-                                products.append({
-                                    "name": name,
-                                    "price": price,
-                                    "category": query,
-                                    "image_url": img_url,
-                                })
-                except Exception:
-                    continue
+                if price > 0 and name:
+                    img_url = hit.get("imageUrl", hit.get("image", hit.get("thumbnail", "")))
+                    products.append({
+                        "name": name,
+                        "price": price,
+                        "category": query,
+                        "image_url": img_url or "",
+                    })
 
             browser.close()
     except Exception as e:
