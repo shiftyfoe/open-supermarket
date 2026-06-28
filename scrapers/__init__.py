@@ -1,0 +1,1 @@
+"""Supermarket scrapers package."""
