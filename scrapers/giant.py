@@ -62,7 +62,20 @@ def fetch_products(query: str) -> list:
                     print(f"[Giant] {query}: response error: {e}")
 
             page.on("response", handle_response)
-            page.goto(url, wait_until="domcontentloaded", timeout=30000)
+
+            # Giant's /search URL returns 404 — search is entirely client-side.
+            # Navigate to homepage, then use the search box to trigger Algolia.
+            page.goto(GIANT_BASE, wait_until="domcontentloaded", timeout=30000)
+            page.wait_for_timeout(3000)
+
+            # Find and use the search input
+            search_input = page.query_selector('input[type="search"], input[name="q"], input[placeholder*="search" i], #search, .search-input')
+            if search_input:
+                search_input.fill(query)
+                search_input.press("Enter")
+                page.wait_for_timeout(8000)
+            else:
+                print(f"[Giant] {query}: no search input found")
 
             # Wait for Algolia to respond
             page.wait_for_timeout(8000)
