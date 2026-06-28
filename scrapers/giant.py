@@ -1,19 +1,13 @@
-"""Giant online scraper using web scraping.
+"""Giant online scraper using Playwright for Algolia search rendering.
 
-Giant.sg is a server-rendered e-commerce site (Yii framework).
-Products are in the HTML — no JS rendering needed.
+Giant.sg uses Algolia instantsearch.js for search — server returns 404 for /search.
+Playwright renders the client-side search and extracts product data.
 """
 import json
 import re
-import requests
-from bs4 import BeautifulSoup
 from datetime import datetime
 
 GIANT_BASE = "https://giant.sg"
-
-HEADERS = {
-    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36",
-}
 
 # Common categories to track
 CATEGORIES = [
@@ -29,57 +23,72 @@ CATEGORIES = [
 
 
 def fetch_products(query: str) -> list:
-    """Fetch products from Giant search page."""
-    url = f"{GIANT_BASE}/search"
-    params = {"q": query}
+    """Fetch products from Giant by rendering the Algolia search with Playwright."""
+    from playwright.sync_api import sync_playwright
+
+    products = []
+    url = f"{GIANT_BASE}/search?q={query}"
+
     try:
-        resp = requests.get(url, params=params, headers=HEADERS, timeout=30)
-        resp.raise_for_status()
-        soup = BeautifulSoup(resp.text, "html.parser")
+        with sync_playwright() as p:
+            browser = p.chromium.launch(
+                headless=True,
+                args=["--no-sandbox"],
+            )
+            context = browser.new_context(
+                user_agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                viewport={"width": 1920, "height": 1080},
+            )
+            page = context.new_page()
+            page.goto(url, wait_until="domcontentloaded", timeout=30000)
 
-        products = []
-        # Giant uses product card elements — try common selectors
-        items = soup.select('.product-item, .product-card, .product-tile, [class*="product-card"]')
+            # Wait for Algolia results to render
+            page.wait_for_timeout(8000)
 
-        if not items:
-            # Fallback: look for structured product data in the page
-            items = soup.select('[class*="product"]')
+            content = page.content()
+            content_len = len(content)
+            print(f"[Giant] {query}: page content length = {content_len}")
 
-        print(f"[Giant] {query}: found {len(items)} candidate elements")
+            # Giant uses product card elements
+            items = page.query_selector_all('.product-item, .product-card, .product-tile, [class*="product-card"], [class*="product-item"]')
+            print(f"[Giant] {query}: found {len(items)} items with product selectors")
 
-        for item in items:
-            name_el = item.select_one('[class*="name"], [class*="title"], h3, h4, .product-name')
-            price_el = item.select_one('[class*="price"], .product-price')
-            img_el = item.select_one('img')
-            link_el = item.select_one('a[href*="/product/"], a[href*="/p/"]')
+            if not items:
+                items = page.query_selector_all('[class*="product"]')
+                print(f"[Giant] {query}: fallback found {len(items)} items")
 
-            if name_el and price_el:
-                name = name_el.get_text(strip=True)
-                price_text = price_el.get_text(strip=True)
+            for item in items:
+                try:
+                    name_el = item.query_selector('[class*="name"], [class*="title"], h3, h4, .product-name')
+                    price_el = item.query_selector('[class*="price"], .product-price')
+                    img_el = item.query_selector('img')
 
-                price_match = re.search(r'[\$S]*([\d.]+)', price_text)
-                if price_match:
-                    price = float(price_match.group(1))
-                    if price > 0 and len(name) > 2:
-                        img_url = ""
-                        if img_el:
-                            img_url = img_el.get("src") or img_el.get("data-src") or ""
+                    if name_el and price_el:
+                        name = name_el.inner_text().strip()
+                        price_text = price_el.inner_text().strip()
 
-                        product_url = ""
-                        if link_el:
-                            product_url = link_el.get("href", "")
+                        price_match = re.search(r'[\$S]*([\d.]+)', price_text)
+                        if price_match:
+                            price = float(price_match.group(1))
+                            if price > 0 and len(name) > 2:
+                                img_url = ""
+                                if img_el:
+                                    img_url = img_el.get_attribute("src") or img_el.get_attribute("data-src") or ""
 
-                        products.append({
-                            "name": name,
-                            "price": price,
-                            "category": query,
-                            "image_url": img_url,
-                            "product_url": product_url,
-                        })
-        return products
+                                products.append({
+                                    "name": name,
+                                    "price": price,
+                                    "category": query,
+                                    "image_url": img_url,
+                                })
+                except Exception:
+                    continue
+
+            browser.close()
     except Exception as e:
         print(f"[Giant] Error fetching {query}: {e}")
-        return []
+
+    return products
 
 
 def parse_product(raw: dict) -> dict:

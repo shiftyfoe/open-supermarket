@@ -1,7 +1,8 @@
 """Sheng Siong online scraper using Playwright for JS rendering.
 
-Sheng Siong is a Meteor.js SPA — plain HTTP requests get an empty shell.
-Playwright renders the full page so we can extract product data.
+Sheng Siong is a Meteor.js SPA behind Incapsula CDN.
+Plain HTTP requests and standard headless browsers get blocked.
+We use stealth settings to bypass detection.
 """
 import json
 import re
@@ -31,19 +32,31 @@ def fetch_products(query: str) -> list:
 
     try:
         with sync_playwright() as p:
-            browser = p.chromium.launch(headless=True)
-            page = browser.new_page(
-                user_agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
+            browser = p.chromium.launch(
+                headless=True,
+                args=[
+                    "--disable-blink-features=AutomationControlled",
+                    "--no-sandbox",
+                ],
             )
-            # Use domcontentloaded instead of networkidle — Meteor keeps
-            # DDP/WebSocket connections alive so networkidle never fires.
+            context = browser.new_context(
+                user_agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                viewport={"width": 1920, "height": 1080},
+                locale="en-SG",
+            )
+            # Remove webdriver detection
+            context.add_init_script("""
+                Object.defineProperty(navigator, 'webdriver', {get: () => undefined});
+                window.chrome = {runtime: {}};
+            """)
+            page = context.new_page()
             page.goto(url, wait_until="domcontentloaded", timeout=30000)
 
-            # Wait for Meteor to render the page
-            page.wait_for_timeout(8000)
+            # Wait for Meteor to render — give it time to load and execute
+            page.wait_for_timeout(10000)
 
-            # Debug: log page content length and some class names
-            content_len = len(page.content())
+            content = page.content()
+            content_len = len(content)
             print(f"[ShengSiong] {query}: page content length = {content_len}")
 
             # Extract product data from the rendered page
@@ -51,7 +64,6 @@ def fetch_products(query: str) -> list:
             print(f"[ShengSiong] {query}: found {len(items)} items with product selectors")
 
             if not items:
-                # Broader fallback
                 items = page.query_selector_all('[class*="product"]')
                 print(f"[ShengSiong] {query}: fallback found {len(items)} items")
 
