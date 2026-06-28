@@ -1,15 +1,17 @@
-"""Sheng Siong online scraper using Meteor DDP protocol.
+"""Sheng Siong online scraper using Meteor DDP over HTTP long-polling.
 
 Sheng Siong is a Meteor.js SPA behind Incapsula CDN.
-We bypass the frontend entirely by calling Meteor server methods via DDP.
+Incapsula blocks WebSocket handshakes from CI, but HTTP POST to the
+SockJS XHR transport may work since it's regular HTTP.
 """
 import json
 import re
-import uuid
-import websocket
+import requests
+import random
+import string
 from datetime import datetime
 
-DDP_URL = "wss://www.shengsiong.com.sg/sockjs/websocket"
+SHENGSIONG_BASE = "https://www.shengsiong.com.sg"
 
 # Common categories to track
 CATEGORIES = [
@@ -23,52 +25,80 @@ CATEGORIES = [
     "tuna",
 ]
 
-
-def ddp_connect(ws):
-    """Send DDP connect message."""
-    ws.send(json.dumps({"msg": "connect", "version": "1", "support": ["1", "pre2", "pre1"]}))
-    # Wait for connected response
-    while True:
-        resp = json.loads(ws.recv())
-        if resp.get("msg") == "connected":
-            return resp
-        if resp.get("msg") == "failed":
-            raise Exception(f"DDP connect failed: {resp}")
+HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "Content-Type": "application/plain",
+    "Origin": SHENGSIONG_BASE,
+    "Referer": f"{SHENGSIONG_BASE}/",
+}
 
 
-def ddp_call(ws, method, params, call_id=None):
-    """Call a Meteor method via DDP and return the result."""
+def ddp_session():
+    """Establish a SockJS XHR session and return (base_url, session_id)."""
+    server_id = str(random.randint(100, 999))
+    session_id = ''.join(random.choices(string.ascii_lowercase + string.digits, k=8))
+    base = f"{SHENGSIONG_BASE}/sockjs/{server_id}/{session_id}"
+    return base, session_id
+
+
+def ddp_connect(base_url):
+    """Send DDP connect via SockJS XHR transport."""
+    # SockJS XHR transport: POST to /xhr endpoint
+    connect_msg = json.dumps({"msg": "connect", "version": "1", "support": ["1", "pre2", "pre1"]})
+    payload = f'["{connect_msg}"]'
+    resp = requests.post(f"{base_url}/xhr", headers=HEADERS, data=payload, timeout=30)
+    resp.raise_for_status()
+    # Response should contain "o" (open) then the connect result
+    return resp.text
+
+
+def ddp_call(base_url, method, params, call_id=None):
+    """Call a Meteor method via SockJS XHR."""
     if call_id is None:
-        call_id = str(uuid.uuid4())[:8]
-    ws.send(json.dumps({
+        call_id = ''.join(random.choices(string.ascii_lowercase + string.digits, k=8))
+
+    method_msg = json.dumps({
         "msg": "method",
         "method": method,
         "params": params,
         "id": call_id,
-    }))
-    # Wait for result
-    while True:
-        resp = json.loads(ws.recv())
-        if resp.get("msg") == "result" and resp.get("id") == call_id:
-            if "error" in resp:
-                raise Exception(f"DDP method error: {resp['error']}")
-            return resp.get("result")
-        # Skip updated/added/changed messages
+    })
+    payload = f'["{method_msg}"]'
+    resp = requests.post(f"{base_url}/xhr", headers=HEADERS, data=payload, timeout=30)
+    resp.raise_for_status()
+
+    # Parse SockJS response — may contain multiple frames
+    text = resp.text
+    # SockJS frames are JSON arrays; each element is a message
+    # The response might look like: 'a["{...}"]'
+    if text.startswith('a'):
+        text = text[1:]
+
+    try:
+        frames = json.loads(text)
+        for frame in frames:
+            msg = json.loads(frame)
+            if msg.get("msg") == "result" and msg.get("id") == call_id:
+                if "error" in msg:
+                    raise Exception(f"DDP error: {msg['error']}")
+                return msg.get("result")
+    except json.JSONDecodeError:
+        pass
+
+    return None
 
 
 def fetch_products(query: str) -> list:
-    """Fetch products from Sheng Siong via DDP method call."""
+    """Fetch products from Sheng Siong via DDP over HTTP."""
     products = []
     try:
-        ws = websocket.create_connection(
-            DDP_URL,
-            timeout=30,
-            header={"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"},
-        )
-        ddp_connect(ws)
+        base_url, _ = ddp_session()
 
-        # Call Products.getByAllSlugs — same method the frontend uses
-        # Params: filters, misc_filters, page, per_page
+        # Connect
+        connect_resp = ddp_connect(base_url)
+        print(f"[ShengSiong] {query}: connect response: {connect_resp[:100]}")
+
+        # Call Products.getByAllSlugs
         filters = {
             "categoryFilter": {"slugs": []},
             "campaignPageFilter": {"slug": "", "category": {"slug": ""}},
@@ -87,7 +117,7 @@ def fetch_products(query: str) -> list:
             "sortBy": {"slug": ""},
         }
 
-        result = ddp_call(ws, "Products.getByAllSlugs", [filters, misc_filters, 1, 40])
+        result = ddp_call(base_url, "Products.getByAllSlugs", [filters, misc_filters, 1, 40])
 
         if result and isinstance(result, list):
             for item in result:
@@ -113,7 +143,7 @@ def fetch_products(query: str) -> list:
                         "image_url": img,
                     })
 
-        ws.close()
+        print(f"[ShengSiong] {query}: got {len(products)} products")
     except Exception as e:
         print(f"[ShengSiong] Error fetching {query}: {e}")
 
