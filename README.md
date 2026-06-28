@@ -18,4 +18,4 @@ Aggregates prices from Singapore's major supermarkets and tracks price changes o
 Product and price data is stored in `data/` as JSON files. Historical data is committed daily via GitHub Actions.
 
 ## Visualization
-View the live dashboard at: https://shuisongluar.github.io/open-supermarket/
+View the live dashboard at: https://shiftyfoe.github.io/open-supermarket/
