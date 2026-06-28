@@ -81,7 +81,6 @@ function createComparisonChart() {
         fairprice: '#2563eb',
         shengsiong: '#22c55e',
         coldstorage: '#f59e0b',
-        giant: '#ef4444',
     };
 
     new Chart(ctx, {

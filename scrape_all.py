@@ -5,7 +5,7 @@ import os
 from datetime import datetime
 from pathlib import Path
 
-from scrapers import fairprice, shengsiong, coldstorage, giant
+from scrapers import fairprice, shengsiong, coldstorage
 
 DATA_DIR = Path("data")
 DATA_DIR.mkdir(exist_ok=True)
@@ -58,9 +58,7 @@ def run_scrapers() -> list:
     scrapers = [
         ("FairPrice", fairprice),
         ("Cold Storage", coldstorage),
-        # TODO: Fix Sheng Siong and Giant scrapers
-        # ("Sheng Siong", shengsiong),
-        # ("Giant", giant),
+        ("Sheng Siong", shengsiong),
     ]
 
     for name, scraper in scrapers:

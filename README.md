@@ -6,7 +6,6 @@ Aggregates prices from Singapore's major supermarkets and tracks price changes o
 - ✅ FairPrice (121 products)
 - ✅ Cold Storage (240 products)
 - ⏳ Sheng Siong (coming soon)
-- ⏳ Giant (coming soon)
 
 ## Features
 - Daily automated price scraping
@@ -16,18 +15,10 @@ Aggregates prices from Singapore's major supermarkets and tracks price changes o
 
 ## Setup
 
-### GitHub Secrets
-Add these secrets to your repository (Settings → Secrets → Actions):
-
-| Secret | Description |
-|--------|-------------|
-| `GIANT_ALGOLIA_APP_ID` | Algolia app ID from giant.sg |
-| `GIANT_ALGOLIA_API_KEY` | Algolia API key from giant.sg |
-
 ### Local Development
-Copy `.env.example` to `.env` and fill in your credentials:
 ```bash
-cp .env.example .env
+pip install -r requirements.txt
+python scrape_all.py
 ```
 
 ## Data
