@@ -2,8 +2,8 @@
  * Open Supermarket Singapore - Dashboard
  */
 
-const DATA_URL = '../data/latest.json';
-const HISTORY_URL = '../data/price_history.json';
+const DATA_URL = 'data/latest.json';
+const HISTORY_URL = 'data/price_history.json';
 
 let allProducts = [];
 let priceHistory = {};
