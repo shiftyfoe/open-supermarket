@@ -23,6 +23,9 @@ jobs:
         run: pip install requests beautifulsoup4
 
       - name: Run scrapers
+        env:
+          GIANT_ALGOLIA_APP_ID: ${{ secrets.GIANT_ALGOLIA_APP_ID }}
+          GIANT_ALGOLIA_API_KEY: ${{ secrets.GIANT_ALGOLIA_API_KEY }}
         run: python scrape_all.py
 
       - name: Commit data
