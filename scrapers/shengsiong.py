@@ -39,19 +39,21 @@ def fetch_products(query: str) -> list:
             # DDP/WebSocket connections alive so networkidle never fires.
             page.goto(url, wait_until="domcontentloaded", timeout=30000)
 
-            # Wait for product cards to appear in the rendered DOM
-            try:
-                page.wait_for_selector('[class*="product-card"], [class*="product-item"], [class*="ProductCard"], [class*="ProductItem"]', timeout=15000)
-            except Exception:
-                # Fallback: wait a bit for Meteor to render
-                page.wait_for_timeout(5000)
+            # Wait for Meteor to render the page
+            page.wait_for_timeout(8000)
+
+            # Debug: log page content length and some class names
+            content_len = len(page.content())
+            print(f"[ShengSiong] {query}: page content length = {content_len}")
 
             # Extract product data from the rendered page
             items = page.query_selector_all('[class*="product-card"], [class*="product-item"], [class*="ProductCard"], [class*="ProductItem"]')
+            print(f"[ShengSiong] {query}: found {len(items)} items with product selectors")
 
             if not items:
                 # Broader fallback
                 items = page.query_selector_all('[class*="product"]')
+                print(f"[ShengSiong] {query}: fallback found {len(items)} items")
 
             for item in items:
                 try:

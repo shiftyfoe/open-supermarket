@@ -24,6 +24,20 @@ jobs:
           pip install -r requirements.txt
           playwright install chromium --with-deps
 
+      - name: Debug - inspect target sites
+        run: |
+          echo "=== Giant search page ==="
+          curl -s -o /dev/null -w "HTTP %{http_code}" "https://giant.sg/search?q=rice" -H "User-Agent: Mozilla/5.0" || true
+          echo ""
+          curl -s "https://giant.sg/catalogsearch/result/?q=rice" -H "User-Agent: Mozilla/5.0" -o /dev/null -w "catalogsearch: HTTP %{http_code}" || true
+          echo ""
+          curl -s "https://giant.sg/search" -H "User-Agent: Mozilla/5.0" -o /dev/null -w "search root: HTTP %{http_code}" || true
+          echo ""
+          echo "=== Giant homepage snippet ==="
+          curl -s "https://giant.sg" -H "User-Agent: Mozilla/5.0" 2>/dev/null | grep -oP 'href="[^"]*search[^"]*"' | head -5
+          echo "=== Sheng Siong page size ==="
+          curl -s "https://www.shengsiong.com.sg/search/rice" -H "User-Agent: Mozilla/5.0" | wc -c
+
       - name: Run scrapers
         run: python scrape_all.py
 
