@@ -49,18 +49,18 @@ def fetch_products(query: str) -> list:
             content_len = len(content)
             print(f"[Giant] {query}: page content length = {content_len}")
 
-            # Giant uses product card elements
-            items = page.query_selector_all('.product-item, .product-card, .product-tile, [class*="product-card"], [class*="product-item"]')
-            print(f"[Giant] {query}: found {len(items)} items with product selectors")
+            # Giant uses Algolia instantsearch — product results are in these containers
+            items = page.query_selector_all('.suggested-product, .ais-hits--item, [class*="product-hits"] > *')
+            print(f"[Giant] {query}: found {len(items)} items with Algolia selectors")
 
             if not items:
-                items = page.query_selector_all('[class*="product"]')
+                items = page.query_selector_all('.product-item, .product-card, [class*="product-card"]')
                 print(f"[Giant] {query}: fallback found {len(items)} items")
 
             for item in items:
                 try:
-                    name_el = item.query_selector('[class*="name"], [class*="title"], h3, h4, .product-name')
-                    price_el = item.query_selector('[class*="price"], .product-price')
+                    name_el = item.query_selector('[class*="name"], [class*="title"], h3, h4, .product-name, .hit-name')
+                    price_el = item.query_selector('[class*="price"], .product-price, .hit-price')
                     img_el = item.query_selector('img')
 
                     if name_el and price_el:
