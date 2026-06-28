@@ -20,12 +20,11 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install requests beautifulsoup4
+        run: |
+          pip install -r requirements.txt
+          playwright install chromium --with-deps
 
       - name: Run scrapers
-        env:
-          GIANT_ALGOLIA_APP_ID: ${{ secrets.GIANT_ALGOLIA_APP_ID }}
-          GIANT_ALGOLIA_API_KEY: ${{ secrets.GIANT_ALGOLIA_API_KEY }}
         run: python scrape_all.py
 
       - name: Copy data to docs

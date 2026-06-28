@@ -1,13 +1,13 @@
-"""Giant online scraper using Algolia API."""
+"""Giant online scraper using Algolia search API."""
 import json
 import re
 import requests
 from datetime import datetime
 
-import os
-
-GIANT_ALGOLIA_APP_ID = os.environ.get("GIANT_ALGOLIA_APP_ID", "")
-GIANT_ALGOLIA_API_KEY = os.environ.get("GIANT_ALGOLIA_API_KEY", "")
+# Giant.sg embeds these in their page source (search-only key, safe to hardcode)
+GIANT_ALGOLIA_APP_ID = "PFCHI1YM66"
+GIANT_ALGOLIA_API_KEY = "d0c09a40111717aec861992cf8497e71"
+GIANT_ALGOLIA_INDEX = "giant_product_live"
 GIANT_ALGOLIA_URL = f"https://{GIANT_ALGOLIA_APP_ID}-dsn.algolia.net/1/indexes/*/queries"
 
 HEADERS = {
@@ -29,11 +29,11 @@ CATEGORIES = [
 ]
 
 
-def fetch_products(query: str, limit: int = 20) -> list:
+def fetch_products(query: str, limit: int = 40) -> list:
     """Fetch products from Giant via Algolia API."""
     payload = {
         "requests": [{
-            "indexName": "giant_products",
+            "indexName": GIANT_ALGOLIA_INDEX,
             "params": f"query={query}&hitsPerPage={limit}",
         }]
     }
@@ -52,9 +52,9 @@ def fetch_products(query: str, limit: int = 20) -> list:
 
 def parse_product(raw: dict, category: str) -> dict:
     """Extract relevant fields from raw Algolia hit."""
-    # Extract price from various possible fields
+    # Giant's Algolia records have nested price info
     price = 0
-    for field in ["price", "sellingPrice", "currentPrice"]:
+    for field in ["price", "sellingPrice", "currentPrice", "finalPrice"]:
         if field in raw and raw[field]:
             try:
                 price = float(raw[field])
@@ -62,17 +62,34 @@ def parse_product(raw: dict, category: str) -> dict:
             except (ValueError, TypeError):
                 pass
 
+    # Check for nested price object
+    if price == 0 and isinstance(raw.get("price"), dict):
+        try:
+            price = float(raw["price"].get("amount", 0))
+        except (ValueError, TypeError):
+            pass
+
+    original_price = price
+    for field in ["originalPrice", "regularPrice", "listPrice"]:
+        if field in raw and raw[field]:
+            try:
+                original_price = float(raw[field])
+                break
+            except (ValueError, TypeError):
+                pass
+
+    name = raw.get("name", raw.get("title", ""))
     return {
         "id": f"gi_{raw.get('objectID', '')}",
         "supermarket": "giant",
-        "name": raw.get("name", raw.get("title", "")),
+        "name": name,
         "brand": raw.get("brand", ""),
         "category": category,
         "price": price,
-        "original_price": float(raw.get("originalPrice", raw.get("regularPrice", price))),
+        "original_price": original_price,
         "unit": raw.get("uom", raw.get("unit", "")),
         "size": raw.get("size", raw.get("packageSize", "")),
-        "image_url": raw.get("imageUrl", raw.get("image", "")),
+        "image_url": raw.get("imageUrl", raw.get("image", raw.get("thumbnail", ""))),
         "scraped_at": datetime.utcnow().isoformat(),
     }
 
@@ -80,11 +97,13 @@ def parse_product(raw: dict, category: str) -> dict:
 def scrape() -> list:
     """Scrape all tracked categories from Giant."""
     all_products = []
+    seen_ids = set()
     for cat in CATEGORIES:
         raw = fetch_products(cat)
         for p in raw:
             parsed = parse_product(p, cat)
-            if parsed["price"] > 0:
+            if parsed["price"] > 0 and parsed["id"] not in seen_ids:
+                seen_ids.add(parsed["id"])
                 all_products.append(parsed)
     return all_products
 
