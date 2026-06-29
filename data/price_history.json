@@ -4,7 +4,8 @@
     "supermarket": "fairprice",
     "category": "rice",
     "prices": {
-      "2026-06-28": 16.95
+      "2026-06-28": 16.95,
+      "2026-06-29": 16.95
     }
   },
   "fp_13241559": {
@@ -12,7 +13,8 @@
     "supermarket": "fairprice",
     "category": "oil",
     "prices": {
-      "2026-06-28": 20.5
+      "2026-06-28": 20.5,
+      "2026-06-29": 20.5
     }
   },
   "fp_13241561": {
@@ -20,7 +22,8 @@
     "supermarket": "fairprice",
     "category": "oil",
     "prices": {
-      "2026-06-28": 9.5
+      "2026-06-28": 9.5,
+      "2026-06-29": 9.5
     }
   },
   "fp_13241563": {
@@ -28,7 +31,8 @@
     "supermarket": "fairprice",
     "category": "oil",
     "prices": {
-      "2026-06-28": 15.8
+      "2026-06-28": 15.8,
+      "2026-06-29": 15.8
     }
   },
   "fp_12274164": {
@@ -36,7 +40,8 @@
     "supermarket": "fairprice",
     "category": "oil",
     "prices": {
-      "2026-06-28": 14.02
+      "2026-06-28": 14.02,
+      "2026-06-29": 14.02
     }
   },
   "fp_493594": {
@@ -44,7 +49,8 @@
     "supermarket": "fairprice",
     "category": "oil",
     "prices": {
-      "2026-06-28": 21.48
+      "2026-06-28": 21.48,
+      "2026-06-29": 21.48
     }
   },
   "fp_12615977": {
@@ -52,7 +58,8 @@
     "supermarket": "fairprice",
     "category": "oil",
     "prices": {
-      "2026-06-28": 22.95
+      "2026-06-28": 22.95,
+      "2026-06-29": 22.95
     }
   },
   "fp_227498": {
@@ -60,7 +67,8 @@
     "supermarket": "fairprice",
     "category": "oil",
     "prices": {
-      "2026-06-28": 10.68
+      "2026-06-28": 10.68,
+      "2026-06-29": 10.68
     }
   },
   "fp_12202849": {
@@ -68,7 +76,8 @@
     "supermarket": "fairprice",
     "category": "oil",
     "prices": {
-      "2026-06-28": 11.9
+      "2026-06-28": 11.9,
+      "2026-06-29": 11.9
     }
   },
   "fp_12635003": {
@@ -76,7 +85,8 @@
     "supermarket": "fairprice",
     "category": "oil",
     "prices": {
-      "2026-06-28": 9.65
+      "2026-06-28": 9.65,
+      "2026-06-29": 9.65
     }
   },
   "fp_12176177": {
@@ -84,7 +94,8 @@
     "supermarket": "fairprice",
     "category": "oil",
     "prices": {
-      "2026-06-28": 11.0
+      "2026-06-28": 11.0,
+      "2026-06-29": 11.0
     }
   },
   "fp_52663": {
@@ -92,7 +103,8 @@
     "supermarket": "fairprice",
     "category": "oil",
     "prices": {
-      "2026-06-28": 10.54
+      "2026-06-28": 10.54,
+      "2026-06-29": 10.54
     }
   },
   "fp_12176150": {
@@ -100,7 +112,8 @@
     "supermarket": "fairprice",
     "category": "oil",
     "prices": {
-      "2026-06-28": 10.08
+      "2026-06-28": 10.08,
+      "2026-06-29": 10.08
     }
   },
   "fp_12496736": {
@@ -108,7 +121,8 @@
     "supermarket": "fairprice",
     "category": "oil",
     "prices": {
-      "2026-06-28": 36.9
+      "2026-06-28": 36.9,
+      "2026-06-29": 36.9
     }
   },
   "fp_278607": {
@@ -116,7 +130,8 @@
     "supermarket": "fairprice",
     "category": "oil",
     "prices": {
-      "2026-06-28": 5.14
+      "2026-06-28": 5.14,
+      "2026-06-29": 5.14
     }
   },
   "fp_13086642": {
@@ -124,7 +139,8 @@
     "supermarket": "fairprice",
     "category": "oil",
     "prices": {
-      "2026-06-28": 14.91
+      "2026-06-28": 14.91,
+      "2026-06-29": 14.91
     }
   },
   "fp_10459229": {
@@ -132,7 +148,8 @@
     "supermarket": "fairprice",
     "category": "oil",
     "prices": {
-      "2026-06-28": 6.8
+      "2026-06-28": 6.8,
+      "2026-06-29": 6.8
     }
   },
   "fp_10388109": {
@@ -140,7 +157,8 @@
     "supermarket": "fairprice",
     "category": "oil",
     "prices": {
-      "2026-06-28": 34.9
+      "2026-06-28": 34.9,
+      "2026-06-29": 34.9
     }
   },
   "fp_12181267": {
@@ -148,7 +166,8 @@
     "supermarket": "fairprice",
     "category": "oil",
     "prices": {
-      "2026-06-28": 11.0
+      "2026-06-28": 11.0,
+      "2026-06-29": 11.0
     }
   },
   "fp_11928138": {
@@ -156,7 +175,8 @@
     "supermarket": "fairprice",
     "category": "oil",
     "prices": {
-      "2026-06-28": 39.5
+      "2026-06-28": 39.5,
+      "2026-06-29": 39.5
     }
   },
   "fp_12361874": {
@@ -164,7 +184,8 @@
     "supermarket": "fairprice",
     "category": "oil",
     "prices": {
-      "2026-06-28": 24.35
+      "2026-06-28": 24.35,
+      "2026-06-29": 24.35
     }
   },
   "fp_13287436": {
@@ -180,7 +201,8 @@
     "supermarket": "fairprice",
     "category": "fresh-milk",
     "prices": {
-      "2026-06-28": 4.08
+      "2026-06-28": 4.08,
+      "2026-06-29": 4.08
     }
   },
   "fp_10238055": {
@@ -188,7 +210,8 @@
     "supermarket": "fairprice",
     "category": "fresh-milk",
     "prices": {
-      "2026-06-28": 6.97
+      "2026-06-28": 6.97,
+      "2026-06-29": 6.97
     }
   },
   "fp_13282313": {
@@ -196,7 +219,8 @@
     "supermarket": "fairprice",
     "category": "fresh-milk",
     "prices": {
-      "2026-06-28": 4.95
+      "2026-06-28": 4.95,
+      "2026-06-29": 4.95
     }
   },
   "fp_13109359": {
@@ -204,7 +228,8 @@
     "supermarket": "fairprice",
     "category": "fresh-milk",
     "prices": {
-      "2026-06-28": 6.91
+      "2026-06-28": 6.91,
+      "2026-06-29": 6.91
     }
   },
   "fp_10549750": {
@@ -212,7 +237,8 @@
     "supermarket": "fairprice",
     "category": "fresh-milk",
     "prices": {
-      "2026-06-28": 6.97
+      "2026-06-28": 6.97,
+      "2026-06-29": 6.97
     }
   },
   "fp_197386": {
@@ -220,7 +246,8 @@
     "supermarket": "fairprice",
     "category": "fresh-milk",
     "prices": {
-      "2026-06-28": 3.53
+      "2026-06-28": 3.53,
+      "2026-06-29": 3.53
     }
   },
   "fp_13099521": {
@@ -228,7 +255,8 @@
     "supermarket": "fairprice",
     "category": "fresh-milk",
     "prices": {
-      "2026-06-28": 3.63
+      "2026-06-28": 3.63,
+      "2026-06-29": 3.63
     }
   },
   "fp_13022014": {
@@ -236,7 +264,8 @@
     "supermarket": "fairprice",
     "category": "fresh-milk",
     "prices": {
-      "2026-06-28": 3.63
+      "2026-06-28": 3.63,
+      "2026-06-29": 3.63
     }
   },
   "fp_10553397": {
@@ -244,7 +273,8 @@
     "supermarket": "fairprice",
     "category": "fresh-milk",
     "prices": {
-      "2026-06-28": 2.77
+      "2026-06-28": 2.77,
+      "2026-06-29": 2.77
     }
   },
   "fp_13282308": {
@@ -252,7 +282,8 @@
     "supermarket": "fairprice",
     "category": "fresh-milk",
     "prices": {
-      "2026-06-28": 4.95
+      "2026-06-28": 4.95,
+      "2026-06-29": 4.95
     }
   },
   "fp_458564": {
@@ -260,7 +291,8 @@
     "supermarket": "fairprice",
     "category": "fresh-milk",
     "prices": {
-      "2026-06-28": 3.73
+      "2026-06-28": 3.73,
+      "2026-06-29": 3.73
     }
   },
   "fp_13109358": {
@@ -268,7 +300,8 @@
     "supermarket": "fairprice",
     "category": "fresh-milk",
     "prices": {
-      "2026-06-28": 8.48
+      "2026-06-28": 8.48,
+      "2026-06-29": 8.48
     }
   },
   "fp_13282299": {
@@ -276,7 +309,8 @@
     "supermarket": "fairprice",
     "category": "fresh-milk",
     "prices": {
-      "2026-06-28": 4.95
+      "2026-06-28": 4.95,
+      "2026-06-29": 4.95
     }
   },
   "fp_13088088": {
@@ -284,7 +318,8 @@
     "supermarket": "fairprice",
     "category": "fresh-milk",
     "prices": {
-      "2026-06-28": 6.92
+      "2026-06-28": 6.92,
+      "2026-06-29": 6.92
     }
   },
   "fp_13148892": {
@@ -292,7 +327,8 @@
     "supermarket": "fairprice",
     "category": "fresh-milk",
     "prices": {
-      "2026-06-28": 2.77
+      "2026-06-28": 2.77,
+      "2026-06-29": 2.77
     }
   },
   "fp_13062327": {
@@ -300,7 +336,8 @@
     "supermarket": "fairprice",
     "category": "fresh-milk",
     "prices": {
-      "2026-06-28": 6.05
+      "2026-06-28": 6.05,
+      "2026-06-29": 6.05
     }
   },
   "fp_13174592": {
@@ -308,7 +345,8 @@
     "supermarket": "fairprice",
     "category": "fresh-milk",
     "prices": {
-      "2026-06-28": 6.87
+      "2026-06-28": 6.87,
+      "2026-06-29": 6.87
     }
   },
   "fp_13188250": {
@@ -316,7 +354,8 @@
     "supermarket": "fairprice",
     "category": "fresh-milk",
     "prices": {
-      "2026-06-28": 5.8
+      "2026-06-28": 5.8,
+      "2026-06-29": 5.8
     }
   },
   "fp_13082657": {
@@ -324,7 +363,8 @@
     "supermarket": "fairprice",
     "category": "fresh-milk",
     "prices": {
-      "2026-06-28": 3.53
+      "2026-06-28": 3.53,
+      "2026-06-29": 3.53
     }
   },
   "fp_13197730": {
@@ -332,7 +372,8 @@
     "supermarket": "fairprice",
     "category": "eggs",
     "prices": {
-      "2026-06-28": 6.65
+      "2026-06-28": 6.65,
+      "2026-06-29": 6.65
     }
   },
   "fp_451724": {
@@ -340,7 +381,8 @@
     "supermarket": "fairprice",
     "category": "eggs",
     "prices": {
-      "2026-06-28": 2.85
+      "2026-06-28": 2.85,
+      "2026-06-29": 2.85
     }
   },
   "fp_13065350": {
@@ -348,7 +390,8 @@
     "supermarket": "fairprice",
     "category": "eggs",
     "prices": {
-      "2026-06-28": 4.6
+      "2026-06-28": 4.6,
+      "2026-06-29": 4.6
     }
   },
   "fp_283672": {
@@ -356,7 +399,8 @@
     "supermarket": "fairprice",
     "category": "eggs",
     "prices": {
-      "2026-06-28": 3.75
+      "2026-06-28": 3.75,
+      "2026-06-29": 3.75
     }
   },
   "fp_13190663": {
@@ -364,7 +408,8 @@
     "supermarket": "fairprice",
     "category": "eggs",
     "prices": {
-      "2026-06-28": 3.78
+      "2026-06-28": 3.78,
+      "2026-06-29": 3.78
     }
   },
   "fp_495350": {
@@ -372,7 +417,8 @@
     "supermarket": "fairprice",
     "category": "eggs",
     "prices": {
-      "2026-06-28": 4.3
+      "2026-06-28": 4.3,
+      "2026-06-29": 4.3
     }
   },
   "fp_13000170": {
@@ -380,7 +426,8 @@
     "supermarket": "fairprice",
     "category": "eggs",
     "prices": {
-      "2026-06-28": 4.55
+      "2026-06-28": 4.55,
+      "2026-06-29": 4.55
     }
   },
   "fp_10523120": {
@@ -388,7 +435,8 @@
     "supermarket": "fairprice",
     "category": "eggs",
     "prices": {
-      "2026-06-28": 4.55
+      "2026-06-28": 4.55,
+      "2026-06-29": 4.55
     }
   },
   "fp_13104178": {
@@ -396,7 +444,8 @@
     "supermarket": "fairprice",
     "category": "eggs",
     "prices": {
-      "2026-06-28": 4.24
+      "2026-06-28": 4.24,
+      "2026-06-29": 4.24
     }
   },
   "fp_13226655": {
@@ -404,7 +453,8 @@
     "supermarket": "fairprice",
     "category": "eggs",
     "prices": {
-      "2026-06-28": 3.05
+      "2026-06-28": 3.05,
+      "2026-06-29": 3.05
     }
   },
   "fp_157869": {
@@ -412,7 +462,8 @@
     "supermarket": "fairprice",
     "category": "eggs",
     "prices": {
-      "2026-06-28": 3.88
+      "2026-06-28": 3.88,
+      "2026-06-29": 3.88
     }
   },
   "fp_12510243": {
@@ -420,7 +471,8 @@
     "supermarket": "fairprice",
     "category": "eggs",
     "prices": {
-      "2026-06-28": 2.88
+      "2026-06-28": 2.88,
+      "2026-06-29": 2.88
     }
   },
   "fp_13225153": {
@@ -436,7 +488,8 @@
     "supermarket": "fairprice",
     "category": "eggs",
     "prices": {
-      "2026-06-28": 4.9
+      "2026-06-28": 4.9,
+      "2026-06-29": 4.9
     }
   },
   "fp_13245146": {
@@ -444,7 +497,8 @@
     "supermarket": "fairprice",
     "category": "eggs",
     "prices": {
-      "2026-06-28": 9.5
+      "2026-06-28": 9.5,
+      "2026-06-29": 9.5
     }
   },
   "fp_13000180": {
@@ -452,7 +506,8 @@
     "supermarket": "fairprice",
     "category": "eggs",
     "prices": {
-      "2026-06-28": 3.35
+      "2026-06-28": 3.35,
+      "2026-06-29": 3.35
     }
   },
   "fp_13084222": {
@@ -460,7 +515,8 @@
     "supermarket": "fairprice",
     "category": "eggs",
     "prices": {
-      "2026-06-28": 2.35
+      "2026-06-28": 2.35,
+      "2026-06-29": 2.35
     }
   },
   "fp_13096573": {
@@ -468,7 +524,8 @@
     "supermarket": "fairprice",
     "category": "eggs",
     "prices": {
-      "2026-06-28": 4.15
+      "2026-06-28": 4.15,
+      "2026-06-29": 4.15
     }
   },
   "fp_399875": {
@@ -476,7 +533,8 @@
     "supermarket": "fairprice",
     "category": "eggs",
     "prices": {
-      "2026-06-28": 3.59
+      "2026-06-28": 3.59,
+      "2026-06-29": 3.59
     }
   },
   "fp_13190728": {
@@ -492,7 +550,8 @@
     "supermarket": "fairprice",
     "category": "chicken",
     "prices": {
-      "2026-06-28": 5.8
+      "2026-06-28": 5.8,
+      "2026-06-29": 5.8
     }
   },
   "fp_13097670": {
@@ -500,7 +559,8 @@
     "supermarket": "fairprice",
     "category": "chicken",
     "prices": {
-      "2026-06-28": 12.3
+      "2026-06-28": 12.3,
+      "2026-06-29": 12.3
     }
   },
   "fp_13097673": {
@@ -508,7 +568,8 @@
     "supermarket": "fairprice",
     "category": "chicken",
     "prices": {
-      "2026-06-28": 5.1
+      "2026-06-28": 5.1,
+      "2026-06-29": 5.1
     }
   },
   "fp_13097679": {
@@ -516,7 +577,8 @@
     "supermarket": "fairprice",
     "category": "chicken",
     "prices": {
-      "2026-06-28": 5.2
+      "2026-06-28": 5.2,
+      "2026-06-29": 5.2
     }
   },
   "fp_13097674": {
@@ -524,7 +586,8 @@
     "supermarket": "fairprice",
     "category": "chicken",
     "prices": {
-      "2026-06-28": 15.3
+      "2026-06-28": 15.3,
+      "2026-06-29": 15.3
     }
   },
   "fp_13097678": {
@@ -532,7 +595,8 @@
     "supermarket": "fairprice",
     "category": "chicken",
     "prices": {
-      "2026-06-28": 6.2
+      "2026-06-28": 6.2,
+      "2026-06-29": 6.2
     }
   },
   "fp_13097671": {
@@ -540,7 +604,8 @@
     "supermarket": "fairprice",
     "category": "chicken",
     "prices": {
-      "2026-06-28": 7.67
+      "2026-06-28": 7.67,
+      "2026-06-29": 7.67
     }
   },
   "fp_13097672": {
@@ -548,7 +613,8 @@
     "supermarket": "fairprice",
     "category": "chicken",
     "prices": {
-      "2026-06-28": 4.4
+      "2026-06-28": 4.4,
+      "2026-06-29": 4.4
     }
   },
   "fp_13097629": {
@@ -556,7 +622,8 @@
     "supermarket": "fairprice",
     "category": "chicken",
     "prices": {
-      "2026-06-28": 6.3
+      "2026-06-28": 6.3,
+      "2026-06-29": 6.3
     }
   },
   "fp_13097677": {
@@ -564,7 +631,8 @@
     "supermarket": "fairprice",
     "category": "chicken",
     "prices": {
-      "2026-06-28": 5.5
+      "2026-06-28": 5.5,
+      "2026-06-29": 5.5
     }
   },
   "fp_13282982": {
@@ -572,7 +640,8 @@
     "supermarket": "fairprice",
     "category": "chicken",
     "prices": {
-      "2026-06-28": 6.4
+      "2026-06-28": 6.4,
+      "2026-06-29": 6.4
     }
   },
   "fp_13282954": {
@@ -580,7 +649,8 @@
     "supermarket": "fairprice",
     "category": "chicken",
     "prices": {
-      "2026-06-28": 5.4
+      "2026-06-28": 5.4,
+      "2026-06-29": 5.4
     }
   },
   "fp_13282973": {
@@ -588,7 +658,8 @@
     "supermarket": "fairprice",
     "category": "chicken",
     "prices": {
-      "2026-06-28": 3.4
+      "2026-06-28": 3.4,
+      "2026-06-29": 3.4
     }
   },
   "fp_13282927": {
@@ -596,7 +667,8 @@
     "supermarket": "fairprice",
     "category": "chicken",
     "prices": {
-      "2026-06-28": 8.0
+      "2026-06-28": 8.0,
+      "2026-06-29": 8.0
     }
   },
   "fp_13282983": {
@@ -604,7 +676,8 @@
     "supermarket": "fairprice",
     "category": "chicken",
     "prices": {
-      "2026-06-28": 4.4
+      "2026-06-28": 4.4,
+      "2026-06-29": 4.4
     }
   },
   "fp_13282980": {
@@ -612,7 +685,8 @@
     "supermarket": "fairprice",
     "category": "chicken",
     "prices": {
-      "2026-06-28": 4.0
+      "2026-06-28": 4.0,
+      "2026-06-29": 4.0
     }
   },
   "fp_90199913": {
@@ -628,7 +702,8 @@
     "supermarket": "fairprice",
     "category": "chicken",
     "prices": {
-      "2026-06-28": 10.55
+      "2026-06-28": 10.55,
+      "2026-06-29": 11.1
     }
   },
   "fp_90018634": {
@@ -636,7 +711,8 @@
     "supermarket": "fairprice",
     "category": "chicken",
     "prices": {
-      "2026-06-28": 10.56
+      "2026-06-28": 10.56,
+      "2026-06-29": 10.56
     }
   },
   "fp_90199899": {
@@ -644,7 +720,8 @@
     "supermarket": "fairprice",
     "category": "chicken",
     "prices": {
-      "2026-06-28": 3.75
+      "2026-06-28": 3.75,
+      "2026-06-29": 3.95
     }
   },
   "fp_70227": {
@@ -652,7 +729,8 @@
     "supermarket": "fairprice",
     "category": "noodles",
     "prices": {
-      "2026-06-28": 1.6
+      "2026-06-28": 1.6,
+      "2026-06-29": 1.6
     }
   },
   "fp_13079949": {
@@ -660,7 +738,8 @@
     "supermarket": "fairprice",
     "category": "noodles",
     "prices": {
-      "2026-06-28": 3.75
+      "2026-06-28": 3.75,
+      "2026-06-29": 3.75
     }
   },
   "fp_13001633": {
@@ -668,7 +747,8 @@
     "supermarket": "fairprice",
     "category": "noodles",
     "prices": {
-      "2026-06-28": 1.52
+      "2026-06-28": 1.52,
+      "2026-06-29": 1.52
     }
   },
   "fp_92213": {
@@ -676,7 +756,8 @@
     "supermarket": "fairprice",
     "category": "noodles",
     "prices": {
-      "2026-06-28": 1.62
+      "2026-06-28": 1.62,
+      "2026-06-29": 1.62
     }
   },
   "fp_13278530": {
@@ -684,7 +765,8 @@
     "supermarket": "fairprice",
     "category": "noodles",
     "prices": {
-      "2026-06-28": 3.0
+      "2026-06-28": 3.0,
+      "2026-06-29": 3.0
     }
   },
   "fp_11104665": {
@@ -692,7 +774,8 @@
     "supermarket": "fairprice",
     "category": "noodles",
     "prices": {
-      "2026-06-28": 1.89
+      "2026-06-28": 1.89,
+      "2026-06-29": 1.89
     }
   },
   "fp_12536734": {
@@ -708,7 +791,8 @@
     "supermarket": "fairprice",
     "category": "noodles",
     "prices": {
-      "2026-06-28": 2.44
+      "2026-06-28": 2.44,
+      "2026-06-29": 2.44
     }
   },
   "fp_12536742": {
@@ -716,7 +800,8 @@
     "supermarket": "fairprice",
     "category": "noodles",
     "prices": {
-      "2026-06-28": 1.35
+      "2026-06-28": 1.35,
+      "2026-06-29": 1.35
     }
   },
   "fp_10459245": {
@@ -724,7 +809,8 @@
     "supermarket": "fairprice",
     "category": "noodles",
     "prices": {
-      "2026-06-28": 1.16
+      "2026-06-28": 1.16,
+      "2026-06-29": 1.16
     }
   },
   "fp_10956727": {
@@ -732,7 +818,8 @@
     "supermarket": "fairprice",
     "category": "noodles",
     "prices": {
-      "2026-06-28": 2.19
+      "2026-06-28": 2.19,
+      "2026-06-29": 2.19
     }
   },
   "fp_456766": {
@@ -740,7 +827,8 @@
     "supermarket": "fairprice",
     "category": "noodles",
     "prices": {
-      "2026-06-28": 2.24
+      "2026-06-28": 2.24,
+      "2026-06-29": 2.24
     }
   },
   "fp_13245102": {
@@ -748,7 +836,8 @@
     "supermarket": "fairprice",
     "category": "noodles",
     "prices": {
-      "2026-06-28": 1.46
+      "2026-06-28": 1.46,
+      "2026-06-29": 1.46
     }
   },
   "fp_280199": {
@@ -756,7 +845,8 @@
     "supermarket": "fairprice",
     "category": "noodles",
     "prices": {
-      "2026-06-28": 2.14
+      "2026-06-28": 2.14,
+      "2026-06-29": 2.14
     }
   },
   "fp_13176412": {
@@ -772,7 +862,8 @@
     "supermarket": "fairprice",
     "category": "noodles",
     "prices": {
-      "2026-06-28": 1.58
+      "2026-06-28": 1.58,
+      "2026-06-29": 1.58
     }
   },
   "fp_13002986": {
@@ -780,7 +871,8 @@
     "supermarket": "fairprice",
     "category": "noodles",
     "prices": {
-      "2026-06-28": 1.67
+      "2026-06-28": 1.67,
+      "2026-06-29": 1.67
     }
   },
   "fp_13278531": {
@@ -788,7 +880,8 @@
     "supermarket": "fairprice",
     "category": "noodles",
     "prices": {
-      "2026-06-28": 1.15
+      "2026-06-28": 1.15,
+      "2026-06-29": 1.15
     }
   },
   "fp_10576230": {
@@ -796,7 +889,8 @@
     "supermarket": "fairprice",
     "category": "noodles",
     "prices": {
-      "2026-06-28": 1.48
+      "2026-06-28": 1.48,
+      "2026-06-29": 1.48
     }
   },
   "fp_11210775": {
@@ -804,7 +898,8 @@
     "supermarket": "fairprice",
     "category": "noodles",
     "prices": {
-      "2026-06-28": 1.68
+      "2026-06-28": 1.68,
+      "2026-06-29": 1.68
     }
   },
   "fp_10125886": {
@@ -812,7 +907,8 @@
     "supermarket": "fairprice",
     "category": "canned-food",
     "prices": {
-      "2026-06-28": 3.31
+      "2026-06-28": 3.31,
+      "2026-06-29": 3.31
     }
   },
   "fp_10458605": {
@@ -820,7 +916,8 @@
     "supermarket": "fairprice",
     "category": "canned-food",
     "prices": {
-      "2026-06-28": 1.66
+      "2026-06-28": 1.66,
+      "2026-06-29": 1.66
     }
   },
   "fp_414649": {
@@ -828,7 +925,8 @@
     "supermarket": "fairprice",
     "category": "canned-food",
     "prices": {
-      "2026-06-28": 4.99
+      "2026-06-28": 4.99,
+      "2026-06-29": 4.99
     }
   },
   "fp_13055480": {
@@ -836,7 +934,8 @@
     "supermarket": "fairprice",
     "category": "canned-food",
     "prices": {
-      "2026-06-28": 0.86
+      "2026-06-28": 0.86,
+      "2026-06-29": 0.86
     }
   },
   "fp_13191444": {
@@ -844,7 +943,8 @@
     "supermarket": "fairprice",
     "category": "canned-food",
     "prices": {
-      "2026-06-28": 2.27
+      "2026-06-28": 2.27,
+      "2026-06-29": 2.27
     }
   },
   "fp_10104372": {
@@ -852,7 +952,8 @@
     "supermarket": "fairprice",
     "category": "canned-food",
     "prices": {
-      "2026-06-28": 1.48
+      "2026-06-28": 1.48,
+      "2026-06-29": 1.48
     }
   },
   "fp_13256630": {
@@ -860,7 +961,8 @@
     "supermarket": "fairprice",
     "category": "canned-food",
     "prices": {
-      "2026-06-28": 2.7
+      "2026-06-28": 2.7,
+      "2026-06-29": 2.7
     }
   },
   "fp_13057896": {
@@ -868,7 +970,8 @@
     "supermarket": "fairprice",
     "category": "canned-food",
     "prices": {
-      "2026-06-28": 3.48
+      "2026-06-28": 3.48,
+      "2026-06-29": 3.48
     }
   },
   "fp_11178664": {
@@ -876,7 +979,8 @@
     "supermarket": "fairprice",
     "category": "canned-food",
     "prices": {
-      "2026-06-28": 1.96
+      "2026-06-28": 1.96,
+      "2026-06-29": 1.96
     }
   },
   "fp_10153561": {
@@ -884,7 +988,8 @@
     "supermarket": "fairprice",
     "category": "canned-food",
     "prices": {
-      "2026-06-28": 1.66
+      "2026-06-28": 1.66,
+      "2026-06-29": 1.66
     }
   },
   "fp_478215": {
@@ -892,7 +997,8 @@
     "supermarket": "fairprice",
     "category": "canned-food",
     "prices": {
-      "2026-06-28": 3.6
+      "2026-06-28": 3.6,
+      "2026-06-29": 3.6
     }
   },
   "fp_13001759": {
@@ -900,7 +1006,8 @@
     "supermarket": "fairprice",
     "category": "canned-food",
     "prices": {
-      "2026-06-28": 3.48
+      "2026-06-28": 3.48,
+      "2026-06-29": 3.48
     }
   },
   "fp_13286629": {
@@ -908,7 +1015,8 @@
     "supermarket": "fairprice",
     "category": "canned-food",
     "prices": {
-      "2026-06-28": 3.9
+      "2026-06-28": 3.9,
+      "2026-06-29": 3.9
     }
   },
   "fp_13131650": {
@@ -916,7 +1024,8 @@
     "supermarket": "fairprice",
     "category": "canned-food",
     "prices": {
-      "2026-06-28": 5.0
+      "2026-06-28": 5.0,
+      "2026-06-29": 5.0
     }
   },
   "fp_30809": {
@@ -924,7 +1033,8 @@
     "supermarket": "fairprice",
     "category": "canned-food",
     "prices": {
-      "2026-06-28": 1.12
+      "2026-06-28": 1.12,
+      "2026-06-29": 1.12
     }
   },
   "fp_497322": {
@@ -932,7 +1042,8 @@
     "supermarket": "fairprice",
     "category": "canned-food",
     "prices": {
-      "2026-06-28": 1.48
+      "2026-06-28": 1.48,
+      "2026-06-29": 1.48
     }
   },
   "fp_13193481": {
@@ -940,7 +1051,8 @@
     "supermarket": "fairprice",
     "category": "canned-food",
     "prices": {
-      "2026-06-28": 6.62
+      "2026-06-28": 6.62,
+      "2026-06-29": 6.62
     }
   },
   "fp_50807": {
@@ -948,7 +1060,8 @@
     "supermarket": "fairprice",
     "category": "canned-food",
     "prices": {
-      "2026-06-28": 3.73
+      "2026-06-28": 3.73,
+      "2026-06-29": 3.73
     }
   },
   "fp_13055486": {
@@ -956,7 +1069,8 @@
     "supermarket": "fairprice",
     "category": "canned-food",
     "prices": {
-      "2026-06-28": 0.86
+      "2026-06-28": 0.86,
+      "2026-06-29": 0.86
     }
   },
   "fp_13057931": {
@@ -980,7 +1094,8 @@
     "supermarket": "coldstorage",
     "category": "rice",
     "prices": {
-      "2026-06-28": 16.95
+      "2026-06-28": 16.95,
+      "2026-06-29": 16.95
     }
   },
   "cs_naturel_organic_brown_rice_fus": {
@@ -988,7 +1103,8 @@
     "supermarket": "coldstorage",
     "category": "rice",
     "prices": {
-      "2026-06-28": 3.3
+      "2026-06-28": 3.3,
+      "2026-06-29": 3.3
     }
   },
   "cs_kangaroo_low_gi_rice_2kg": {
@@ -1004,7 +1120,8 @@
     "supermarket": "coldstorage",
     "category": "rice",
     "prices": {
-      "2026-06-28": 19.9
+      "2026-06-28": 19.9,
+      "2026-06-29": 19.9
     }
   },
   "cs_naturel_organic_brown_rice_2kg": {
@@ -1012,7 +1129,8 @@
     "supermarket": "coldstorage",
     "category": "rice",
     "prices": {
-      "2026-06-28": 11.85
+      "2026-06-28": 11.85,
+      "2026-06-29": 11.85
     }
   },
   "cs_cj_cheiljedang_hatban_brown_in": {
@@ -1020,7 +1138,8 @@
     "supermarket": "coldstorage",
     "category": "rice",
     "prices": {
-      "2026-06-28": 3.05
+      "2026-06-28": 3.05,
+      "2026-06-29": 3.05
     }
   },
   "cs_cj_cheiljedang_hatban_white_in": {
@@ -1028,7 +1147,8 @@
     "supermarket": "coldstorage",
     "category": "rice",
     "prices": {
-      "2026-06-28": 2.95
+      "2026-06-28": 2.95,
+      "2026-06-29": 2.95
     }
   },
   "cs_gallo_italian_arborio_rice_1kg": {
@@ -1036,7 +1156,8 @@
     "supermarket": "coldstorage",
     "category": "rice",
     "prices": {
-      "2026-06-28": 12.5
+      "2026-06-28": 12.5,
+      "2026-06-29": 12.5
     }
   },
   "cs_royal_umbrella_thai_hom_mali_f": {
@@ -1044,7 +1165,8 @@
     "supermarket": "coldstorage",
     "category": "rice",
     "prices": {
-      "2026-06-28": 31.5
+      "2026-06-28": 31.5,
+      "2026-06-29": 31.5
     }
   },
   "cs_golden_eagle_thai_fragrant_ric": {
@@ -1060,7 +1182,8 @@
     "supermarket": "coldstorage",
     "category": "rice",
     "prices": {
-      "2026-06-28": 28.6
+      "2026-06-28": 28.6,
+      "2026-06-29": 28.6
     }
   },
   "cs_naturel_organic_brown___red_ri": {
@@ -1068,7 +1191,8 @@
     "supermarket": "coldstorage",
     "category": "rice",
     "prices": {
-      "2026-06-28": 11.85
+      "2026-06-28": 11.85,
+      "2026-06-29": 11.85
     }
   },
   "cs_golden_pineapple_premium_japon": {
@@ -1076,7 +1200,8 @@
     "supermarket": "coldstorage",
     "category": "rice",
     "prices": {
-      "2026-06-28": 10.5
+      "2026-06-28": 10.5,
+      "2026-06-29": 10.5
     }
   },
   "cs_dreamrice_low_gi_basmati_rice_": {
@@ -1084,7 +1209,8 @@
     "supermarket": "coldstorage",
     "category": "rice",
     "prices": {
-      "2026-06-28": 4.25
+      "2026-06-28": 4.25,
+      "2026-06-29": 4.25
     }
   },
   "cs_malika_gold_basmati_rice_2kg": {
@@ -1100,7 +1226,8 @@
     "supermarket": "coldstorage",
     "category": "rice",
     "prices": {
-      "2026-06-28": 7.8
+      "2026-06-28": 7.8,
+      "2026-06-29": 7.8
     }
   },
   "cs_hinata_short_grain_rice_5kg": {
@@ -1108,7 +1235,8 @@
     "supermarket": "coldstorage",
     "category": "rice",
     "prices": {
-      "2026-06-28": 10.2
+      "2026-06-28": 10.2,
+      "2026-06-29": 10.2
     }
   },
   "cs_sunright_18_multigrain_rice_1_": {
@@ -1116,7 +1244,8 @@
     "supermarket": "coldstorage",
     "category": "rice",
     "prices": {
-      "2026-06-28": 15.05
+      "2026-06-28": 15.05,
+      "2026-06-29": 15.05
     }
   },
   "cs_daawat_super_basmati_rice_1kg": {
@@ -1124,7 +1253,8 @@
     "supermarket": "coldstorage",
     "category": "rice",
     "prices": {
-      "2026-06-28": 4.85
+      "2026-06-28": 4.85,
+      "2026-06-29": 4.85
     }
   },
   "cs_food_people_16_multigrain_rice": {
@@ -1140,7 +1270,8 @@
     "supermarket": "coldstorage",
     "category": "rice",
     "prices": {
-      "2026-06-28": 1.7
+      "2026-06-28": 1.7,
+      "2026-06-29": 1.7
     }
   },
   "cs_cj_cheiljedang_100__brown_inst": {
@@ -1148,7 +1279,8 @@
     "supermarket": "coldstorage",
     "category": "rice",
     "prices": {
-      "2026-06-28": 2.2
+      "2026-06-28": 2.2,
+      "2026-06-29": 2.2
     }
   },
   "cs_cj_cheiljedang_black_instant_r": {
@@ -1188,7 +1320,8 @@
     "supermarket": "coldstorage",
     "category": "rice",
     "prices": {
-      "2026-06-28": 4.2
+      "2026-06-28": 4.2,
+      "2026-06-29": 4.2
     }
   },
   "cs_borges_organic_extra_virgin_ol": {
@@ -1196,7 +1329,8 @@
     "supermarket": "coldstorage",
     "category": "oil",
     "prices": {
-      "2026-06-28": 12.9
+      "2026-06-28": 12.9,
+      "2026-06-29": 12.9
     }
   },
   "cs_iliada_chef_s_way_premium_extr": {
@@ -1204,7 +1338,8 @@
     "supermarket": "coldstorage",
     "category": "oil",
     "prices": {
-      "2026-06-28": 20.9
+      "2026-06-28": 20.9,
+      "2026-06-29": 20.9
     }
   },
   "cs_borges_pure_classic_olive_oil_": {
@@ -1220,7 +1355,8 @@
     "supermarket": "coldstorage",
     "category": "oil",
     "prices": {
-      "2026-06-28": 5.3
+      "2026-06-28": 5.3,
+      "2026-06-29": 5.3
     }
   },
   "cs_waitrose_organic_100__italian_": {
@@ -1244,7 +1380,8 @@
     "supermarket": "coldstorage",
     "category": "oil",
     "prices": {
-      "2026-06-28": 15.95
+      "2026-06-28": 15.95,
+      "2026-06-29": 15.95
     }
   },
   "cs_colavita_classic_olive_oil_500": {
@@ -1252,7 +1389,8 @@
     "supermarket": "coldstorage",
     "category": "oil",
     "prices": {
-      "2026-06-28": 13.95
+      "2026-06-28": 13.95,
+      "2026-06-29": 13.95
     }
   },
   "cs_filippo_berio_extra_virgin_oli": {
@@ -1260,7 +1398,8 @@
     "supermarket": "coldstorage",
     "category": "oil",
     "prices": {
-      "2026-06-28": 6.3
+      "2026-06-28": 6.3,
+      "2026-06-29": 6.3
     }
   },
   "cs_filippo_berio_classic_olive_oi": {
@@ -1268,7 +1407,8 @@
     "supermarket": "coldstorage",
     "category": "oil",
     "prices": {
-      "2026-06-28": 5.5
+      "2026-06-28": 5.5,
+      "2026-06-29": 5.5
     }
   },
   "cs_iliada_chef_s_way_kalamata_ext": {
@@ -1276,7 +1416,8 @@
     "supermarket": "coldstorage",
     "category": "oil",
     "prices": {
-      "2026-06-28": 20.9
+      "2026-06-28": 20.9,
+      "2026-06-29": 20.9
     }
   },
   "cs_ladiva_olive_oil_white_truffle": {
@@ -1284,7 +1425,8 @@
     "supermarket": "coldstorage",
     "category": "oil",
     "prices": {
-      "2026-06-28": 9.6
+      "2026-06-28": 9.6,
+      "2026-06-29": 9.6
     }
   },
   "cs_ladiva_extra_pomace_oil_1l": {
@@ -1292,7 +1434,8 @@
     "supermarket": "coldstorage",
     "category": "oil",
     "prices": {
-      "2026-06-28": 10.95
+      "2026-06-28": 10.95,
+      "2026-06-29": 10.95
     }
   },
   "cs_ladiva_extra_virgin_olive_oil_": {
@@ -1316,7 +1459,8 @@
     "supermarket": "coldstorage",
     "category": "oil",
     "prices": {
-      "2026-06-28": 15.95
+      "2026-06-28": 15.95,
+      "2026-06-29": 15.95
     }
   },
   "cs_ottogi_perilla_oil_160ml": {
@@ -1324,7 +1468,8 @@
     "supermarket": "coldstorage",
     "category": "oil",
     "prices": {
-      "2026-06-28": 19.0
+      "2026-06-28": 19.0,
+      "2026-06-29": 19.0
     }
   },
   "cs_borges_sunflower___extra_virgi": {
@@ -1372,7 +1517,8 @@
     "supermarket": "coldstorage",
     "category": "oil",
     "prices": {
-      "2026-06-28": 17.35
+      "2026-06-28": 17.35,
+      "2026-06-29": 17.35
     }
   },
   "cs_truffle_hunter_white_truffle_o": {
@@ -1396,7 +1542,8 @@
     "supermarket": "coldstorage",
     "category": "oil",
     "prices": {
-      "2026-06-28": 30.9
+      "2026-06-28": 30.9,
+      "2026-06-29": 13.4
     }
   },
   "cs_monini_classico_extra_virgin_o": {
@@ -1444,7 +1591,8 @@
     "supermarket": "coldstorage",
     "category": "milk",
     "prices": {
-      "2026-06-28": 6.15
+      "2026-06-28": 6.15,
+      "2026-06-29": 3.9
     }
   },
   "cs_magnolia_fresh_milk_200ml": {
@@ -1460,7 +1608,8 @@
     "supermarket": "coldstorage",
     "category": "milk",
     "prices": {
-      "2026-06-28": 6.45
+      "2026-06-28": 6.45,
+      "2026-06-29": 6.45
     }
   },
   "cs_milkmaid_low_fat_sweetened_con": {
@@ -1516,7 +1665,8 @@
     "supermarket": "coldstorage",
     "category": "milk",
     "prices": {
-      "2026-06-28": 24.0
+      "2026-06-28": 24.0,
+      "2026-06-29": 24.0
     }
   },
   "cs_meiji_fresh_milk_830ml": {
@@ -1572,7 +1722,8 @@
     "supermarket": "coldstorage",
     "category": "milk",
     "prices": {
-      "2026-06-28": 24.0
+      "2026-06-28": 24.0,
+      "2026-06-29": 24.0
     }
   },
   "cs_farm_fresh_pure_fresh_milk_1l": {
@@ -1604,7 +1755,8 @@
     "supermarket": "coldstorage",
     "category": "milk",
     "prices": {
-      "2026-06-28": 24.0
+      "2026-06-28": 24.0,
+      "2026-06-29": 24.0
     }
   },
   "cs_rokeby_chocolate_honeycomb_pro": {
@@ -1612,7 +1764,8 @@
     "supermarket": "coldstorage",
     "category": "milk",
     "prices": {
-      "2026-06-28": 24.0
+      "2026-06-28": 24.0,
+      "2026-06-29": 24.0
     }
   },
   "cs_farmhouse_fresh_milk_946ml": {
@@ -1644,7 +1797,8 @@
     "supermarket": "coldstorage",
     "category": "eggs",
     "prices": {
-      "2026-06-28": 6.4
+      "2026-06-28": 6.4,
+      "2026-06-29": 6.4
     }
   },
   "cs_farm_choice_farm_fresh_eggs_15": {
@@ -1652,7 +1806,8 @@
     "supermarket": "coldstorage",
     "category": "eggs",
     "prices": {
-      "2026-06-28": 4.8
+      "2026-06-28": 4.8,
+      "2026-06-29": 4.8
     }
   },
   "cs_seng_choon_low_cholesterol_fre": {
@@ -1660,7 +1815,8 @@
     "supermarket": "coldstorage",
     "category": "eggs",
     "prices": {
-      "2026-06-28": 4.0
+      "2026-06-28": 4.0,
+      "2026-06-29": 4.0
     }
   },
   "cs_egg_story_pasteurized_vitamin_": {
@@ -1668,7 +1824,8 @@
     "supermarket": "coldstorage",
     "category": "eggs",
     "prices": {
-      "2026-06-28": 6.8
+      "2026-06-28": 6.8,
+      "2026-06-29": 6.8
     }
   },
   "cs_freedom_cage_free_xl_eggs_12s_": {
@@ -1676,7 +1833,8 @@
     "supermarket": "coldstorage",
     "category": "eggs",
     "prices": {
-      "2026-06-28": 9.5
+      "2026-06-28": 9.5,
+      "2026-06-29": 9.5
     }
   },
   "cs_farm_choice_farm_fresh_eggs_30": {
@@ -1684,7 +1842,8 @@
     "supermarket": "coldstorage",
     "category": "eggs",
     "prices": {
-      "2026-06-28": 7.7
+      "2026-06-28": 7.7,
+      "2026-06-29": 7.7
     }
   },
   "cs_chew_s_lower_cholesterol_king_": {
@@ -1692,7 +1851,8 @@
     "supermarket": "coldstorage",
     "category": "eggs",
     "prices": {
-      "2026-06-28": 3.5
+      "2026-06-28": 3.5,
+      "2026-06-29": 3.5
     }
   },
   "cs_an_an_lower_cholesterol_first_": {
@@ -1708,7 +1868,8 @@
     "supermarket": "coldstorage",
     "category": "eggs",
     "prices": {
-      "2026-06-28": 3.9
+      "2026-06-28": 3.9,
+      "2026-06-29": 3.9
     }
   },
   "cs_farm_choice_singapore_fresh_eg": {
@@ -1716,7 +1877,8 @@
     "supermarket": "coldstorage",
     "category": "eggs",
     "prices": {
-      "2026-06-28": 3.7
+      "2026-06-28": 3.7,
+      "2026-06-29": 3.7
     }
   },
   "cs_farm_choice_farm_fresh_eggs_10": {
@@ -1724,7 +1886,8 @@
     "supermarket": "coldstorage",
     "category": "eggs",
     "prices": {
-      "2026-06-28": 3.45
+      "2026-06-28": 3.45,
+      "2026-06-29": 3.45
     }
   },
   "cs_chew_s_cage_free_fresh_eggs_6s": {
@@ -1732,7 +1895,8 @@
     "supermarket": "coldstorage",
     "category": "eggs",
     "prices": {
-      "2026-06-28": 4.15
+      "2026-06-28": 4.15,
+      "2026-06-29": 4.15
     }
   },
   "cs_danaeg_organic_danish_eggs_10s": {
@@ -1740,7 +1904,8 @@
     "supermarket": "coldstorage",
     "category": "eggs",
     "prices": {
-      "2026-06-28": 15.8
+      "2026-06-28": 15.8,
+      "2026-06-29": 15.8
     }
   },
   "cs_chew_s_omega_6_brown_eggs_10s_": {
@@ -1748,7 +1913,8 @@
     "supermarket": "coldstorage",
     "category": "eggs",
     "prices": {
-      "2026-06-28": 4.55
+      "2026-06-28": 4.55,
+      "2026-06-29": 4.55
     }
   },
   "cs_hinata_cage_eggs_10s_520g": {
@@ -1764,7 +1930,8 @@
     "supermarket": "coldstorage",
     "category": "eggs",
     "prices": {
-      "2026-06-28": 4.1
+      "2026-06-28": 4.1,
+      "2026-06-29": 4.1
     }
   },
   "cs_egg_story_pasteurized_eggs_10s": {
@@ -1772,7 +1939,8 @@
     "supermarket": "coldstorage",
     "category": "eggs",
     "prices": {
-      "2026-06-28": 5.2
+      "2026-06-28": 5.2,
+      "2026-06-29": 5.2
     }
   },
   "cs_nuyolk_m_vitamin_eggs_10s_530g": {
@@ -1780,7 +1948,8 @@
     "supermarket": "coldstorage",
     "category": "eggs",
     "prices": {
-      "2026-06-28": 6.05
+      "2026-06-28": 6.05,
+      "2026-06-29": 6.05
     }
   },
   "cs_sunny_queen_free_range_organic": {
@@ -1788,7 +1957,8 @@
     "supermarket": "coldstorage",
     "category": "eggs",
     "prices": {
-      "2026-06-28": 19.8
+      "2026-06-28": 19.8,
+      "2026-06-29": 19.8
     }
   },
   "cs_golden_irish_organic_eggs_6s_3": {
@@ -1804,7 +1974,8 @@
     "supermarket": "coldstorage",
     "category": "eggs",
     "prices": {
-      "2026-06-28": 3.6
+      "2026-06-28": 3.6,
+      "2026-06-29": 3.6
     }
   },
   "cs_frenz_free_range_size_7_eggs_1": {
@@ -1812,7 +1983,8 @@
     "supermarket": "coldstorage",
     "category": "eggs",
     "prices": {
-      "2026-06-28": 15.5
+      "2026-06-28": 15.5,
+      "2026-06-29": 15.5
     }
   },
   "cs_farm_choice_singapore_kampong_": {
@@ -1820,7 +1992,8 @@
     "supermarket": "coldstorage",
     "category": "eggs",
     "prices": {
-      "2026-06-28": 3.9
+      "2026-06-28": 3.9,
+      "2026-06-29": 3.9
     }
   },
   "cs_chew_s_omega_3_white_eggs_10s_": {
@@ -1828,7 +2001,8 @@
     "supermarket": "coldstorage",
     "category": "eggs",
     "prices": {
-      "2026-06-28": 4.65
+      "2026-06-28": 4.65,
+      "2026-06-29": 4.65
     }
   },
   "cs_farm_choice_singapore_quail_eg": {
@@ -1844,7 +2018,8 @@
     "supermarket": "coldstorage",
     "category": "eggs",
     "prices": {
-      "2026-06-28": 3.95
+      "2026-06-28": 3.95,
+      "2026-06-29": 3.95
     }
   },
   "cs_farm_choice_singapore_premium_": {
@@ -1852,7 +2027,8 @@
     "supermarket": "coldstorage",
     "category": "eggs",
     "prices": {
-      "2026-06-28": 3.7
+      "2026-06-28": 3.7,
+      "2026-06-29": 3.7
     }
   },
   "cs_farm_choice_singapore_omega_3_": {
@@ -1860,7 +2036,8 @@
     "supermarket": "coldstorage",
     "category": "eggs",
     "prices": {
-      "2026-06-28": 4.45
+      "2026-06-28": 4.45,
+      "2026-06-29": 4.45
     }
   },
   "cs_farm_choice_salted_eggs_4s_240": {
@@ -1876,7 +2053,8 @@
     "supermarket": "coldstorage",
     "category": "eggs",
     "prices": {
-      "2026-06-28": 2.5
+      "2026-06-28": 2.5,
+      "2026-06-29": 2.5
     }
   },
   "cs_seara_frozen_whole_chicken_1kg": {
@@ -1892,7 +2070,8 @@
     "supermarket": "coldstorage",
     "category": "chicken",
     "prices": {
-      "2026-06-28": 8.9
+      "2026-06-28": 8.9,
+      "2026-06-29": 8.9
     }
   },
   "cs_s_pure_original_chicken_drumst": {
@@ -1900,7 +2079,8 @@
     "supermarket": "coldstorage",
     "category": "chicken",
     "prices": {
-      "2026-06-28": 7.65
+      "2026-06-28": 7.65,
+      "2026-06-29": 7.65
     }
   },
   "cs_s_pure_bone_in_chicken_thigh_4": {
@@ -1908,7 +2088,8 @@
     "supermarket": "coldstorage",
     "category": "chicken",
     "prices": {
-      "2026-06-28": 10.0
+      "2026-06-28": 10.0,
+      "2026-06-29": 10.0
     }
   },
   "cs_s_pure_skinless_chicken_breast": {
@@ -1916,7 +2097,8 @@
     "supermarket": "coldstorage",
     "category": "chicken",
     "prices": {
-      "2026-06-28": 8.9
+      "2026-06-28": 8.9,
+      "2026-06-29": 8.9
     }
   },
   "cs_s_pure_frozen_original_chicken": {
@@ -1924,7 +2106,8 @@
     "supermarket": "coldstorage",
     "category": "chicken",
     "prices": {
-      "2026-06-28": 8.5
+      "2026-06-28": 8.5,
+      "2026-06-29": 8.5
     }
   },
   "cs_butcher_s_ridge_original_chick": {
@@ -1932,7 +2115,8 @@
     "supermarket": "coldstorage",
     "category": "chicken",
     "prices": {
-      "2026-06-28": 4.95
+      "2026-06-28": 4.95,
+      "2026-06-29": 4.55
     }
   },
   "cs_butcher_s_ridge_original_stir_": {
@@ -1940,7 +2124,8 @@
     "supermarket": "coldstorage",
     "category": "chicken",
     "prices": {
-      "2026-06-28": 4.0
+      "2026-06-28": 4.0,
+      "2026-06-29": 4.0
     }
   },
   "cs_s_pure_frozen_boneless_chicken": {
@@ -1948,7 +2133,8 @@
     "supermarket": "coldstorage",
     "category": "chicken",
     "prices": {
-      "2026-06-28": 8.5
+      "2026-06-28": 8.5,
+      "2026-06-29": 8.5
     }
   },
   "cs_s_pure_frozen_boneless_skinles": {
@@ -1956,7 +2142,8 @@
     "supermarket": "coldstorage",
     "category": "chicken",
     "prices": {
-      "2026-06-28": 8.5
+      "2026-06-28": 8.5,
+      "2026-06-29": 8.5
     }
   },
   "cs_s_pure_original_chicken_mid_jo": {
@@ -1964,7 +2151,8 @@
     "supermarket": "coldstorage",
     "category": "chicken",
     "prices": {
-      "2026-06-28": 7.65
+      "2026-06-28": 7.65,
+      "2026-06-29": 7.65
     }
   },
   "cs_seara_chicken_thighs__halal__1": {
@@ -1972,7 +2160,8 @@
     "supermarket": "coldstorage",
     "category": "chicken",
     "prices": {
-      "2026-06-28": 6.5
+      "2026-06-28": 6.5,
+      "2026-06-29": 6.5
     }
   },
   "cs_seara_frozen_chicken_drumstick": {
@@ -1980,7 +2169,8 @@
     "supermarket": "coldstorage",
     "category": "chicken",
     "prices": {
-      "2026-06-28": 6.5
+      "2026-06-28": 6.5,
+      "2026-06-29": 6.5
     }
   },
   "cs_heinz_chicken_broth_1l": {
@@ -2036,7 +2226,8 @@
     "supermarket": "coldstorage",
     "category": "bread",
     "prices": {
-      "2026-06-28": 4.5
+      "2026-06-28": 4.5,
+      "2026-06-29": 4.5
     }
   },
   "cs_sunshine_hokkaido_milk_toast_b": {
@@ -2044,7 +2235,8 @@
     "supermarket": "coldstorage",
     "category": "bread",
     "prices": {
-      "2026-06-28": 3.6
+      "2026-06-28": 3.6,
+      "2026-06-29": 3.6
     }
   },
   "cs_gardenia_enriched_white_bread_": {
@@ -2052,7 +2244,8 @@
     "supermarket": "coldstorage",
     "category": "bread",
     "prices": {
-      "2026-06-28": 2.5
+      "2026-06-28": 2.5,
+      "2026-06-29": 3.2
     }
   },
   "cs_sunshine_low_sugar_enriched_so": {
@@ -2060,7 +2253,8 @@
     "supermarket": "coldstorage",
     "category": "bread",
     "prices": {
-      "2026-06-28": 2.4
+      "2026-06-28": 2.4,
+      "2026-06-29": 2.4
     }
   },
   "cs_sunshine_homestyle_pandan_brea": {
@@ -2068,7 +2262,8 @@
     "supermarket": "coldstorage",
     "category": "bread",
     "prices": {
-      "2026-06-28": 3.4
+      "2026-06-28": 3.4,
+      "2026-06-29": 3.4
     }
   },
   "cs_gardenia_chocolate_royale_brea": {
@@ -2076,7 +2271,8 @@
     "supermarket": "coldstorage",
     "category": "bread",
     "prices": {
-      "2026-06-28": 3.9
+      "2026-06-28": 3.9,
+      "2026-06-29": 3.9
     }
   },
   "cs_gardenia_wholemeal_banana_waln": {
@@ -2084,7 +2280,8 @@
     "supermarket": "coldstorage",
     "category": "bread",
     "prices": {
-      "2026-06-28": 4.0
+      "2026-06-28": 4.0,
+      "2026-06-29": 4.0
     }
   },
   "cs_gardenia_super_soft___fine_who": {
@@ -2092,7 +2289,8 @@
     "supermarket": "coldstorage",
     "category": "bread",
     "prices": {
-      "2026-06-28": 3.0
+      "2026-06-28": 3.0,
+      "2026-06-29": 3.0
     }
   },
   "cs_sunshine_enriched_soft_white_b": {
@@ -2100,7 +2298,8 @@
     "supermarket": "coldstorage",
     "category": "bread",
     "prices": {
-      "2026-06-28": 3.0
+      "2026-06-28": 3.0,
+      "2026-06-29": 3.0
     }
   },
   "cs_gardenia_fine_grain_wholemeal_": {
@@ -2108,7 +2307,8 @@
     "supermarket": "coldstorage",
     "category": "bread",
     "prices": {
-      "2026-06-28": 3.1
+      "2026-06-28": 3.1,
+      "2026-06-29": 3.1
     }
   },
   "cs_sunshine_butter_shokupan_bread": {
@@ -2116,7 +2316,8 @@
     "supermarket": "coldstorage",
     "category": "bread",
     "prices": {
-      "2026-06-28": 4.1
+      "2026-06-28": 4.1,
+      "2026-06-29": 4.1
     }
   },
   "cs_sunshine_shiro_barley_shokupan": {
@@ -2124,7 +2325,8 @@
     "supermarket": "coldstorage",
     "category": "bread",
     "prices": {
-      "2026-06-28": 3.6
+      "2026-06-28": 3.6,
+      "2026-06-29": 3.6
     }
   },
   "cs_sunshine_purple_sweet_potato_b": {
@@ -2132,7 +2334,8 @@
     "supermarket": "coldstorage",
     "category": "bread",
     "prices": {
-      "2026-06-28": 4.1
+      "2026-06-28": 4.1,
+      "2026-06-29": 4.1
     }
   },
   "cs_top_one_enriched_wholemeal_bre": {
@@ -2140,7 +2343,8 @@
     "supermarket": "coldstorage",
     "category": "bread",
     "prices": {
-      "2026-06-28": 3.1
+      "2026-06-28": 3.1,
+      "2026-06-29": 3.1
     }
   },
   "cs_sunshine_low_sugar_low_gi_smar": {
@@ -2148,7 +2352,8 @@
     "supermarket": "coldstorage",
     "category": "bread",
     "prices": {
-      "2026-06-28": 4.3
+      "2026-06-28": 4.3,
+      "2026-06-29": 4.3
     }
   },
   "cs_gardenia_pandan_coconut_gula_m": {
@@ -2156,7 +2361,8 @@
     "supermarket": "coldstorage",
     "category": "bread",
     "prices": {
-      "2026-06-28": 3.4
+      "2026-06-28": 3.4,
+      "2026-06-29": 3.4
     }
   },
   "cs_gardenia_100__wholemeal_extra_": {
@@ -2164,7 +2370,8 @@
     "supermarket": "coldstorage",
     "category": "bread",
     "prices": {
-      "2026-06-28": 3.3
+      "2026-06-28": 3.3,
+      "2026-06-29": 3.3
     }
   },
   "cs_sunshine_100__whole_grains_ult": {
@@ -2172,7 +2379,8 @@
     "supermarket": "coldstorage",
     "category": "bread",
     "prices": {
-      "2026-06-28": 3.5
+      "2026-06-28": 3.5,
+      "2026-06-29": 3.5
     }
   },
   "cs_gardenia_california_raisin_bre": {
@@ -2180,7 +2388,8 @@
     "supermarket": "coldstorage",
     "category": "bread",
     "prices": {
-      "2026-06-28": 3.9
+      "2026-06-28": 3.9,
+      "2026-06-29": 3.9
     }
   },
   "cs_gardenia_hi_calcium_milk_bread": {
@@ -2188,7 +2397,8 @@
     "supermarket": "coldstorage",
     "category": "bread",
     "prices": {
-      "2026-06-28": 3.4
+      "2026-06-28": 3.4,
+      "2026-06-29": 3.4
     }
   },
   "cs_swissbake_multigrain_toast_bre": {
@@ -2196,7 +2406,8 @@
     "supermarket": "coldstorage",
     "category": "bread",
     "prices": {
-      "2026-06-28": 6.3
+      "2026-06-28": 6.3,
+      "2026-06-29": 6.3
     }
   },
   "cs_sunshine_dark_rye_komugi_bread": {
@@ -2204,7 +2415,8 @@
     "supermarket": "coldstorage",
     "category": "bread",
     "prices": {
-      "2026-06-28": 4.6
+      "2026-06-28": 4.6,
+      "2026-06-29": 4.6
     }
   },
   "cs_gardenia_thick_toast_brioche_b": {
@@ -2212,7 +2424,8 @@
     "supermarket": "coldstorage",
     "category": "bread",
     "prices": {
-      "2026-06-28": 3.8
+      "2026-06-28": 3.8,
+      "2026-06-29": 3.8
     }
   },
   "cs_sunshine_brioche_shokupan_brea": {
@@ -2220,7 +2433,8 @@
     "supermarket": "coldstorage",
     "category": "bread",
     "prices": {
-      "2026-06-28": 3.6
+      "2026-06-28": 3.6,
+      "2026-06-29": 3.6
     }
   },
   "cs_top_one_enriched_white_bread_5": {
@@ -2236,7 +2450,8 @@
     "supermarket": "coldstorage",
     "category": "bread",
     "prices": {
-      "2026-06-28": 3.6
+      "2026-06-28": 3.6,
+      "2026-06-29": 3.6
     }
   },
   "cs_sunshine_california_walnut_who": {
@@ -2244,7 +2459,8 @@
     "supermarket": "coldstorage",
     "category": "bread",
     "prices": {
-      "2026-06-28": 4.2
+      "2026-06-28": 4.2,
+      "2026-06-29": 4.2
     }
   },
   "cs_sunshine_enriched_fine_softmea": {
@@ -2260,7 +2476,8 @@
     "supermarket": "coldstorage",
     "category": "bread",
     "prices": {
-      "2026-06-28": 8.0
+      "2026-06-28": 8.0,
+      "2026-06-29": 8.0
     }
   },
   "cs_nong_shim_neoguri_udon_instant": {
@@ -2276,7 +2493,8 @@
     "supermarket": "coldstorage",
     "category": "noodles",
     "prices": {
-      "2026-06-28": 5.8
+      "2026-06-28": 5.8,
+      "2026-06-29": 5.8
     }
   },
   "cs_indomie_special_mi_goreng_inst": {
@@ -2292,7 +2510,8 @@
     "supermarket": "coldstorage",
     "category": "noodles",
     "prices": {
-      "2026-06-28": 1.95
+      "2026-06-28": 1.95,
+      "2026-06-29": 1.95
     }
   },
   "cs_nissin_irvins_salted_egg_insta": {
@@ -2300,7 +2519,8 @@
     "supermarket": "coldstorage",
     "category": "noodles",
     "prices": {
-      "2026-06-28": 5.6
+      "2026-06-28": 5.6,
+      "2026-06-29": 5.6
     }
   },
   "cs_nissin_big_tom_yam_seafood_ins": {
@@ -2324,7 +2544,8 @@
     "supermarket": "coldstorage",
     "category": "noodles",
     "prices": {
-      "2026-06-28": 1.95
+      "2026-06-28": 1.95,
+      "2026-06-29": 1.8
     }
   },
   "cs_kangshifu_braised_beef_instant": {
@@ -2340,7 +2561,8 @@
     "supermarket": "coldstorage",
     "category": "noodles",
     "prices": {
-      "2026-06-28": 1.95
+      "2026-06-28": 1.95,
+      "2026-06-29": 1.8
     }
   },
   "cs_samyang_kimchi_instant_noodles": {
@@ -2364,7 +2586,8 @@
     "supermarket": "coldstorage",
     "category": "noodles",
     "prices": {
-      "2026-06-28": 3.2
+      "2026-06-28": 3.2,
+      "2026-06-29": 3.2
     }
   },
   "cs_nissin_irvins_mala_salted_egg_": {
@@ -2372,7 +2595,8 @@
     "supermarket": "coldstorage",
     "category": "noodles",
     "prices": {
-      "2026-06-28": 5.6
+      "2026-06-28": 5.6,
+      "2026-06-29": 5.6
     }
   },
   "cs_maggi_2_minute_chicken_instant": {
@@ -2420,7 +2644,8 @@
     "supermarket": "coldstorage",
     "category": "noodles",
     "prices": {
-      "2026-06-28": 1.95
+      "2026-06-28": 1.95,
+      "2026-06-29": 1.95
     }
   },
   "cs_nissin_laksa_instant_noodles_c": {
@@ -2436,7 +2661,8 @@
     "supermarket": "coldstorage",
     "category": "noodles",
     "prices": {
-      "2026-06-28": 1.85
+      "2026-06-28": 1.85,
+      "2026-06-29": 1.85
     }
   },
   "cs_samyang_hot_chicken_carbonara_": {
@@ -2444,7 +2670,8 @@
     "supermarket": "coldstorage",
     "category": "noodles",
     "prices": {
-      "2026-06-28": 2.65
+      "2026-06-28": 2.65,
+      "2026-06-29": 2.65
     }
   },
   "cs_vitapet_tuna___prawn_cat_food_": {
@@ -2452,7 +2679,8 @@
     "supermarket": "coldstorage",
     "category": "tuna",
     "prices": {
-      "2026-06-28": 1.45
+      "2026-06-28": 1.45,
+      "2026-06-29": 1.45
     }
   },
   "cs_vitapet_adult_tuna___surimi_ca": {
@@ -2460,7 +2688,8 @@
     "supermarket": "coldstorage",
     "category": "tuna",
     "prices": {
-      "2026-06-28": 1.45
+      "2026-06-28": 1.45,
+      "2026-06-29": 1.45
     }
   },
   "cs_meadows_yellowfin_tuna_chunks_": {
@@ -2468,7 +2697,8 @@
     "supermarket": "coldstorage",
     "category": "tuna",
     "prices": {
-      "2026-06-28": 2.9
+      "2026-06-28": 2.9,
+      "2026-06-29": 2.9
     }
   },
   "cs_sheba_melty_tuna___seafood_cat": {
@@ -2484,7 +2714,8 @@
     "supermarket": "coldstorage",
     "category": "tuna",
     "prices": {
-      "2026-06-28": 3.6
+      "2026-06-28": 3.6,
+      "2026-06-29": 3.6
     }
   },
   "cs_vitapet_tuna___spinach_cat_foo": {
@@ -2500,7 +2731,8 @@
     "supermarket": "coldstorage",
     "category": "tuna",
     "prices": {
-      "2026-06-28": 1.45
+      "2026-06-28": 1.45,
+      "2026-06-29": 1.45
     }
   },
   "cs_vitapet_tuna_dry_cat_food_1_5k": {
@@ -2516,7 +2748,8 @@
     "supermarket": "coldstorage",
     "category": "tuna",
     "prices": {
-      "2026-06-28": 4.05
+      "2026-06-28": 4.05,
+      "2026-06-29": 4.05
     }
   },
   "cs_ayam_brand_tuna_meal_with_bean": {
@@ -2524,7 +2757,8 @@
     "supermarket": "coldstorage",
     "category": "tuna",
     "prices": {
-      "2026-06-28": 4.05
+      "2026-06-28": 4.05,
+      "2026-06-29": 4.05
     }
   },
   "cs_ayam_brand_tuna_mayonnaise_hot": {
@@ -2532,7 +2766,8 @@
     "supermarket": "coldstorage",
     "category": "tuna",
     "prices": {
-      "2026-06-28": 3.35
+      "2026-06-28": 3.35,
+      "2026-06-29": 3.35
     }
   },
   "cs_fancy_feast_royale_prawn___tun": {
@@ -2540,7 +2775,8 @@
     "supermarket": "coldstorage",
     "category": "tuna",
     "prices": {
-      "2026-06-28": 1.8
+      "2026-06-28": 1.8,
+      "2026-06-29": 1.8
     }
   },
   "cs_fancy_feast_royale_virgin_flak": {
@@ -2548,7 +2784,8 @@
     "supermarket": "coldstorage",
     "category": "tuna",
     "prices": {
-      "2026-06-28": 1.8
+      "2026-06-28": 1.8,
+      "2026-06-29": 1.8
     }
   },
   "cs_fancy_feast_royale_fine_flakes": {
@@ -2556,7 +2793,8 @@
     "supermarket": "coldstorage",
     "category": "tuna",
     "prices": {
-      "2026-06-28": 1.8
+      "2026-06-28": 1.8,
+      "2026-06-29": 1.8
     }
   },
   "cs_fancy_feast_royale_tuna_whitem": {
@@ -2564,7 +2802,8 @@
     "supermarket": "coldstorage",
     "category": "tuna",
     "prices": {
-      "2026-06-28": 1.8
+      "2026-06-28": 1.8,
+      "2026-06-29": 1.8
     }
   },
   "cs_ayam_brand_tuna_with_olives___": {
@@ -2580,7 +2819,8 @@
     "supermarket": "coldstorage",
     "category": "tuna",
     "prices": {
-      "2026-06-28": 2.8
+      "2026-06-28": 2.8,
+      "2026-06-29": 3.6
     }
   },
   "cs_ayam_brand_tuna_with_lemon___t": {
@@ -2628,7 +2868,8 @@
     "supermarket": "coldstorage",
     "category": "tuna",
     "prices": {
-      "2026-06-28": 1.45
+      "2026-06-28": 1.45,
+      "2026-06-29": 1.45
     }
   },
   "cs_vitapet_adult_tuna_vegetable__": {
@@ -2636,7 +2877,8 @@
     "supermarket": "coldstorage",
     "category": "tuna",
     "prices": {
-      "2026-06-28": 1.45
+      "2026-06-28": 1.45,
+      "2026-06-29": 1.45
     }
   },
   "cs_vitapet_adult_tuna___sardine_c": {
@@ -4437,6 +4679,758 @@
     "category": "tuna",
     "prices": {
       "2026-06-28": 7.5
+    }
+  },
+  "fp_11160106": {
+    "name": "F & N NutriSoy High Calcium Fresh Soya Milk - Omega (No Sugar Added)",
+    "supermarket": "fairprice",
+    "category": "fresh-milk",
+    "prices": {
+      "2026-06-29": 2.97
+    }
+  },
+  "fp_10426910": {
+    "name": "Chew's Singapore Fresh Eggs - Omega 6",
+    "supermarket": "fairprice",
+    "category": "eggs",
+    "prices": {
+      "2026-06-29": 4.15
+    }
+  },
+  "fp_13000173": {
+    "name": "Chew's Kampong Chicken Eggs",
+    "supermarket": "fairprice",
+    "category": "eggs",
+    "prices": {
+      "2026-06-29": 4.15
+    }
+  },
+  "fp_90199901": {
+    "name": "FarmFresh Chicken Thigh",
+    "supermarket": "fairprice",
+    "category": "chicken",
+    "prices": {
+      "2026-06-29": 3.35
+    }
+  },
+  "fp_11164588": {
+    "name": "Singlong Bean Mee (Tau Chiam)",
+    "supermarket": "fairprice",
+    "category": "noodles",
+    "prices": {
+      "2026-06-29": 1.83
+    }
+  },
+  "fp_13002996": {
+    "name": "Kang Kang Pasteurised Fresh\u00a0Kway Teow",
+    "supermarket": "fairprice",
+    "category": "noodles",
+    "prices": {
+      "2026-06-29": 1.67
+    }
+  },
+  "fp_52720": {
+    "name": "Ayam Brand Baked Beans - Tomato Sauce",
+    "supermarket": "fairprice",
+    "category": "canned-food",
+    "prices": {
+      "2026-06-29": 1.21
+    }
+  },
+  "cs_koka_laksa_rice_noodles_bowl_7": {
+    "name": "Koka Laksa Rice Noodles Bowl 78g",
+    "supermarket": "coldstorage",
+    "category": "rice",
+    "prices": {
+      "2026-06-29": 1.65
+    }
+  },
+  "cs_koka_beef_pho_rice_noodles_bow": {
+    "name": "Koka Beef Pho Rice Noodles Bowl 70g",
+    "supermarket": "coldstorage",
+    "category": "rice",
+    "prices": {
+      "2026-06-29": 1.65
+    }
+  },
+  "cs_shokaku_premium_sushi_rice_4_5": {
+    "name": "Shokaku Premium Sushi Rice 4.5kg",
+    "supermarket": "coldstorage",
+    "category": "rice",
+    "prices": {
+      "2026-06-29": 13.8
+    }
+  },
+  "cs_new_moon_premium_glutinous_ric": {
+    "name": "New Moon Premium Glutinous Rice 2kg",
+    "supermarket": "coldstorage",
+    "category": "rice",
+    "prices": {
+      "2026-06-29": 7.85
+    }
+  },
+  "cs_rice_field_rice_bran_oil_1l": {
+    "name": "Rice Field Rice Bran Oil 1L",
+    "supermarket": "coldstorage",
+    "category": "rice",
+    "prices": {
+      "2026-06-29": 6.8
+    }
+  },
+  "cs_a1_rice_vermicelli_10_x_50g": {
+    "name": "A1 Rice Vermicelli 10 x 50g",
+    "supermarket": "coldstorage",
+    "category": "rice",
+    "prices": {
+      "2026-06-29": 3.75
+    }
+  },
+  "cs_songhe_new_crop_fragrant_rice_": {
+    "name": "Songhe New Crop Fragrant Rice 5kg",
+    "supermarket": "coldstorage",
+    "category": "rice",
+    "prices": {
+      "2026-06-29": 16.95
+    }
+  },
+  "cs_songhe_new_crop_rice_2kg": {
+    "name": "Songhe New Crop Rice 2kg",
+    "supermarket": "coldstorage",
+    "category": "rice",
+    "prices": {
+      "2026-06-29": 8.2
+    }
+  },
+  "cs_royal_umbrella_thai_fragrant_b": {
+    "name": "Royal Umbrella Thai Fragrant Brown Rice 2kg",
+    "supermarket": "coldstorage",
+    "category": "rice",
+    "prices": {
+      "2026-06-29": 5.95
+    }
+  },
+  "cs_tai_sun_original_rice_vermicel": {
+    "name": "Tai Sun Original Rice Vermicelli 400g",
+    "supermarket": "coldstorage",
+    "category": "rice",
+    "prices": {
+      "2026-06-29": 1.85
+    }
+  },
+  "cs_kangaroo_australian_calrose_wh": {
+    "name": "Kangaroo Australian Calrose White Rice 5kg",
+    "supermarket": "coldstorage",
+    "category": "rice",
+    "prices": {
+      "2026-06-29": 13.5
+    }
+  },
+  "cs_double_pagoda_pure_sesame_oil_": {
+    "name": "Double Pagoda Pure Sesame Oil 150ml",
+    "supermarket": "coldstorage",
+    "category": "oil",
+    "prices": {
+      "2026-06-29": 4.4
+    }
+  },
+  "cs_borges_extra_virgin_olive_oil_": {
+    "name": "Borges Extra Virgin Olive Oil 500ml",
+    "supermarket": "coldstorage",
+    "category": "oil",
+    "prices": {
+      "2026-06-29": 10.15
+    }
+  },
+  "cs_naturel_extra_virgin_olive_oil": {
+    "name": "Naturel Extra Virgin Olive Oil 500ml",
+    "supermarket": "coldstorage",
+    "category": "oil",
+    "prices": {
+      "2026-06-29": 9.95
+    }
+  },
+  "cs_colavita_classic_mediterranean": {
+    "name": "Colavita Classic Mediterranean Extra Virgin Olive Oil 500ml",
+    "supermarket": "coldstorage",
+    "category": "oil",
+    "prices": {
+      "2026-06-29": 11.05
+    }
+  },
+  "cs_cj_beksul_sesame_oil_110ml": {
+    "name": "CJ Beksul Sesame Oil 110ml",
+    "supermarket": "coldstorage",
+    "category": "oil",
+    "prices": {
+      "2026-06-29": 3.45
+    }
+  },
+  "cs_meadows_extra_virgin_olive_oil": {
+    "name": "Meadows Extra Virgin Olive Oil 250ml",
+    "supermarket": "coldstorage",
+    "category": "oil",
+    "prices": {
+      "2026-06-29": 7.6
+    }
+  },
+  "cs_borges_grapeseed_oil_500ml": {
+    "name": "Borges Grapeseed Oil 500ml",
+    "supermarket": "coldstorage",
+    "category": "oil",
+    "prices": {
+      "2026-06-29": 7.6
+    }
+  },
+  "cs_new_moon_premium_grade_corn_oi": {
+    "name": "New Moon Premium Grade Corn Oil 2L",
+    "supermarket": "coldstorage",
+    "category": "oil",
+    "prices": {
+      "2026-06-29": 8.95
+    }
+  },
+  "cs_borges_extra_light_olive_oil_2": {
+    "name": "Borges Extra Light Olive Oil 2L",
+    "supermarket": "coldstorage",
+    "category": "oil",
+    "prices": {
+      "2026-06-29": 30.5
+    }
+  },
+  "cs_knife_100__pure_groundnut_oil_": {
+    "name": "Knife 100% Pure Groundnut Oil 2L",
+    "supermarket": "coldstorage",
+    "category": "oil",
+    "prices": {
+      "2026-06-29": 13.2
+    }
+  },
+  "cs_naturel_organic_extra_virgin_o": {
+    "name": "Naturel Organic Extra Virgin Olive Oil 500ml",
+    "supermarket": "coldstorage",
+    "category": "oil",
+    "prices": {
+      "2026-06-29": 16.9
+    }
+  },
+  "cs_golden_circle_corn_oil_2l": {
+    "name": "Golden Circle Corn Oil 2L",
+    "supermarket": "coldstorage",
+    "category": "oil",
+    "prices": {
+      "2026-06-29": 10.75
+    }
+  },
+  "cs_naturel_canola_oil_1l": {
+    "name": "Naturel Canola Oil 1L",
+    "supermarket": "coldstorage",
+    "category": "oil",
+    "prices": {
+      "2026-06-29": 4.4
+    }
+  },
+  "cs_iliada_kalamata_extra_virgin_o": {
+    "name": "Iliada Kalamata Extra Virgin Olive Oil 500ml",
+    "supermarket": "coldstorage",
+    "category": "oil",
+    "prices": {
+      "2026-06-29": 23.75
+    }
+  },
+  "cs_bertolli_extra_light_olive_oil": {
+    "name": "Bertolli Extra Light Olive Oil 500ml",
+    "supermarket": "coldstorage",
+    "category": "oil",
+    "prices": {
+      "2026-06-29": 12.0
+    }
+  },
+  "cs_yotsuba_hokkaido_low_fat_milk_": {
+    "name": "Yotsuba Hokkaido Low Fat Milk 1L",
+    "supermarket": "coldstorage",
+    "category": "milk",
+    "prices": {
+      "2026-06-29": 6.75
+    }
+  },
+  "cs_marigold_powerbeans_unsweetene": {
+    "name": "Marigold PowerBeans Unsweetened Fresh Soya Milk 946ml",
+    "supermarket": "coldstorage",
+    "category": "milk",
+    "prices": {
+      "2026-06-29": 2.45
+    }
+  },
+  "cs_yotsuba_hokkaido_fresh_milk_1l": {
+    "name": "Yotsuba Hokkaido Fresh Milk 1L",
+    "supermarket": "coldstorage",
+    "category": "milk",
+    "prices": {
+      "2026-06-29": 6.95
+    }
+  },
+  "cs_yotsuba_milk_tea_uht_200ml": {
+    "name": "Yotsuba Milk Tea UHT 200ml",
+    "supermarket": "coldstorage",
+    "category": "milk",
+    "prices": {
+      "2026-06-29": 2.3
+    }
+  },
+  "cs_meiji_lactose_free_fresh_milk_": {
+    "name": "Meiji Lactose Free Fresh Milk 946ml",
+    "supermarket": "coldstorage",
+    "category": "milk",
+    "prices": {
+      "2026-06-29": 5.25
+    }
+  },
+  "cs_yakult_gold_cultured_milk_drin": {
+    "name": "Yakult Gold Cultured Milk Drink 5 x 100ml",
+    "supermarket": "coldstorage",
+    "category": "milk",
+    "prices": {
+      "2026-06-29": 3.75
+    }
+  },
+  "cs_pauls_100__australian_fresh_mi": {
+    "name": "Pauls 100% Australian Fresh Milk 1L",
+    "supermarket": "coldstorage",
+    "category": "milk",
+    "prices": {
+      "2026-06-29": 4.55
+    }
+  },
+  "cs_cowhead_fresh_milk_1l": {
+    "name": "Cowhead Fresh Milk 1L",
+    "supermarket": "coldstorage",
+    "category": "milk",
+    "prices": {
+      "2026-06-29": 4.15
+    }
+  },
+  "cs_meiji_low_fat_high_protein_pla": {
+    "name": "Meiji Low Fat High Protein Plain Milk 350ml",
+    "supermarket": "coldstorage",
+    "category": "milk",
+    "prices": {
+      "2026-06-29": 3.75
+    }
+  },
+  "cs_plenish_organic_6__almond_milk": {
+    "name": "Plenish Organic 6% Almond Milk 1L",
+    "supermarket": "coldstorage",
+    "category": "milk",
+    "prices": {
+      "2026-06-29": 6.95
+    }
+  },
+  "cs_greenfields_fresh_milk_1l": {
+    "name": "Greenfields Fresh Milk 1L",
+    "supermarket": "coldstorage",
+    "category": "milk",
+    "prices": {
+      "2026-06-29": 3.55
+    }
+  },
+  "cs_greenfields_fresh_milk_1_89l": {
+    "name": "Greenfields Fresh Milk 1.89L",
+    "supermarket": "coldstorage",
+    "category": "milk",
+    "prices": {
+      "2026-06-29": 6.15
+    }
+  },
+  "cs_arla_organic_low_fat_milk_bund": {
+    "name": "Arla Organic Low Fat Milk Bundle Pack 2 x 900ml",
+    "supermarket": "coldstorage",
+    "category": "milk",
+    "prices": {
+      "2026-06-29": 9.9
+    }
+  },
+  "cs_meiji_4_3_deluxe_fresh_milk_94": {
+    "name": "Meiji 4.3 Deluxe Fresh Milk 946ml",
+    "supermarket": "coldstorage",
+    "category": "milk",
+    "prices": {
+      "2026-06-29": 3.65
+    }
+  },
+  "cs_meiji_fresh_milk_450ml": {
+    "name": "Meiji Fresh Milk 450ml",
+    "supermarket": "coldstorage",
+    "category": "milk",
+    "prices": {
+      "2026-06-29": 2.55
+    }
+  },
+  "cs_yakult_gold_cultured_milk_10_x": {
+    "name": "Yakult Gold Cultured Milk 10 x 100ml",
+    "supermarket": "coldstorage",
+    "category": "milk",
+    "prices": {
+      "2026-06-29": 7.35
+    }
+  },
+  "cs_nutrisoy_high_calcium_reduced_": {
+    "name": "Nutrisoy High Calcium Reduced Sugar Soya Milk 946ml",
+    "supermarket": "coldstorage",
+    "category": "milk",
+    "prices": {
+      "2026-06-29": 2.8
+    }
+  },
+  "cs_magnolia_chocolate_milk_946ml": {
+    "name": "Magnolia Chocolate Milk 946ml",
+    "supermarket": "coldstorage",
+    "category": "milk",
+    "prices": {
+      "2026-06-29": 3.65
+    }
+  },
+  "cs_magnolia_fresh_milk_946ml": {
+    "name": "Magnolia Fresh Milk 946ml",
+    "supermarket": "coldstorage",
+    "category": "milk",
+    "prices": {
+      "2026-06-29": 3.65
+    }
+  },
+  "cs_nutrisoy_high_calcium_no_sugar": {
+    "name": "Nutrisoy High Calcium No Sugar Added Soya Milk 946ml",
+    "supermarket": "coldstorage",
+    "category": "milk",
+    "prices": {
+      "2026-06-29": 2.8
+    }
+  },
+  "cs_nuyolk_premium_eggs_10s_550g": {
+    "name": "Nuyolk Premium Eggs 10s 550g",
+    "supermarket": "coldstorage",
+    "category": "eggs",
+    "prices": {
+      "2026-06-29": 8.4
+    }
+  },
+  "cs_chew_s_organic_selenium_eggs_1": {
+    "name": "Chew's Organic Selenium Eggs 10s 550g",
+    "supermarket": "coldstorage",
+    "category": "eggs",
+    "prices": {
+      "2026-06-29": 5.0
+    }
+  },
+  "cs_freedom_cage_free_jumbo_eggs_1": {
+    "name": "Freedom Cage Free Jumbo Eggs 10s 700g",
+    "supermarket": "coldstorage",
+    "category": "eggs",
+    "prices": {
+      "2026-06-29": 8.8
+    }
+  },
+  "cs_chew_s_lower_cholesterol_with_": {
+    "name": "Chew's Lower Cholesterol with Vitamin E Fresh Eggs 10s 600g",
+    "supermarket": "coldstorage",
+    "category": "eggs",
+    "prices": {
+      "2026-06-29": 3.75
+    }
+  },
+  "cs_chew_s_kampong_fresh_eggs_6s_1": {
+    "name": "Chew's Kampong Fresh Eggs 6s 180g",
+    "supermarket": "coldstorage",
+    "category": "eggs",
+    "prices": {
+      "2026-06-29": 4.2
+    }
+  },
+  "cs_dasoon_cooked_quail_eggs_15s_2": {
+    "name": "Dasoon Cooked Quail Eggs 15s 270g",
+    "supermarket": "coldstorage",
+    "category": "eggs",
+    "prices": {
+      "2026-06-29": 2.5
+    }
+  },
+  "cs_s_pure_boneless_chicken_leg_42": {
+    "name": "S-Pure Boneless Chicken Leg 420g",
+    "supermarket": "coldstorage",
+    "category": "chicken",
+    "prices": {
+      "2026-06-29": 10.0
+    }
+  },
+  "cs_farmpride_buffalo_chicken_wing": {
+    "name": "Farmpride Buffalo Chicken Wings 450g",
+    "supermarket": "coldstorage",
+    "category": "chicken",
+    "prices": {
+      "2026-06-29": 7.3
+    }
+  },
+  "cs_koka_creamy_hot_chicken_instan": {
+    "name": "Koka Creamy Hot Chicken Instant Noodles Bowl 95g",
+    "supermarket": "coldstorage",
+    "category": "chicken",
+    "prices": {
+      "2026-06-29": 2.5
+    }
+  },
+  "cs_bluebird_original_chicken_pota": {
+    "name": "Bluebird Original Chicken Potato Chips 150g",
+    "supermarket": "coldstorage",
+    "category": "chicken",
+    "prices": {
+      "2026-06-29": 5.0
+    }
+  },
+  "cs_cp_teriyaki_chicken_with_rice_": {
+    "name": "CP Teriyaki Chicken with Rice 320g",
+    "supermarket": "coldstorage",
+    "category": "chicken",
+    "prices": {
+      "2026-06-29": 6.15
+    }
+  },
+  "cs_s_pure_thyme___lemon_roasted_c": {
+    "name": "S-Pure Thyme & Lemon Roasted Chicken 90g",
+    "supermarket": "coldstorage",
+    "category": "chicken",
+    "prices": {
+      "2026-06-29": 3.5
+    }
+  },
+  "cs_gardenia_super_soft_fine_whole": {
+    "name": "Gardenia Super Soft Fine Wholemeal Bread 600g",
+    "supermarket": "coldstorage",
+    "category": "bread",
+    "prices": {
+      "2026-06-29": 4.1
+    }
+  },
+  "cs_koka_signature_laksa_singapura": {
+    "name": "Koka Signature Laksa Singapura Instant Noodles 5 x 90g",
+    "supermarket": "coldstorage",
+    "category": "noodles",
+    "prices": {
+      "2026-06-29": 3.95
+    }
+  },
+  "cs_nissin_jumbo_seafood_chilli_cr": {
+    "name": "Nissin Jumbo Seafood Chilli Crab Instant Noodles 5 x 116g",
+    "supermarket": "coldstorage",
+    "category": "noodles",
+    "prices": {
+      "2026-06-29": 5.6
+    }
+  },
+  "cs_sun_brand_plain_noodles_300g": {
+    "name": "Sun Brand Plain Noodles 300g",
+    "supermarket": "coldstorage",
+    "category": "noodles",
+    "prices": {
+      "2026-06-29": 2.55
+    }
+  },
+  "cs_nissin_kyushu_white_instant_no": {
+    "name": "Nissin Kyushu White Instant Noodles Cup 75g",
+    "supermarket": "coldstorage",
+    "category": "noodles",
+    "prices": {
+      "2026-06-29": 1.85
+    }
+  },
+  "cs_new_moon_low_calorie_flat_konj": {
+    "name": "New Moon Low Calorie Flat Konjac Noodles 270g",
+    "supermarket": "coldstorage",
+    "category": "noodles",
+    "prices": {
+      "2026-06-29": 3.2
+    }
+  },
+  "cs_nissin_328_katong_laksa_instan": {
+    "name": "Nissin 328 Katong Laksa Instant Noodles Bowl 120g",
+    "supermarket": "coldstorage",
+    "category": "noodles",
+    "prices": {
+      "2026-06-29": 2.75
+    }
+  },
+  "cs_hakubaku_organic_udon_noodles_": {
+    "name": "Hakubaku Organic Udon Noodles 270g",
+    "supermarket": "coldstorage",
+    "category": "noodles",
+    "prices": {
+      "2026-06-29": 4.55
+    }
+  },
+  "cs_nissin_chu_qian_yi_ding_chicke": {
+    "name": "Nissin Chu Qian Yi Ding Chicken Instant Noodles 5 x 82g",
+    "supermarket": "coldstorage",
+    "category": "noodles",
+    "prices": {
+      "2026-06-29": 2.8
+    }
+  },
+  "cs_nissin_big_cup_seafood_instant": {
+    "name": "Nissin BIG Cup Seafood Instant Noodles Cup 105g",
+    "supermarket": "coldstorage",
+    "category": "noodles",
+    "prices": {
+      "2026-06-29": 2.55
+    }
+  },
+  "cs_nissin_crab_instant_noodles_cu": {
+    "name": "Nissin Crab Instant Noodles Cup 75g",
+    "supermarket": "coldstorage",
+    "category": "noodles",
+    "prices": {
+      "2026-06-29": 1.85
+    }
+  },
+  "cs_maggi_hot_mealz_curry_curry_ka": {
+    "name": "Maggi Hot Mealz Curry Curry Kaw Instant Noodles Bowl 90g",
+    "supermarket": "coldstorage",
+    "category": "noodles",
+    "prices": {
+      "2026-06-29": 1.95
+    }
+  },
+  "cs_nissin_tokyo_shoyu_instant_noo": {
+    "name": "Nissin Tokyo Shoyu Instant Noodles Bowl 110g",
+    "supermarket": "coldstorage",
+    "category": "noodles",
+    "prices": {
+      "2026-06-29": 2.55
+    }
+  },
+  "cs_nissin_ufo_black_pepper_crab_i": {
+    "name": "Nissin UFO Black Pepper Crab Instant Noodles Bowl 94g",
+    "supermarket": "coldstorage",
+    "category": "noodles",
+    "prices": {
+      "2026-06-29": 1.95
+    }
+  },
+  "cs_maggi_syiok_chilli_kampung_mi_": {
+    "name": "Maggi Syiok Chilli Kampung Mi Goreng Instant Noodles 5 x 89g",
+    "supermarket": "coldstorage",
+    "category": "noodles",
+    "prices": {
+      "2026-06-29": 3.7
+    }
+  },
+  "cs_koka_multigrain_oats___barley_": {
+    "name": "Koka Multigrain Oats & Barley Green Curry Instant Noodles Cup 65g",
+    "supermarket": "coldstorage",
+    "category": "noodles",
+    "prices": {
+      "2026-06-29": 2.35
+    }
+  },
+  "cs_myojo_curry_chicken_instant_no": {
+    "name": "Myojo Curry Chicken Instant Noodles Bowl 80g",
+    "supermarket": "coldstorage",
+    "category": "noodles",
+    "prices": {
+      "2026-06-29": 1.65
+    }
+  },
+  "cs_meadows_yellowfin_tuna_flakes_": {
+    "name": "Meadows Yellowfin Tuna Flakes in Spring Water 185g",
+    "supermarket": "coldstorage",
+    "category": "tuna",
+    "prices": {
+      "2026-06-29": 2.9
+    }
+  },
+  "cs_inaba_light_tuna_flakes_165g": {
+    "name": "Inaba Light Tuna Flakes 165g",
+    "supermarket": "coldstorage",
+    "category": "tuna",
+    "prices": {
+      "2026-06-29": 6.55
+    }
+  },
+  "cs_ayam_brand_fire_hot_chilli_tun": {
+    "name": "Ayam Brand Fire Hot Chilli Tuna 160g",
+    "supermarket": "coldstorage",
+    "category": "tuna",
+    "prices": {
+      "2026-06-29": 3.35
+    }
+  },
+  "cs_ayam_brand_deli_tuna_mayonnais": {
+    "name": "Ayam Brand Deli Tuna Mayonnaise 160g",
+    "supermarket": "coldstorage",
+    "category": "tuna",
+    "prices": {
+      "2026-06-29": 3.4
+    }
+  },
+  "cs_ayam_brand_chilli_tuna_160g": {
+    "name": "Ayam Brand Chilli Tuna 160g",
+    "supermarket": "coldstorage",
+    "category": "tuna",
+    "prices": {
+      "2026-06-29": 3.4
+    }
+  },
+  "cs_century_vegetable_tuna_flakes_": {
+    "name": "Century Vegetable Tuna Flakes 180g",
+    "supermarket": "coldstorage",
+    "category": "tuna",
+    "prices": {
+      "2026-06-29": 2.6
+    }
+  },
+  "cs_ayam_brand_light_tuna_flakes_i": {
+    "name": "Ayam Brand Light Tuna Flakes in Water 150g",
+    "supermarket": "coldstorage",
+    "category": "tuna",
+    "prices": {
+      "2026-06-29": 3.6
+    }
+  },
+  "cs_ayam_brand_tuna_chunks_in_oliv": {
+    "name": "Ayam Brand Tuna Chunks in Olive Oil 150g",
+    "supermarket": "coldstorage",
+    "category": "tuna",
+    "prices": {
+      "2026-06-29": 3.6
+    }
+  },
+  "cs_ayam_brand_tuna_with_tomato___": {
+    "name": "Ayam Brand Tuna with Tomato & Chilli 160g",
+    "supermarket": "coldstorage",
+    "category": "tuna",
+    "prices": {
+      "2026-06-29": 3.45
+    }
+  },
+  "cs_sheba_tuna___whitefish_in_grav": {
+    "name": "Sheba Tuna & Whitefish in Gravy Cat Food 85g",
+    "supermarket": "coldstorage",
+    "category": "tuna",
+    "prices": {
+      "2026-06-29": 1.8
+    }
+  },
+  "cs_sheba_tuna___snapper_in_gravy_": {
+    "name": "Sheba Tuna & Snapper in Gravy Cat Food 85g",
+    "supermarket": "coldstorage",
+    "category": "tuna",
+    "prices": {
+      "2026-06-29": 1.8
+    }
+  },
+  "cs_sheba_flaked_tuna_in_gravy_cat": {
+    "name": "Sheba Flaked Tuna in Gravy Cat Food 85g",
+    "supermarket": "coldstorage",
+    "category": "tuna",
+    "prices": {
+      "2026-06-29": 1.8
     }
   }
 }
