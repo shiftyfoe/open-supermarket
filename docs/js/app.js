@@ -41,7 +41,6 @@ function updateStats() {
 
     // Count price drops (compare with previous day)
     let drops = 0;
-    const today = new Date().toISOString().split('T')[0];
     for (const product of allProducts) {
         const hist = priceHistory[product.id];
         if (hist && hist.prices) {
@@ -122,7 +121,7 @@ function createTrendsChart() {
     // Sample some products for the chart
     const sampleProducts = Object.entries(priceHistory)
         .slice(0, 5)
-        .map(([id, hist]) => ({
+        .map(([, hist]) => ({
             label: hist.name,
             data: dates.map(d => hist.prices[d] || null),
             borderColor: `hsl(${Math.random() * 360}, 70%, 50%)`,
@@ -242,3 +241,36 @@ async function init() {
 }
 
 init();
+
+// Scroll spy: highlight the nav link for the section currently in view
+(function setupNav() {
+    const sections = ['summary', 'comparison', 'trends', 'products'];
+    const navLinks = sections.reduce((map, id) => {
+        map[id] = document.querySelector(`.nav-link[href="#${id}"]`);
+        return map;
+    }, {});
+
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    sections.forEach(id => navLinks[id]?.classList.remove('active'));
+                    navLinks[entry.target.id]?.classList.add('active');
+                }
+            });
+        },
+        { rootMargin: '-20% 0px -70% 0px', threshold: 0 }
+    );
+
+    sections.forEach(id => {
+        const el = document.getElementById(id);
+        if (el) observer.observe(el);
+    });
+
+    // Back to top button
+    const btn = document.getElementById('back-to-top');
+    window.addEventListener('scroll', () => {
+        btn.classList.toggle('visible', window.scrollY > 400);
+    }, { passive: true });
+    btn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+})();
