@@ -980,7 +980,7 @@
     "supermarket": "coldstorage",
     "category": "rice",
     "prices": {
-      "2026-06-28": 5.35
+      "2026-06-28": 16.95
     }
   },
   "cs_naturel_organic_brown_rice_fus": {
@@ -1084,7 +1084,7 @@
     "supermarket": "coldstorage",
     "category": "rice",
     "prices": {
-      "2026-06-28": 9.9
+      "2026-06-28": 4.25
     }
   },
   "cs_malika_gold_basmati_rice_2kg": {
@@ -1516,7 +1516,7 @@
     "supermarket": "coldstorage",
     "category": "milk",
     "prices": {
-      "2026-06-28": 5.05
+      "2026-06-28": 24.0
     }
   },
   "cs_meiji_fresh_milk_830ml": {
@@ -1572,7 +1572,7 @@
     "supermarket": "coldstorage",
     "category": "milk",
     "prices": {
-      "2026-06-28": 5.05
+      "2026-06-28": 24.0
     }
   },
   "cs_farm_fresh_pure_fresh_milk_1l": {
@@ -1604,7 +1604,7 @@
     "supermarket": "coldstorage",
     "category": "milk",
     "prices": {
-      "2026-06-28": 5.05
+      "2026-06-28": 24.0
     }
   },
   "cs_rokeby_chocolate_honeycomb_pro": {
@@ -1612,7 +1612,7 @@
     "supermarket": "coldstorage",
     "category": "milk",
     "prices": {
-      "2026-06-28": 5.05
+      "2026-06-28": 24.0
     }
   },
   "cs_farmhouse_fresh_milk_946ml": {
@@ -1932,7 +1932,7 @@
     "supermarket": "coldstorage",
     "category": "chicken",
     "prices": {
-      "2026-06-28": 4.55
+      "2026-06-28": 4.95
     }
   },
   "cs_butcher_s_ridge_original_stir_": {
@@ -2236,7 +2236,7 @@
     "supermarket": "coldstorage",
     "category": "bread",
     "prices": {
-      "2026-06-28": 4.6
+      "2026-06-28": 3.6
     }
   },
   "cs_sunshine_california_walnut_who": {
@@ -2292,7 +2292,7 @@
     "supermarket": "coldstorage",
     "category": "noodles",
     "prices": {
-      "2026-06-28": 1.8
+      "2026-06-28": 1.95
     }
   },
   "cs_nissin_irvins_salted_egg_insta": {
@@ -2300,7 +2300,7 @@
     "supermarket": "coldstorage",
     "category": "noodles",
     "prices": {
-      "2026-06-28": 2.75
+      "2026-06-28": 5.6
     }
   },
   "cs_nissin_big_tom_yam_seafood_ins": {
@@ -2324,7 +2324,7 @@
     "supermarket": "coldstorage",
     "category": "noodles",
     "prices": {
-      "2026-06-28": 5.8
+      "2026-06-28": 1.95
     }
   },
   "cs_kangshifu_braised_beef_instant": {
@@ -2653,6 +2653,1790 @@
     "category": "tuna",
     "prices": {
       "2026-06-28": 0.8
+    }
+  },
+  "ss_lungkow_vermicelli": {
+    "name": "Lungkow Vermicelli",
+    "supermarket": "shengsiong",
+    "category": "rice",
+    "prices": {
+      "2026-06-28": 5.2
+    }
+  },
+  "ss_instant_rice_vermicelli": {
+    "name": "Instant Rice Vermicelli",
+    "supermarket": "shengsiong",
+    "category": "rice",
+    "prices": {
+      "2026-06-28": 3.35
+    }
+  },
+  "ss_ketupat_nasi___rice_cube": {
+    "name": "Ketupat Nasi - Rice Cube",
+    "supermarket": "shengsiong",
+    "category": "rice",
+    "prices": {
+      "2026-06-28": 4.6
+    }
+  },
+  "ss_organic_penne_rigate": {
+    "name": "Organic Penne Rigate",
+    "supermarket": "shengsiong",
+    "category": "rice",
+    "prices": {
+      "2026-06-28": 3.41
+    }
+  },
+  "ss_organic_macaroni": {
+    "name": "Organic Macaroni",
+    "supermarket": "shengsiong",
+    "category": "rice",
+    "prices": {
+      "2026-06-28": 3.41
+    }
+  },
+  "ss_organic_whole_wheat_spaghetti": {
+    "name": "Organic Whole Wheat Spaghetti",
+    "supermarket": "shengsiong",
+    "category": "rice",
+    "prices": {
+      "2026-06-28": 3.41
+    }
+  },
+  "ss_organic_pasta_alphabet_tricolo": {
+    "name": "Organic Pasta Alphabet Tricolore",
+    "supermarket": "shengsiong",
+    "category": "rice",
+    "prices": {
+      "2026-06-28": 2.34
+    }
+  },
+  "ss_organic_pasta___vehicle_shapes": {
+    "name": "Organic Pasta - Vehicle Shapes",
+    "supermarket": "shengsiong",
+    "category": "rice",
+    "prices": {
+      "2026-06-28": 2.34
+    }
+  },
+  "ss_maccheroni_pasta__no_32_": {
+    "name": "Maccheroni Pasta (NO.32)",
+    "supermarket": "shengsiong",
+    "category": "rice",
+    "prices": {
+      "2026-06-28": 1.9
+    }
+  },
+  "ss_spaghetti_pasta__no_4_": {
+    "name": "Spaghetti Pasta (NO.4)",
+    "supermarket": "shengsiong",
+    "category": "rice",
+    "prices": {
+      "2026-06-28": 1.9
+    }
+  },
+  "ss_elbows_rigati_no_34": {
+    "name": "Elbows Rigati No.34",
+    "supermarket": "shengsiong",
+    "category": "rice",
+    "prices": {
+      "2026-06-28": 1.9
+    }
+  },
+  "ss_spirali_pasta__no_55_": {
+    "name": "Spirali Pasta (NO.55)",
+    "supermarket": "shengsiong",
+    "category": "rice",
+    "prices": {
+      "2026-06-28": 1.9
+    }
+  },
+  "ss_penne_rigati_pasta__no_18_": {
+    "name": "Penne Rigati Pasta (NO.18)",
+    "supermarket": "shengsiong",
+    "category": "rice",
+    "prices": {
+      "2026-06-28": 1.9
+    }
+  },
+  "ss_pasta_fusilli": {
+    "name": "Pasta Fusilli",
+    "supermarket": "shengsiong",
+    "category": "rice",
+    "prices": {
+      "2026-06-28": 2.1
+    }
+  },
+  "ss_pasta_spaghetti": {
+    "name": "Pasta Spaghetti",
+    "supermarket": "shengsiong",
+    "category": "rice",
+    "prices": {
+      "2026-06-28": 2.1
+    }
+  },
+  "ss_meehoon__rice_vermicelli_": {
+    "name": "MeeHoon (Rice Vermicelli)",
+    "supermarket": "shengsiong",
+    "category": "rice",
+    "prices": {
+      "2026-06-28": 5.9
+    }
+  },
+  "ss_rice_vermicelli": {
+    "name": "Rice Vermicelli",
+    "supermarket": "shengsiong",
+    "category": "rice",
+    "prices": {
+      "2026-06-28": 1.55
+    }
+  },
+  "ss_kong_moon_rice_stick": {
+    "name": "Kong Moon Rice Stick",
+    "supermarket": "shengsiong",
+    "category": "rice",
+    "prices": {
+      "2026-06-28": 2.27
+    }
+  },
+  "ss_basmati_rice_low_gi": {
+    "name": "Basmati Rice Low GI",
+    "supermarket": "shengsiong",
+    "category": "rice",
+    "prices": {
+      "2026-06-28": 8.95
+    }
+  },
+  "ss_thai_fragrant_rice": {
+    "name": "Thai Fragrant Rice",
+    "supermarket": "shengsiong",
+    "category": "rice",
+    "prices": {
+      "2026-06-28": 14.85
+    }
+  },
+  "ss_jasmine_fragrant_rice": {
+    "name": "Jasmine Fragrant Rice",
+    "supermarket": "shengsiong",
+    "category": "rice",
+    "prices": {
+      "2026-06-28": 7.8
+    }
+  },
+  "ss_japonica_rice": {
+    "name": "Japonica Rice",
+    "supermarket": "shengsiong",
+    "category": "rice",
+    "prices": {
+      "2026-06-28": 10.8
+    }
+  },
+  "ss_thai_premium_fragrant_rice": {
+    "name": "Thai Premium Fragrant Rice",
+    "supermarket": "shengsiong",
+    "category": "rice",
+    "prices": {
+      "2026-06-28": 24.5
+    }
+  },
+  "ss_thai_fragrant_new_crop_rice": {
+    "name": "Thai Fragrant New Crop Rice",
+    "supermarket": "shengsiong",
+    "category": "rice",
+    "prices": {
+      "2026-06-28": 12.5
+    }
+  },
+  "ss_elbow_macaroni": {
+    "name": "Elbow Macaroni",
+    "supermarket": "shengsiong",
+    "category": "rice",
+    "prices": {
+      "2026-06-28": 1.65
+    }
+  },
+  "ss_thai_glutinous_rice": {
+    "name": "Thai Glutinous Rice",
+    "supermarket": "shengsiong",
+    "category": "rice",
+    "prices": {
+      "2026-06-28": 9.2
+    }
+  },
+  "ss_fragrant_jasmine_rice": {
+    "name": "Fragrant Jasmine Rice",
+    "supermarket": "shengsiong",
+    "category": "rice",
+    "prices": {
+      "2026-06-28": 4.95
+    }
+  },
+  "ss_rice_bran_oil": {
+    "name": "Rice Bran Oil",
+    "supermarket": "shengsiong",
+    "category": "rice",
+    "prices": {
+      "2026-06-28": 8.5
+    }
+  },
+  "ss_spaghetti_pasta": {
+    "name": "Spaghetti Pasta",
+    "supermarket": "shengsiong",
+    "category": "rice",
+    "prices": {
+      "2026-06-28": 1.65
+    }
+  },
+  "ss_special_white_rice": {
+    "name": "Special White Rice",
+    "supermarket": "shengsiong",
+    "category": "rice",
+    "prices": {
+      "2026-06-28": 6.5
+    }
+  },
+  "ss_red_brown_rice": {
+    "name": "Red Brown Rice",
+    "supermarket": "shengsiong",
+    "category": "rice",
+    "prices": {
+      "2026-06-28": 4.95
+    }
+  },
+  "ss_premium_short_grain_rice": {
+    "name": "Premium Short Grain Rice",
+    "supermarket": "shengsiong",
+    "category": "rice",
+    "prices": {
+      "2026-06-28": 5.25
+    }
+  },
+  "ss_brown_rice": {
+    "name": "Brown Rice",
+    "supermarket": "shengsiong",
+    "category": "rice",
+    "prices": {
+      "2026-06-28": 4.25
+    }
+  },
+  "ss_men_s_facial_scrub___double_oi": {
+    "name": "Men's Facial Scrub - Double Oil Control",
+    "supermarket": "shengsiong",
+    "category": "oil",
+    "prices": {
+      "2026-06-28": 8.0
+    }
+  },
+  "ss_classic_olive_oil": {
+    "name": "Classic Olive Oil",
+    "supermarket": "shengsiong",
+    "category": "oil",
+    "prices": {
+      "2026-06-28": 30.5
+    }
+  },
+  "ss_extra_light_olive_oil": {
+    "name": "Extra Light Olive Oil",
+    "supermarket": "shengsiong",
+    "category": "oil",
+    "prices": {
+      "2026-06-28": 30.5
+    }
+  },
+  "ss_extra_virgin_olive_oil": {
+    "name": "Extra Virgin Olive Oil",
+    "supermarket": "shengsiong",
+    "category": "oil",
+    "prices": {
+      "2026-06-28": 19.95
+    }
+  },
+  "ss_grapeseed_refined_oil": {
+    "name": "Grapeseed Refined Oil",
+    "supermarket": "shengsiong",
+    "category": "oil",
+    "prices": {
+      "2026-06-28": 9.95
+    }
+  },
+  "ss_nourishing_oil_care_conditione": {
+    "name": "Nourishing Oil Care Conditioner",
+    "supermarket": "shengsiong",
+    "category": "oil",
+    "prices": {
+      "2026-06-28": 7.35
+    }
+  },
+  "ss_cooking_oil": {
+    "name": "Cooking Oil",
+    "supermarket": "shengsiong",
+    "category": "oil",
+    "prices": {
+      "2026-06-28": 13.15
+    }
+  },
+  "ss_organic_pure_olive_oil": {
+    "name": "Organic Pure Olive Oil",
+    "supermarket": "shengsiong",
+    "category": "oil",
+    "prices": {
+      "2026-06-28": 4.8
+    }
+  },
+  "ss_yellow_joss_oil": {
+    "name": "Yellow Joss Oil",
+    "supermarket": "shengsiong",
+    "category": "oil",
+    "prices": {
+      "2026-06-28": 4.5
+    }
+  },
+  "ss_corn_oil": {
+    "name": "Corn Oil",
+    "supermarket": "shengsiong",
+    "category": "oil",
+    "prices": {
+      "2026-06-28": 6.95
+    }
+  },
+  "ss_men_s_turbo_light_oil_control_": {
+    "name": "Men's Turbo Light Oil Control Cleanser - Oil Control (Cool)",
+    "supermarket": "shengsiong",
+    "category": "oil",
+    "prices": {
+      "2026-06-28": 11.1
+    }
+  },
+  "ss_bio_pure_olive_oil": {
+    "name": "Bio Pure Olive Oil",
+    "supermarket": "shengsiong",
+    "category": "oil",
+    "prices": {
+      "2026-06-28": 3.9
+    }
+  },
+  "ss_sunflower_oil": {
+    "name": "Sunflower Oil",
+    "supermarket": "shengsiong",
+    "category": "oil",
+    "prices": {
+      "2026-06-28": 16.9
+    }
+  },
+  "ss_hot_pot_soup_base___spicy_clea": {
+    "name": "Hot Pot Soup Base - Spicy Clear Oil",
+    "supermarket": "shengsiong",
+    "category": "oil",
+    "prices": {
+      "2026-06-28": 4.5
+    }
+  },
+  "ss_canola_oil": {
+    "name": "Canola Oil",
+    "supermarket": "shengsiong",
+    "category": "oil",
+    "prices": {
+      "2026-06-28": 2.5
+    }
+  },
+  "ss_vegetable_oil": {
+    "name": "Vegetable Oil",
+    "supermarket": "shengsiong",
+    "category": "oil",
+    "prices": {
+      "2026-06-28": 1.95
+    }
+  },
+  "ss_soya_bean_oil": {
+    "name": "Soya Bean Oil",
+    "supermarket": "shengsiong",
+    "category": "oil",
+    "prices": {
+      "2026-06-28": 9.35
+    }
+  },
+  "ss_yellowfin_tuna_flakes_in_sunfl": {
+    "name": "Yellowfin Tuna Flakes in Sunflower Oil",
+    "supermarket": "shengsiong",
+    "category": "oil",
+    "prices": {
+      "2026-06-28": 2.6
+    }
+  },
+  "ss_yellowfin_tuna_chunk_in_sunflo": {
+    "name": "Yellowfin Tuna Chunk In Sunflower oil",
+    "supermarket": "shengsiong",
+    "category": "oil",
+    "prices": {
+      "2026-06-28": 2.6
+    }
+  },
+  "ss_100__pure_fragrant_sesame_oil": {
+    "name": "100% Pure Fragrant Sesame Oil",
+    "supermarket": "shengsiong",
+    "category": "oil",
+    "prices": {
+      "2026-06-28": 9.65
+    }
+  },
+  "ss_ginger_milk_tea": {
+    "name": "Ginger Milk Tea",
+    "supermarket": "shengsiong",
+    "category": "milk",
+    "prices": {
+      "2026-06-28": 7.8
+    }
+  },
+  "ss_actifit_3x_adult_milk_powder__": {
+    "name": "Actifit 3X Adult Milk Powder - Plain",
+    "supermarket": "shengsiong",
+    "category": "milk",
+    "prices": {
+      "2026-06-28": 21.15
+    }
+  },
+  "ss_gold_concentrate_uht_milk___ch": {
+    "name": "Gold Concentrate UHT Milk - Chocolate",
+    "supermarket": "shengsiong",
+    "category": "milk",
+    "prices": {
+      "2026-06-28": 4.49
+    }
+  },
+  "ss_actifit_3x_uht_milk___black_se": {
+    "name": "Actifit 3X UHT Milk - Black Sesame",
+    "supermarket": "shengsiong",
+    "category": "milk",
+    "prices": {
+      "2026-06-28": 3.28
+    }
+  },
+  "ss_gold_concentrate_uht_milk___fa": {
+    "name": "Gold Concentrate UHT Milk - Fat Free",
+    "supermarket": "shengsiong",
+    "category": "milk",
+    "prices": {
+      "2026-06-28": 4.49
+    }
+  },
+  "ss_materna_formulated_milk___plai": {
+    "name": "Materna Formulated Milk - Plain",
+    "supermarket": "shengsiong",
+    "category": "milk",
+    "prices": {
+      "2026-06-28": 23.7
+    }
+  },
+  "ss_482_ml_protein_vanilla_milk": {
+    "name": "482 ml Protein Vanilla Milk",
+    "supermarket": "shengsiong",
+    "category": "milk",
+    "prices": {
+      "2026-06-28": 4.4
+    }
+  },
+  "ss_482_ml_protein_strawberry___ra": {
+    "name": "482 ml Protein Strawberry & Raspberry Milk",
+    "supermarket": "shengsiong",
+    "category": "milk",
+    "prices": {
+      "2026-06-28": 4.4
+    }
+  },
+  "ss_tiramisu_milk_chocolate": {
+    "name": "Tiramisu Milk Chocolate",
+    "supermarket": "shengsiong",
+    "category": "milk",
+    "prices": {
+      "2026-06-28": 3.33
+    }
+  },
+  "ss_almond_coated_with_milk_chocol": {
+    "name": "Almond Coated With Milk Chocolate",
+    "supermarket": "shengsiong",
+    "category": "milk",
+    "prices": {
+      "2026-06-28": 9.9
+    }
+  },
+  "ss_raisin_milk_chocolate": {
+    "name": "Raisin Milk Chocolate",
+    "supermarket": "shengsiong",
+    "category": "milk",
+    "prices": {
+      "2026-06-28": 9.9
+    }
+  },
+  "ss_assorted_milk_chocolate": {
+    "name": "Assorted Milk Chocolate",
+    "supermarket": "shengsiong",
+    "category": "milk",
+    "prices": {
+      "2026-06-28": 9.9
+    }
+  },
+  "ss_tiramisu_almond_milk_chocolate": {
+    "name": "Tiramisu Almond Milk Chocolate",
+    "supermarket": "shengsiong",
+    "category": "milk",
+    "prices": {
+      "2026-06-28": 3.33
+    }
+  },
+  "ss_uht_banana_milk": {
+    "name": "UHT Banana Milk",
+    "supermarket": "shengsiong",
+    "category": "milk",
+    "prices": {
+      "2026-06-28": 6.5
+    }
+  },
+  "ss_dairy_milk_roast_almond": {
+    "name": "Dairy Milk Roast Almond",
+    "supermarket": "shengsiong",
+    "category": "milk",
+    "prices": {
+      "2026-06-28": 6.2
+    }
+  },
+  "ss_dairy_milk_black_forest": {
+    "name": "Dairy Milk Black Forest",
+    "supermarket": "shengsiong",
+    "category": "milk",
+    "prices": {
+      "2026-06-28": 6.2
+    }
+  },
+  "ss_dairy_milk_milk_chocolate": {
+    "name": "Dairy Milk Milk Chocolate",
+    "supermarket": "shengsiong",
+    "category": "milk",
+    "prices": {
+      "2026-06-28": 6.2
+    }
+  },
+  "ss_dairy_milk_sharepack": {
+    "name": "Dairy Milk Sharepack",
+    "supermarket": "shengsiong",
+    "category": "milk",
+    "prices": {
+      "2026-06-28": 7.05
+    }
+  },
+  "ss_dairy_milk_hazelnut": {
+    "name": "Dairy Milk Hazelnut",
+    "supermarket": "shengsiong",
+    "category": "milk",
+    "prices": {
+      "2026-06-28": 6.2
+    }
+  },
+  "ss_dairy_milk_chocolate": {
+    "name": "Dairy Milk Chocolate",
+    "supermarket": "shengsiong",
+    "category": "milk",
+    "prices": {
+      "2026-06-28": 2.8
+    }
+  },
+  "ss_dairy_milk_chocolate_roll": {
+    "name": "Dairy Milk Chocolate Roll",
+    "supermarket": "shengsiong",
+    "category": "milk",
+    "prices": {
+      "2026-06-28": 2.8
+    }
+  },
+  "ss_crunchie_milk_chocolate": {
+    "name": "Crunchie Milk Chocolate",
+    "supermarket": "shengsiong",
+    "category": "milk",
+    "prices": {
+      "2026-06-28": 2.8
+    }
+  },
+  "ss_evaporated_full_cream_milk": {
+    "name": "Evaporated Full Cream Milk",
+    "supermarket": "shengsiong",
+    "category": "milk",
+    "prices": {
+      "2026-06-28": 2.15
+    }
+  },
+  "ss_evaporated_filled_milk": {
+    "name": "Evaporated Filled Milk",
+    "supermarket": "shengsiong",
+    "category": "milk",
+    "prices": {
+      "2026-06-28": 2.0
+    }
+  },
+  "ss_evaporated_low_fat_milk": {
+    "name": "Evaporated Low Fat Milk",
+    "supermarket": "shengsiong",
+    "category": "milk",
+    "prices": {
+      "2026-06-28": 2.25
+    }
+  },
+  "ss_instant_full_cream_milk_powder": {
+    "name": "Instant Full Cream Milk Powder",
+    "supermarket": "shengsiong",
+    "category": "milk",
+    "prices": {
+      "2026-06-28": 12.6
+    }
+  },
+  "ss_fresh_milk": {
+    "name": "Fresh Milk",
+    "supermarket": "shengsiong",
+    "category": "milk",
+    "prices": {
+      "2026-06-28": 4.06
+    }
+  },
+  "ss_uht_pure_milk": {
+    "name": "UHT Pure Milk",
+    "supermarket": "shengsiong",
+    "category": "milk",
+    "prices": {
+      "2026-06-28": 2.5
+    }
+  },
+  "ss_uht_milk_light": {
+    "name": "UHT Milk Light",
+    "supermarket": "shengsiong",
+    "category": "milk",
+    "prices": {
+      "2026-06-28": 22.5
+    }
+  },
+  "ss_low_fat_uht_lite_pure_milk": {
+    "name": "Low Fat UHT Lite Pure Milk",
+    "supermarket": "shengsiong",
+    "category": "milk",
+    "prices": {
+      "2026-06-28": 2.5
+    }
+  },
+  "ss_choco_hazelnut___milk_spread": {
+    "name": "Choco Hazelnut & Milk Spread",
+    "supermarket": "shengsiong",
+    "category": "milk",
+    "prices": {
+      "2026-06-28": 3.95
+    }
+  },
+  "ss_foaming_hand_wash___honey_milk": {
+    "name": "Foaming Hand Wash - Honey Milk",
+    "supermarket": "shengsiong",
+    "category": "milk",
+    "prices": {
+      "2026-06-28": 2.65
+    }
+  },
+  "ss_baby_head_to_toe_natural_oat_m": {
+    "name": "Baby Head To Toe Natural Oat Milk",
+    "supermarket": "shengsiong",
+    "category": "milk",
+    "prices": {
+      "2026-06-28": 5.45
+    }
+  },
+  "ss_disney_princess_uht_chocolate_": {
+    "name": "Disney Princess UHT Chocolate Milk",
+    "supermarket": "shengsiong",
+    "category": "milk",
+    "prices": {
+      "2026-06-28": 2.69
+    }
+  },
+  "ss_disney_princess_uht_strawberry": {
+    "name": "Disney Princess UHT Strawberry Milk",
+    "supermarket": "shengsiong",
+    "category": "milk",
+    "prices": {
+      "2026-06-28": 2.69
+    }
+  },
+  "ss_omega_6_fresh_eggs__10s_": {
+    "name": "Omega 6 Fresh Eggs (10s)",
+    "supermarket": "shengsiong",
+    "category": "eggs",
+    "prices": {
+      "2026-06-28": 4.0
+    }
+  },
+  "ss_salted_egg_fish_skin___mala": {
+    "name": "Salted Egg Fish Skin - Mala",
+    "supermarket": "shengsiong",
+    "category": "eggs",
+    "prices": {
+      "2026-06-28": 5.55
+    }
+  },
+  "ss_salted_egg_fish_skin___origina": {
+    "name": "Salted Egg Fish Skin - Original",
+    "supermarket": "shengsiong",
+    "category": "eggs",
+    "prices": {
+      "2026-06-28": 5.55
+    }
+  },
+  "ss_salted_egg_fish_skin___tom_yum": {
+    "name": "Salted Egg Fish Skin - Tom Yum",
+    "supermarket": "shengsiong",
+    "category": "eggs",
+    "prices": {
+      "2026-06-28": 5.55
+    }
+  },
+  "ss_ramen_egg_1s": {
+    "name": "Ramen Egg 1s",
+    "supermarket": "shengsiong",
+    "category": "eggs",
+    "prices": {
+      "2026-06-28": 1.3
+    }
+  },
+  "ss_baby_food___smooth_egg_custard": {
+    "name": "Baby Food - Smooth Egg Custard",
+    "supermarket": "shengsiong",
+    "category": "eggs",
+    "prices": {
+      "2026-06-28": 2.45
+    }
+  },
+  "ss_salted_egg_yolk_powder": {
+    "name": "Salted Egg Yolk Powder",
+    "supermarket": "shengsiong",
+    "category": "eggs",
+    "prices": {
+      "2026-06-28": 5.0
+    }
+  },
+  "ss_irvins_salted_egg_instant_nood": {
+    "name": "Irvins Salted Egg Instant Noodle Packet",
+    "supermarket": "shengsiong",
+    "category": "eggs",
+    "prices": {
+      "2026-06-28": 6.01
+    }
+  },
+  "ss_irvin_salted_egg_flavour": {
+    "name": "Irvin Salted Egg Flavour",
+    "supermarket": "shengsiong",
+    "category": "eggs",
+    "prices": {
+      "2026-06-28": 2.68
+    }
+  },
+  "ss_irvins_salted_egg_noodles___sp": {
+    "name": "Irvins Salted Egg Noodles - Spicy",
+    "supermarket": "shengsiong",
+    "category": "eggs",
+    "prices": {
+      "2026-06-28": 2.68
+    }
+  },
+  "ss_egg_tart_cake": {
+    "name": "Egg tart Cake",
+    "supermarket": "shengsiong",
+    "category": "eggs",
+    "prices": {
+      "2026-06-28": 1.2
+    }
+  },
+  "ss_salted_egg_fish_skin": {
+    "name": "Salted Egg Fish Skin",
+    "supermarket": "shengsiong",
+    "category": "eggs",
+    "prices": {
+      "2026-06-28": 5.8
+    }
+  },
+  "ss_salted_egg_custard_pau": {
+    "name": "Salted Egg Custard Pau",
+    "supermarket": "shengsiong",
+    "category": "eggs",
+    "prices": {
+      "2026-06-28": 3.45
+    }
+  },
+  "ss_chives___egg_dumplings": {
+    "name": "Chives & Egg Dumplings",
+    "supermarket": "shengsiong",
+    "category": "eggs",
+    "prices": {
+      "2026-06-28": 5.33
+    }
+  },
+  "ss_egg_tofu": {
+    "name": "Egg Tofu",
+    "supermarket": "shengsiong",
+    "category": "eggs",
+    "prices": {
+      "2026-06-28": 0.6
+    }
+  },
+  "ss_fresh_egg_noodle": {
+    "name": "Fresh Egg Noodle",
+    "supermarket": "shengsiong",
+    "category": "eggs",
+    "prices": {
+      "2026-06-28": 1.75
+    }
+  },
+  "ss_braised_quail_egg___hot___spic": {
+    "name": "Braised Quail Egg - Hot & Spicy (5s)",
+    "supermarket": "shengsiong",
+    "category": "eggs",
+    "prices": {
+      "2026-06-28": 2.45
+    }
+  },
+  "ss_taro_salted_egg_lava_ball": {
+    "name": "Taro Salted Egg Lava Ball",
+    "supermarket": "shengsiong",
+    "category": "eggs",
+    "prices": {
+      "2026-06-28": 4.15
+    }
+  },
+  "ss_superior_chicken_collagen_brot": {
+    "name": "Superior Chicken Collagen Broth",
+    "supermarket": "shengsiong",
+    "category": "chicken",
+    "prices": {
+      "2026-06-28": 6.55
+    }
+  },
+  "ss_instant_chicken_curry_paste": {
+    "name": "Instant Chicken Curry Paste",
+    "supermarket": "shengsiong",
+    "category": "chicken",
+    "prices": {
+      "2026-06-28": 3.45
+    }
+  },
+  "ss_pulled_chicken___mayonnaise": {
+    "name": "Pulled Chicken - Mayonnaise",
+    "supermarket": "shengsiong",
+    "category": "chicken",
+    "prices": {
+      "2026-06-28": 3.28
+    }
+  },
+  "ss_pulled_chicken___black_pepper": {
+    "name": "Pulled Chicken - Black Pepper",
+    "supermarket": "shengsiong",
+    "category": "chicken",
+    "prices": {
+      "2026-06-28": 3.28
+    }
+  },
+  "ss_pulled_chicken___hot_chilli": {
+    "name": "Pulled Chicken - Hot Chilli",
+    "supermarket": "shengsiong",
+    "category": "chicken",
+    "prices": {
+      "2026-06-28": 3.28
+    }
+  },
+  "ss_frozen_chicken_whole_leg": {
+    "name": "Frozen Chicken Whole Leg",
+    "supermarket": "shengsiong",
+    "category": "chicken",
+    "prices": {
+      "2026-06-28": 6.95
+    }
+  },
+  "ss_essence_of_chicken_with_cordyc": {
+    "name": "Essence Of Chicken With Cordyceps",
+    "supermarket": "shengsiong",
+    "category": "chicken",
+    "prices": {
+      "2026-06-28": 20.95
+    }
+  },
+  "ss_essence_of_chicken_original": {
+    "name": "Essence of Chicken Original",
+    "supermarket": "shengsiong",
+    "category": "chicken",
+    "prices": {
+      "2026-06-28": 19.95
+    }
+  },
+  "ss_chicken___lamb_sauce___hot___s": {
+    "name": "Chicken & Lamb Sauce - Hot & Spicy",
+    "supermarket": "shengsiong",
+    "category": "chicken",
+    "prices": {
+      "2026-06-28": 4.6
+    }
+  },
+  "ss_chicken_tofu": {
+    "name": "CHICKEN TOFU",
+    "supermarket": "shengsiong",
+    "category": "chicken",
+    "prices": {
+      "2026-06-28": 2.8
+    }
+  },
+  "ss_pickle_chicken_feet": {
+    "name": "PICKLE CHICKEN FEET",
+    "supermarket": "shengsiong",
+    "category": "chicken",
+    "prices": {
+      "2026-06-28": 3.9
+    }
+  },
+  "ss_chicken_tau_kwa": {
+    "name": "CHICKEN TAU KWA",
+    "supermarket": "shengsiong",
+    "category": "chicken",
+    "prices": {
+      "2026-06-28": 2.8
+    }
+  },
+  "ss_japanese_golden_crispy_chicken": {
+    "name": "Japanese Golden Crispy Chicken",
+    "supermarket": "shengsiong",
+    "category": "chicken",
+    "prices": {
+      "2026-06-28": 6.25
+    }
+  },
+  "ss_roasted_hot_wing": {
+    "name": "Roasted Hot Wing",
+    "supermarket": "shengsiong",
+    "category": "chicken",
+    "prices": {
+      "2026-06-28": 13.95
+    }
+  },
+  "ss_pepper_kicks_skinless_chicken_": {
+    "name": "Pepper Kicks Skinless Chicken Leg Meat",
+    "supermarket": "shengsiong",
+    "category": "chicken",
+    "prices": {
+      "2026-06-28": 6.0
+    }
+  },
+  "ss_signature_hot___spicy_chicken_": {
+    "name": "Signature Hot & Spicy Chicken Ribs",
+    "supermarket": "shengsiong",
+    "category": "chicken",
+    "prices": {
+      "2026-06-28": 6.75
+    }
+  },
+  "ss_crispy_chicken_with_korean_hot": {
+    "name": "Crispy Chicken With Korean Hot & Spicy Sauce",
+    "supermarket": "shengsiong",
+    "category": "chicken",
+    "prices": {
+      "2026-06-28": 9.11
+    }
+  },
+  "ss_crispy_chicken_with_honey_lemo": {
+    "name": "Crispy Chicken With Honey Lemon Sauce",
+    "supermarket": "shengsiong",
+    "category": "chicken",
+    "prices": {
+      "2026-06-28": 9.11
+    }
+  },
+  "ss_glazed_teriyaki_skinless_chick": {
+    "name": "Glazed Teriyaki Skinless Chicken Leg Meat",
+    "supermarket": "shengsiong",
+    "category": "chicken",
+    "prices": {
+      "2026-06-28": 6.0
+    }
+  },
+  "ss_signature_chicken_ribs": {
+    "name": "Signature Chicken Ribs",
+    "supermarket": "shengsiong",
+    "category": "chicken",
+    "prices": {
+      "2026-06-28": 6.75
+    }
+  },
+  "ss_chicken_gyoza": {
+    "name": "Chicken Gyoza",
+    "supermarket": "shengsiong",
+    "category": "chicken",
+    "prices": {
+      "2026-06-28": 5.8
+    }
+  },
+  "ss_fried_chicken_wing": {
+    "name": "Fried Chicken Wing",
+    "supermarket": "shengsiong",
+    "category": "chicken",
+    "prices": {
+      "2026-06-28": 17.95
+    }
+  },
+  "ss_cream_of_chicken_instant_soup": {
+    "name": "Cream Of Chicken Instant Soup",
+    "supermarket": "shengsiong",
+    "category": "chicken",
+    "prices": {
+      "2026-06-28": 2.3
+    }
+  },
+  "ss_cream_of_chicken_soup": {
+    "name": "Cream Of Chicken Soup",
+    "supermarket": "shengsiong",
+    "category": "chicken",
+    "prices": {
+      "2026-06-28": 2.1
+    }
+  },
+  "ss_cream_style_corn_with_chicken_": {
+    "name": "Cream Style Corn With Chicken Soup",
+    "supermarket": "shengsiong",
+    "category": "chicken",
+    "prices": {
+      "2026-06-28": 2.1
+    }
+  },
+  "ss_wet_dog_food___chicken___veget": {
+    "name": "Wet Dog Food - Chicken & Vegetables",
+    "supermarket": "shengsiong",
+    "category": "chicken",
+    "prices": {
+      "2026-06-28": 2.2
+    }
+  },
+  "ss_instant_quick_frozen_chicken_d": {
+    "name": "Instant Quick Frozen Chicken Drumstick",
+    "supermarket": "shengsiong",
+    "category": "chicken",
+    "prices": {
+      "2026-06-28": 9.45
+    }
+  },
+  "ss_iqf_frozen_chicken_whole_leg": {
+    "name": "IQF Frozen Chicken Whole Leg",
+    "supermarket": "shengsiong",
+    "category": "chicken",
+    "prices": {
+      "2026-06-28": 10.95
+    }
+  },
+  "ss_instant_quick_frozen_chicken_w": {
+    "name": "Instant Quick Frozen Chicken Wings",
+    "supermarket": "shengsiong",
+    "category": "chicken",
+    "prices": {
+      "2026-06-28": 10.45
+    }
+  },
+  "ss_instant_quick_frozen_chicken_t": {
+    "name": "Instant Quick Frozen Chicken Thigh",
+    "supermarket": "shengsiong",
+    "category": "chicken",
+    "prices": {
+      "2026-06-28": 9.95
+    }
+  },
+  "ss_chicken_cheese_franks": {
+    "name": "Chicken Cheese Franks",
+    "supermarket": "shengsiong",
+    "category": "chicken",
+    "prices": {
+      "2026-06-28": 2.55
+    }
+  },
+  "ss_chicken_meat_loaf": {
+    "name": "Chicken Meat Loaf",
+    "supermarket": "shengsiong",
+    "category": "chicken",
+    "prices": {
+      "2026-06-28": 3.95
+    }
+  },
+  "ss_essence_of_chicken___american_": {
+    "name": "Essence Of Chicken - American Ginseng & Cordyceps",
+    "supermarket": "shengsiong",
+    "category": "chicken",
+    "prices": {
+      "2026-06-28": 27.9
+    }
+  },
+  "ss_traditional_essence_of_chicken": {
+    "name": "Traditional Essence Of Chicken",
+    "supermarket": "shengsiong",
+    "category": "chicken",
+    "prices": {
+      "2026-06-28": 17.9
+    }
+  },
+  "ss_essence_of_chicken___goji_berr": {
+    "name": "Essence of Chicken - Goji Berries & Red Dates",
+    "supermarket": "shengsiong",
+    "category": "chicken",
+    "prices": {
+      "2026-06-28": 21.9
+    }
+  },
+  "ss_wet_cat_food___chunky_chicken_": {
+    "name": "Wet Cat Food - Chunky Chicken Feast",
+    "supermarket": "shengsiong",
+    "category": "chicken",
+    "prices": {
+      "2026-06-28": 1.66
+    }
+  },
+  "ss_savory_chicken___turkey": {
+    "name": "Savory Chicken & Turkey",
+    "supermarket": "shengsiong",
+    "category": "chicken",
+    "prices": {
+      "2026-06-28": 18.45
+    }
+  },
+  "ss_classic_broths_with_chicken__v": {
+    "name": "Classic Broths With Chicken, Vegetables & Whitefish",
+    "supermarket": "shengsiong",
+    "category": "chicken",
+    "prices": {
+      "2026-06-28": 1.82
+    }
+  },
+  "ss_puree_kiss_tuna_puree_with_chi": {
+    "name": "Puree Kiss Tuna Puree with Chicken Flakes",
+    "supermarket": "shengsiong",
+    "category": "chicken",
+    "prices": {
+      "2026-06-28": 4.58
+    }
+  },
+  "ss_inspirations_wet_cat_food___ch": {
+    "name": "Inspirations Wet Cat Food - Chicken Pasta Pearls Pouch",
+    "supermarket": "shengsiong",
+    "category": "chicken",
+    "prices": {
+      "2026-06-28": 1.66
+    }
+  },
+  "ss_breaded_scallop_cake": {
+    "name": "Breaded Scallop Cake",
+    "supermarket": "shengsiong",
+    "category": "bread",
+    "prices": {
+      "2026-06-28": 2.0
+    }
+  },
+  "ss_breaded_butterfly_shrimp": {
+    "name": "Breaded Butterfly Shrimp",
+    "supermarket": "shengsiong",
+    "category": "bread",
+    "prices": {
+      "2026-06-28": 6.45
+    }
+  },
+  "ss_pre_fried_breaded_torpedo_shri": {
+    "name": "Pre-Fried Breaded Torpedo Shrimp",
+    "supermarket": "shengsiong",
+    "category": "bread",
+    "prices": {
+      "2026-06-28": 6.45
+    }
+  },
+  "ss_breaded_karaage": {
+    "name": "Breaded Karaage",
+    "supermarket": "shengsiong",
+    "category": "bread",
+    "prices": {
+      "2026-06-28": 8.02
+    }
+  },
+  "ss_jumbo_pack_enriched_soft_white": {
+    "name": "Jumbo Pack Enriched Soft White Bread",
+    "supermarket": "shengsiong",
+    "category": "bread",
+    "prices": {
+      "2026-06-28": 3.0
+    }
+  },
+  "ss_enriched_soft_white_bread": {
+    "name": "Enriched Soft White Bread",
+    "supermarket": "shengsiong",
+    "category": "bread",
+    "prices": {
+      "2026-06-28": 2.4
+    }
+  },
+  "ss_breaded_tartar_fish_nugget": {
+    "name": "Breaded Tartar Fish Nugget",
+    "supermarket": "shengsiong",
+    "category": "bread",
+    "prices": {
+      "2026-06-28": 5.5
+    }
+  },
+  "ss_breaded_salt_and_black_pepper_": {
+    "name": "Breaded Salt And Black Pepper Fish Fillet",
+    "supermarket": "shengsiong",
+    "category": "bread",
+    "prices": {
+      "2026-06-28": 5.0
+    }
+  },
+  "ss_garlic_bread___original": {
+    "name": "Garlic Bread - Original",
+    "supermarket": "shengsiong",
+    "category": "bread",
+    "prices": {
+      "2026-06-28": 2.55
+    }
+  },
+  "ss_breaded_fish_fillet": {
+    "name": "Breaded Fish Fillet",
+    "supermarket": "shengsiong",
+    "category": "bread",
+    "prices": {
+      "2026-06-28": 5.0
+    }
+  },
+  "ss_garlic_bread": {
+    "name": "Garlic Bread",
+    "supermarket": "shengsiong",
+    "category": "bread",
+    "prices": {
+      "2026-06-28": 1.0
+    }
+  },
+  "ss_bread_flour": {
+    "name": "Bread Flour",
+    "supermarket": "shengsiong",
+    "category": "bread",
+    "prices": {
+      "2026-06-28": 2.65
+    }
+  },
+  "ss_plain_breaded_chicken_inner_fi": {
+    "name": "Plain Breaded Chicken Inner Fillet",
+    "supermarket": "shengsiong",
+    "category": "bread",
+    "prices": {
+      "2026-06-28": 8.02
+    }
+  },
+  "ss_breaded_fish_chip": {
+    "name": "Breaded Fish Chip",
+    "supermarket": "shengsiong",
+    "category": "bread",
+    "prices": {
+      "2026-06-28": 4.95
+    }
+  },
+  "ss_abalone_instant_noodle": {
+    "name": "Abalone Instant Noodle",
+    "supermarket": "shengsiong",
+    "category": "noodles",
+    "prices": {
+      "2026-06-28": 4.1
+    }
+  },
+  "ss_bak_kut_teh_noodles": {
+    "name": "Bak Kut Teh Noodles",
+    "supermarket": "shengsiong",
+    "category": "noodles",
+    "prices": {
+      "2026-06-28": 4.15
+    }
+  },
+  "ss_curry_instant_noodle": {
+    "name": "Curry Instant Noodle",
+    "supermarket": "shengsiong",
+    "category": "noodles",
+    "prices": {
+      "2026-06-28": 2.15
+    }
+  },
+  "ss_non_fried_original_mi_tampa_go": {
+    "name": "Non-Fried Original Mi Tampa Goreng",
+    "supermarket": "shengsiong",
+    "category": "noodles",
+    "prices": {
+      "2026-06-28": 1.5
+    }
+  },
+  "ss_tomato_vermicelli": {
+    "name": "Tomato Vermicelli",
+    "supermarket": "shengsiong",
+    "category": "noodles",
+    "prices": {
+      "2026-06-28": 1.51
+    }
+  },
+  "ss_fried_hokkien_prawn_noodle_pas": {
+    "name": "Fried Hokkien Prawn Noodle Paste",
+    "supermarket": "shengsiong",
+    "category": "noodles",
+    "prices": {
+      "2026-06-28": 2.19
+    }
+  },
+  "ss_prawn_noodle_sauce": {
+    "name": "Prawn Noodle Sauce",
+    "supermarket": "shengsiong",
+    "category": "noodles",
+    "prices": {
+      "2026-06-28": 2.7
+    }
+  },
+  "ss_easi_cook_instant_noodles": {
+    "name": "Easi-Cook Instant Noodles",
+    "supermarket": "shengsiong",
+    "category": "noodles",
+    "prices": {
+      "2026-06-28": 2.4
+    }
+  },
+  "ss_family_noodle": {
+    "name": "Family Noodle",
+    "supermarket": "shengsiong",
+    "category": "noodles",
+    "prices": {
+      "2026-06-28": 2.65
+    }
+  },
+  "ss_vegetable_instant_noodle": {
+    "name": "Vegetable Instant Noodle",
+    "supermarket": "shengsiong",
+    "category": "noodles",
+    "prices": {
+      "2026-06-28": 1.95
+    }
+  },
+  "ss_chicken_instant_noodle": {
+    "name": "Chicken Instant Noodle",
+    "supermarket": "shengsiong",
+    "category": "noodles",
+    "prices": {
+      "2026-06-28": 1.95
+    }
+  },
+  "ss_ramen_noodles": {
+    "name": "Ramen Noodles",
+    "supermarket": "shengsiong",
+    "category": "noodles",
+    "prices": {
+      "2026-06-28": 4.2
+    }
+  },
+  "ss_sliced_noodles": {
+    "name": "Sliced Noodles",
+    "supermarket": "shengsiong",
+    "category": "noodles",
+    "prices": {
+      "2026-06-28": 4.2
+    }
+  },
+  "ss_mi_goreng_asli": {
+    "name": "Mi Goreng Asli",
+    "supermarket": "shengsiong",
+    "category": "noodles",
+    "prices": {
+      "2026-06-28": 2.37
+    }
+  },
+  "ss_mi_goreng_fried_noodles___hot_": {
+    "name": "Mi Goreng Fried Noodles - Hot & Spicy",
+    "supermarket": "shengsiong",
+    "category": "noodles",
+    "prices": {
+      "2026-06-28": 2.3
+    }
+  },
+  "ss_mi_goreng_fried_noodles_origin": {
+    "name": "Mi Goreng Fried Noodles Original",
+    "supermarket": "shengsiong",
+    "category": "noodles",
+    "prices": {
+      "2026-06-28": 2.3
+    }
+  },
+  "ss_soto_soup_noodle": {
+    "name": "Soto Soup Noodle",
+    "supermarket": "shengsiong",
+    "category": "noodles",
+    "prices": {
+      "2026-06-28": 2.3
+    }
+  },
+  "ss_mi_goreng_rendang_spicy_beef": {
+    "name": "Mi Goreng Rendang Spicy Beef",
+    "supermarket": "shengsiong",
+    "category": "noodles",
+    "prices": {
+      "2026-06-28": 2.3
+    }
+  },
+  "ss_mi_goreng_special": {
+    "name": "Mi Goreng Special",
+    "supermarket": "shengsiong",
+    "category": "noodles",
+    "prices": {
+      "2026-06-28": 2.3
+    }
+  },
+  "ss_chicken_mushroom_bowl_noodle": {
+    "name": "Chicken Mushroom Bowl Noodle",
+    "supermarket": "shengsiong",
+    "category": "noodles",
+    "prices": {
+      "2026-06-28": 1.3
+    }
+  },
+  "ss_spicy_beef_bowl_noodle": {
+    "name": "Spicy Beef Bowl Noodle",
+    "supermarket": "shengsiong",
+    "category": "noodles",
+    "prices": {
+      "2026-06-28": 1.3
+    }
+  },
+  "ss_stew_beef_bowl_noodle": {
+    "name": "Stew Beef Bowl Noodle",
+    "supermarket": "shengsiong",
+    "category": "noodles",
+    "prices": {
+      "2026-06-28": 1.3
+    }
+  },
+  "ss_sarawak_kolo_mee": {
+    "name": "Sarawak Kolo Mee",
+    "supermarket": "shengsiong",
+    "category": "noodles",
+    "prices": {
+      "2026-06-28": 3.4
+    }
+  },
+  "ss_hot_mealz_curry_chicken_bowl": {
+    "name": "Hot Mealz Curry Chicken Bowl",
+    "supermarket": "shengsiong",
+    "category": "noodles",
+    "prices": {
+      "2026-06-28": 1.81
+    }
+  },
+  "ss_kari_letup_instant_noodles": {
+    "name": "Kari Letup Instant Noodles",
+    "supermarket": "shengsiong",
+    "category": "noodles",
+    "prices": {
+      "2026-06-28": 2.5
+    }
+  },
+  "ss_hot_heads_tom_yam_mee_goreng": {
+    "name": "Hot Heads Tom Yam Mee Goreng",
+    "supermarket": "shengsiong",
+    "category": "noodles",
+    "prices": {
+      "2026-06-28": 3.8
+    }
+  },
+  "ss_2_min_asam_laksa_noodle": {
+    "name": "2-MIN Asam Laksa Noodle",
+    "supermarket": "shengsiong",
+    "category": "noodles",
+    "prices": {
+      "2026-06-28": 2.5
+    }
+  },
+  "ss_2_min_chicken_noodle": {
+    "name": "2-MIN Chicken Noodle",
+    "supermarket": "shengsiong",
+    "category": "noodles",
+    "prices": {
+      "2026-06-28": 2.5
+    }
+  },
+  "ss_hot_heads_spicy_curry_noodle": {
+    "name": "Hot Heads Spicy Curry Noodle",
+    "supermarket": "shengsiong",
+    "category": "noodles",
+    "prices": {
+      "2026-06-28": 3.8
+    }
+  },
+  "ss_tom_yam_noodle": {
+    "name": "Tom Yam Noodle",
+    "supermarket": "shengsiong",
+    "category": "noodles",
+    "prices": {
+      "2026-06-28": 2.5
+    }
+  },
+  "ss_hot_mealz_curry_bowl": {
+    "name": "Hot Mealz Curry Bowl",
+    "supermarket": "shengsiong",
+    "category": "noodles",
+    "prices": {
+      "2026-06-28": 1.81
+    }
+  },
+  "ss_2_min_curry_noodle": {
+    "name": "2-Min Curry Noodle",
+    "supermarket": "shengsiong",
+    "category": "noodles",
+    "prices": {
+      "2026-06-28": 2.5
+    }
+  },
+  "ss_instant_rice_vermicelli_clear_": {
+    "name": "Instant Rice Vermicelli Clear Soup",
+    "supermarket": "shengsiong",
+    "category": "noodles",
+    "prices": {
+      "2026-06-28": 2.8
+    }
+  },
+  "ss_monster_noodle_snack_chicken_f": {
+    "name": "Monster Noodle Snack Chicken Flavour",
+    "supermarket": "shengsiong",
+    "category": "noodles",
+    "prices": {
+      "2026-06-28": 2.7
+    }
+  },
+  "ss_curry_flavour_cup_noodle": {
+    "name": "Curry Flavour Cup Noodle",
+    "supermarket": "shengsiong",
+    "category": "noodles",
+    "prices": {
+      "2026-06-28": 0.75
+    }
+  },
+  "ss_chicken_flavour_cup_noodle": {
+    "name": "Chicken Flavour Cup Noodle",
+    "supermarket": "shengsiong",
+    "category": "noodles",
+    "prices": {
+      "2026-06-28": 0.75
+    }
+  },
+  "ss_tom_yam_flavour_cup_noodle": {
+    "name": "Tom Yam Flavour Cup Noodle",
+    "supermarket": "shengsiong",
+    "category": "noodles",
+    "prices": {
+      "2026-06-28": 0.75
+    }
+  },
+  "ss_soto_soup_flavour": {
+    "name": "Soto Soup Flavour",
+    "supermarket": "shengsiong",
+    "category": "noodles",
+    "prices": {
+      "2026-06-28": 2.5
+    }
+  },
+  "ss_mi_goreng": {
+    "name": "Mi Goreng",
+    "supermarket": "shengsiong",
+    "category": "noodles",
+    "prices": {
+      "2026-06-28": 2.5
+    }
+  },
+  "ss_classic_broths_with_tuna__shri": {
+    "name": "Classic Broths With Tuna, Shrimp & Whitefish",
+    "supermarket": "shengsiong",
+    "category": "tuna",
+    "prices": {
+      "2026-06-28": 1.82
+    }
+  },
+  "ss_classic_broths_with_tuna__anch": {
+    "name": "Classic Broths With Tuna, Anchovies & Whitefish",
+    "supermarket": "shengsiong",
+    "category": "tuna",
+    "prices": {
+      "2026-06-28": 1.82
+    }
+  },
+  "ss_puree_kiss_tuna_with_tuna_flak": {
+    "name": "Puree Kiss Tuna with Tuna Flakes",
+    "supermarket": "shengsiong",
+    "category": "tuna",
+    "prices": {
+      "2026-06-28": 4.58
+    }
+  },
+  "ss_inspirations_wet_cat_food___tu": {
+    "name": "Inspirations Wet Cat Food - Tuna Courgette Wholegrain Rice Pouch",
+    "supermarket": "shengsiong",
+    "category": "tuna",
+    "prices": {
+      "2026-06-28": 1.66
+    }
+  },
+  "ss_tuna_chunk_in_brine": {
+    "name": "Tuna Chunk In Brine",
+    "supermarket": "shengsiong",
+    "category": "tuna",
+    "prices": {
+      "2026-06-28": 2.52
+    }
+  },
+  "ss_yellowfin_tuna_chunk_in_brine": {
+    "name": "Yellowfin Tuna Chunk In Brine",
+    "supermarket": "shengsiong",
+    "category": "tuna",
+    "prices": {
+      "2026-06-28": 2.6
+    }
+  },
+  "ss_sambal_goreng_tuna": {
+    "name": "Sambal Goreng Tuna",
+    "supermarket": "shengsiong",
+    "category": "tuna",
+    "prices": {
+      "2026-06-28": 2.6
+    }
+  },
+  "ss_yellowfin_tuna_flakes_in_brine": {
+    "name": "Yellowfin Tuna Flakes In Brine",
+    "supermarket": "shengsiong",
+    "category": "tuna",
+    "prices": {
+      "2026-06-28": 2.6
+    }
+  },
+  "ss_wet_cat_food___tuna_and_white_": {
+    "name": "Wet Cat Food - Tuna and White Fish in Gravy",
+    "supermarket": "shengsiong",
+    "category": "tuna",
+    "prices": {
+      "2026-06-28": 1.66
+    }
+  },
+  "ss_wet_cat_food___tuna_fillet_in_": {
+    "name": "Wet Cat Food - Tuna Fillet in Jelly",
+    "supermarket": "shengsiong",
+    "category": "tuna",
+    "prices": {
+      "2026-06-28": 1.66
+    }
+  },
+  "ss_tuna_melty_cat_creamy_treats": {
+    "name": "Tuna Melty Cat Creamy Treats",
+    "supermarket": "shengsiong",
+    "category": "tuna",
+    "prices": {
+      "2026-06-28": 4.69
+    }
+  },
+  "ss_tuna_and_tuna_seafood_melty_ca": {
+    "name": "Tuna and Tuna Seafood Melty Cat Creamy Treats",
+    "supermarket": "shengsiong",
+    "category": "tuna",
+    "prices": {
+      "2026-06-28": 4.69
+    }
+  },
+  "ss_wet_cat_food___tuna_fillet_and": {
+    "name": "Wet Cat Food - Tuna Fillet and Prawn in Gravy",
+    "supermarket": "shengsiong",
+    "category": "tuna",
+    "prices": {
+      "2026-06-28": 1.66
+    }
+  },
+  "ss_wet_cat_food___flaked_tuna_in_": {
+    "name": "Wet Cat Food - Flaked Tuna In Gravy",
+    "supermarket": "shengsiong",
+    "category": "tuna",
+    "prices": {
+      "2026-06-28": 1.66
+    }
+  },
+  "ss_wet_cat_food___tuna___snapper_": {
+    "name": "Wet Cat Food - Tuna & Snapper in Gravy",
+    "supermarket": "shengsiong",
+    "category": "tuna",
+    "prices": {
+      "2026-06-28": 1.66
+    }
+  },
+  "ss_wet_cat_food___tuna_and_salmon": {
+    "name": "Wet Cat Food - Tuna and Salmon in Gravy",
+    "supermarket": "shengsiong",
+    "category": "tuna",
+    "prices": {
+      "2026-06-28": 1.66
+    }
+  },
+  "ss_wet_cat_food___tuna_with_shred": {
+    "name": "Wet Cat Food - Tuna With Shredded Crab",
+    "supermarket": "shengsiong",
+    "category": "tuna",
+    "prices": {
+      "2026-06-28": 1.66
+    }
+  },
+  "ss_tuna_with_chicken_in_jelly": {
+    "name": "Tuna With Chicken In Jelly",
+    "supermarket": "shengsiong",
+    "category": "tuna",
+    "prices": {
+      "2026-06-28": 0.8
+    }
+  },
+  "ss_tuna_flavour": {
+    "name": "Tuna Flavour",
+    "supermarket": "shengsiong",
+    "category": "tuna",
+    "prices": {
+      "2026-06-28": 4.68
+    }
+  },
+  "ss_wet_cat_food_pouch___tuna": {
+    "name": "Wet Cat Food Pouch - Tuna",
+    "supermarket": "shengsiong",
+    "category": "tuna",
+    "prices": {
+      "2026-06-28": 0.8
+    }
+  },
+  "ss_wet_cat_food_pouch___tuna___wh": {
+    "name": "Wet Cat Food Pouch - Tuna & White Fish",
+    "supermarket": "shengsiong",
+    "category": "tuna",
+    "prices": {
+      "2026-06-28": 0.8
+    }
+  },
+  "ss_tuna_mayonnaise": {
+    "name": "Tuna Mayonnaise",
+    "supermarket": "shengsiong",
+    "category": "tuna",
+    "prices": {
+      "2026-06-28": 2.6
+    }
+  },
+  "ss_tuna_in_teriyaki_sauce": {
+    "name": "Tuna In Teriyaki Sauce",
+    "supermarket": "shengsiong",
+    "category": "tuna",
+    "prices": {
+      "2026-06-28": 2.6
+    }
+  },
+  "ss_frozen_tuna_portion______": {
+    "name": "Frozen Tuna Portion (\u8840\u9c7c\u5757)",
+    "supermarket": "shengsiong",
+    "category": "tuna",
+    "prices": {
+      "2026-06-28": 7.5
     }
   }
 }
