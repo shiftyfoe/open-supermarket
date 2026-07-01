@@ -32,6 +32,10 @@ jobs:
         run: |
           mkdir -p docs/data
           cp data/latest.json data/price_history.json docs/data/
+          # Copy individual supermarket files so they persist as fallback data
+          for f in data/fairprice.json data/shengsiong.json data/coldstorage.json; do
+            [ -f "$f" ] && cp "$f" docs/data/
+          done
 
       - name: Commit data
         run: |

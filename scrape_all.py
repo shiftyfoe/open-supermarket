@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
 """Run all supermarket scrapers and aggregate results."""
 import json
-import os
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 
 from scrapers import fairprice, shengsiong, coldstorage
@@ -13,12 +12,10 @@ DATA_DIR.mkdir(exist_ok=True)
 
 def save_snapshot(products: list, date: str):
     """Save daily snapshot and update latest data."""
-    # Save dated snapshot
     snapshot_path = DATA_DIR / f"snapshot_{date}.json"
     with open(snapshot_path, "w") as f:
         json.dump(products, f, indent=2)
 
-    # Save latest data
     latest_path = DATA_DIR / "latest.json"
     with open(latest_path, "w") as f:
         json.dump(products, f, indent=2)
@@ -51,31 +48,62 @@ def update_history(products: list, date: str):
         json.dump(history, f, indent=2)
 
 
+def save_individual(store_key: str, products: list):
+    """Persist per-supermarket data so it can be used as fallback on failure."""
+    path = DATA_DIR / f"{store_key}.json"
+    with open(path, "w") as f:
+        json.dump(products, f, indent=2)
+
+
+def load_fallback(store_key: str) -> list:
+    """Load cached data for a supermarket when its scraper fails."""
+    path = DATA_DIR / f"{store_key}.json"
+    if not path.exists():
+        return []
+    try:
+        with open(path) as f:
+            data = json.load(f)
+        print(f"  ↩ Using cached data for {store_key} ({len(data)} products)")
+        return data
+    except Exception:
+        return []
+
+
 def run_scrapers() -> list:
-    """Run all scrapers and combine results."""
+    """Run all scrapers, falling back to cached data on failure."""
     all_products = []
 
     scrapers = [
-        ("FairPrice", fairprice),
-        ("Cold Storage", coldstorage),
-        ("Sheng Siong", shengsiong),
+        ("FairPrice", "fairprice", fairprice),
+        ("Cold Storage", "coldstorage", coldstorage),
+        ("Sheng Siong", "shengsiong", shengsiong),
     ]
 
-    for name, scraper in scrapers:
+    for name, key, scraper in scrapers:
         try:
             print(f"Scraping {name}...")
             products = scraper.scrape()
             print(f"  → {len(products)} products")
-            all_products.extend(products)
+
+            if products:
+                save_individual(key, products)
+                all_products.extend(products)
+            else:
+                print(f"  ✗ {name} returned no products")
+                fallback = load_fallback(key)
+                all_products.extend(fallback)
+
         except Exception as e:
-            print(f"  ✗ Error: {e}")
+            print(f"  ✗ Error scraping {name}: {e}")
+            fallback = load_fallback(key)
+            all_products.extend(fallback)
 
     return all_products
 
 
 def main():
     """Main entry point."""
-    date = datetime.utcnow().strftime("%Y-%m-%d")
+    date = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     print(f"\n=== Open Supermarket Singapore ===")
     print(f"Date: {date}\n")
 
@@ -88,7 +116,6 @@ def main():
         print(f"\nTotal products scraped: {len(products)}")
         print(f"Snapshot saved to: {snapshot_path}")
 
-        # Print summary by supermarket
         by_store = {}
         for p in products:
             store = p["supermarket"]
